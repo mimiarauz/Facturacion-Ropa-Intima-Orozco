@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categoria</title>
+    <link rel="stylesheet" href="categoria.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../imagenes/R.ico" >    
+</head>
+<body>
+    <div class="fondo">
+        <form action="">
+            <div class="encabezado">
+                <h2>Registro de Clasificación</h2>
+            </div>
+      <!--Menu de Daotos-->
+            <nav>
+                    <input type="checkbox" id="chek">
+                    <label for="chek" class="chekbtn">
+                     <img src="../../../imagenes/menu (2).png" alt="Menu" id="me">
+                    </label>
+                <ul>
+                    <li><a class="active" id="active" href="#" >Clasificación</a></li>
+                    <li><a id="active" href="../../Usuario/usuario.html">Usuario</a></li>
+                    <li><a id="active" href="../../Cliente/cliente.html">Clientes</a></li>
+                    <li><a id="active" href="../../Proveedor/proveedor.html">Proveedores</a></li>
+                    <li><a id="active" href="../../Producto/catalogo.html">Productos</a></li>
+                </ul>
+            </nav>
+            <a href="../../../Hom/Home.html"><img src="../../../imagenes/hogar.png" style="margin-left:84.5%;margin-top: -60px;" alt="Home"></a>
+            <div class="contenido">
+                <div class="datos">
+                    <h2 class="c">Categoría</h2>
+    
+                    <input type="text" name="" class="categoria" id="txtidcategoria" placeholder="ID" required>
+                    <input type="text" class="categoria" id="txtcategoria" placeholder="Categoria" required pattern="[a-zA-Z]+">
+            
+                    <input type="text" id="raya1" disabled>
+                    <input type="text" id="raya2" disabled>
+                    <div class="central">
+                            
+                       <!--Creacion de tabla-->
+                       <div class="conteyner">
+                        <table id="tablacategoria">
+                         <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Categoría</th>
+                                <th>Editar</th>
+                                <th>Eliminar</th>
+                              </tr>
+                             </thead>
+                             <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td>Editar</td>
+                                <td>Borrar</td>
+                            </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                           
+                            <!--Botones-->
+                           <div class="botones">
+                            <input type="button" class="b" value="Nuevo">
+                            <input type="button" class="b" value="Guardar" onclick="createCategoria()">
+                            <input type="button" class="b" value="Actualizar" onclick="updateCategoria()">
+                            <input type="button" class="b" value="Cancelar" onclick="">
+                           </div>
+                   </div>
+                    
+                </div>
+                
+
+               <!--clasif-->
+                <div class="br">
+                    <div class="info"><a href="#" class="active"><img src="../../../imagenes/Categoria.png" alt=""><h5>Categoría</h5><p>Organiza tus productos mediante la implementación de categorías</p></a></div>
+                    <div class="info"><a href="../Marca/Marca.html"><img src="../../../imagenes/Marca.png" alt=""><h5>Marca</h5><p>Registra tu marca para los productos que gestionas</p></a></div>
+                    <div class="info"><a href="../ColorP/Color.html"><img src="../../../imagenes/Color.png" alt=""><h5>Color</h5><p>Registra un color exclusivo para caracterizarlos</p></a></div>
+                    <div class="info"><a href="../Talla/Talla.html"><img src="../../../imagenes/Talla.png" alt=""><h5>Talla</h5><p>Crea tallas para personalizar tus nuevas prendas de vestir</p></a></div>
+                </div>
+             
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <!--Funciones js-->
+    <script>
+
+        function getCateroris() {
+            // Realizar una solicitud GET para obtener tallas
+            fetch('/CtrlCategoria/Get')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+            })
+            .catch(error => console.error('Error:', error));
+        }
+
+    
+        function createCategoria() {
+            // Obtener valores de los campos de entrada
+            const idcategoria = document.getElementById('txtidcategoria').value;
+            const nombreCategoria = document.getElementById('txtcategoria').value;
+
+            if(idcategoria==""){
+                alert("Rellene el id de la categoria")
+                e.preventDefault()
+            }
+            if(nombreCategoria==""){
+                alert("Rellene el nombre de la categoria")
+                e.preventDefault()
+            }
+            
+            // Crear un objeto Categoria con los valores
+            const categoria = {
+                idCategoria: idcategoria,
+                categoria: nombreCategoria
+            };
+            
+            // Realizar una solicitud POST para crear un nuevo categoria
+            fetch('/CtrlCategoria/Create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(categoria)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+                // Verificar si la respuesta indica éxito
+                if (data === true) 
+                {
+                    console.log('Categoria creado exitosamente');
+                    // Actualizar la tabla con el nueva categoria
+                    updateTable();
+                    
+                } 
+                else 
+                {
+                    console.error('Error al crear la categoria');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+
+        function updateCategoria() {
+        // Obtener valores de los campos de entrada
+        const idCategoria = document.getElementById('txtidcategoria').value;
+        const nombreCategoria = document.getElementById('txtcategoria').value;
+    
+        // Crear un objeto Categoria con los valores
+        const categoria = {
+            idCategoria: idCategoria,
+            categoria: nombreCategoria
+        };
+    
+        // Realizar una solicitud PUT para actualizar lacategoria
+        fetch(`/CtrlCategoria/Update/${idCategoria}`,
+        {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(categoria)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Verificar si la respuesta indica éxito
+            if (data === true) {
+                console.log('Categoria actualizado exitosamente');
+                
+                // Actualizar la tabla con los datos actualizados
+                updateTable();
+            }
+            else
+            {
+                console.error('Error al actualizar la categoria');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+        }
+    
+
+        function removeCategoria(idCategoria) {
+            // Obtener el ID del categoria a eliminar
+            //onst idCategoria = document.getElementById('txtidcategoria').value;
+            // Realizar una solicitud DELETE para eliminar la categoria
+            fetch(`/CtrlCategoria/Remove?code=${idCategoria}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+                // Verificar si la respuesta indica éxito
+                if (data === true) {
+                    console.log('Categoria eliminado exitosamente');
+                    // Actualizar la tabla con los datos actualizados
+                    updateTable();
+                } 
+                else 
+                {
+                    console.error('Error al eliminar la categoria');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    
+    
+        function updateTable(idCategoria) {
+        // Realizar una solicitud GET para obtener los colores
+        fetch('/CtrlCategoria/Get')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+    
+                // Obtener la referencia a la tabla
+                const tableBody = document.querySelector('.conteyner tbody');
+    
+                // Limpiar el contenido actual de la tabla
+                tableBody.innerHTML = '';
+    
+                // Iterar sobre los datos y agregar filas a lañ tabla
+                data.forEach(categoria => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${categoria.idCategoria}</td>
+                        <td>${categoria.categoria}</td>
+                        <td>Editar</td>
+                        <td>Eliminar</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+      
+    // Llamar a updateTable al cargar la página
+      window.onload = function() {
+        updateTable();
+     };
+
+
+        // Función para manejar el evento dblclick
+         function manejarDobleClic(event)
+        {
+            // Verificar si el clic fue en la columna "Eliminar"
+            if (event.target.textContent.toLowerCase() === 'eliminar') 
+            {
+                var fila = event.target.parentNode;
+    
+                var ID = fila.cells[0].innerText;
+
+                var confirmacion = window.confirm('¿Estás seguro de que deseas eliminar esta categoría?');
+    
+                if (confirmacion) {
+                    // Mostrar el ID (puedes hacer lo que quieras con el valor aquí)
+                    removeCategoria(ID);
+                }
+            }
+
+             // Verificar si el clic fue en la columna "Eliminar"
+            else if (event.target.textContent.toLowerCase() === 'editar') 
+            {
+                // Obtener la fila en la que se hizo clic
+                var fila = event.target.parentNode;
+    
+                //Mostramos los datos en los txt
+                document.getElementById('txtidcategoria').value=fila.cells[0].innerText;
+                document.getElementById('txtcategoria').value=fila.cells[1].innerText;
+
+                // Habilitar campos de entrada
+                document.getElementById('txtidcategoria').disabled = false;
+                 document.getElementById('txtcategoria').disabled = false;
+    
+                 // Desactivar botones "Nuevo" y "Guardar"
+                 document.querySelector('.b[value="Nuevo"]').disabled = true;
+                 // Desactivar botón "Nuevo" con la señal de advertencia
+                 document.querySelector('.b[value="Nuevo"]').style.opacity = '0.5';
+                 document.querySelector('.b[value="Nuevo"]').style.cursor = 'not-allowed';
+    
+                 document.querySelector('.b[value="Guardar"]').disabled = true;
+                 document.querySelector('.b[value="Guardar"]').style.opacity = '0.5';
+                 document.querySelector('.b[value="Guardar"]').style.cursor = 'not-allowed';
+    
+                 // Activar botones "Actualizar" y "Cancelar"
+                 document.querySelector('.b[value="Actualizar"]').disabled = false;
+                 document.querySelector('.b[value="Actualizar"]').style.opacity = '1';
+                 document.querySelector('.b[value="Actualizar"]').style.cursor = 'pointer';
+    
+                 document.querySelector('.b[value="Cancelar"]').disabled = false;
+                 document.querySelector('.b[value="Cancelar"]').style.opacity = '1';
+                 document.querySelector('.b[value="Cancelar"]').style.cursor = 'pointer';
+            }
+        }
+    
+        // Obtener la tabla por su ID
+        var tabla = document.getElementById('tablacategoria');
+    
+        // Asignar el manejador de eventos dblclick a la tabla
+        tabla.addEventListener('dblclick', manejarDobleClic);
+
+        // Función para manejar el clic en el botón "Cancelar" después de editar
+        document.querySelector('.b[value="Cancelar"]').addEventListener('click', function () {
+             limpiarYDesactivar();
+         });
+    
+         function limpiarYDesactivar() {
+             // Limpiar los campos de entrada
+             document.getElementById('txtidcategoria').value = '';
+             document.getElementById('txtcategoria').value = '';
+     
+             // Desactivar campos de entrada y botones
+             desactivarTodoExceptoNuevo();
+    
+             // Actualizar la tabla con los datos originales
+             updateTable();
+         }
+    
+         // Obtener la tabla por su ID
+         var tablaCategoria = document.getElementById('tablacategoria');
+    
+         // Asignar el manejador de eventos dblclick a la tabla
+         tablaCategoria.addEventListener('dblclick', manejarDobleClic);
+    
+         // Desactivar campos de entrada y botones al cargar la interfaz
+         function desactivarElementos() {
+             // Desactivar campos de entrada
+             const campos = document.querySelectorAll('.categoria');
+             campos.forEach(campo => {
+                 campo.disabled = true;
+             });
+    
+             // Desactivar botones (haciéndolos no interactivos y cambiando su estilo), excepto el botón "Nuevo"
+             const botones = document.querySelectorAll('.b');
+             botones.forEach(boton => {
+                 if (boton.value !== 'Nuevo') {
+                     boton.disabled = true;
+                     boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                     boton.style.cursor = 'not-allowed';
+                 }
+             });
+         }
+    
+         // Llamar a la función para desactivar elementos al cargar la página
+         window.onload = function () {
+             desactivarElementos();
+             updateTable();  // También llamamos a la función que actualiza la tabla
+         };
+    
+         function activarNuevo() {
+             // Activar campos de entrada
+             const campos = document.querySelectorAll('.categoria');
+             campos.forEach(campo => {
+                 campo.disabled = false;
+             });
+    
+             // Activar tabla (haciéndola interactiva)
+             const tabla = document.getElementById('tablacategoria');
+             tabla.style.pointerEvents = 'auto';
+    
+             // Activar botones "Guardar" y "Cancelar"
+             const botonesGuardarCancelar = document.querySelectorAll('.b[value="Guardar"], .b[value="Cancelar"]');
+             botonesGuardarCancelar.forEach(boton => {
+                 if (boton.value === 'Guardar' || boton.value === 'Cancelar') {
+                     boton.disabled = false;
+                     boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                     boton.style.cursor = 'pointer';
+                 } 
+                 else {
+                     // Desactivar botones "Nuevo" y "Actualizar"
+                     boton.disabled = true;
+                     boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                     boton.style.cursor = 'not-allowed';
+                 }
+             });
+    
+             // Desactivar botón "Nuevo"
+             const botonNuevo = document.querySelector('.b[value="Nuevo"]');
+             botonNuevo.disabled = true;
+             botonNuevo.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+             botonNuevo.style.cursor = 'not-allowed';
+         }
+    
+         // Llamar a la función para activar elementos al hacer clic en "Nuevo"
+         document.querySelector('.b[value="Nuevo"]').addEventListener('click', activarNuevo);
+    
+         // Función para desactivar todos los campos, tabla y botones excepto "Nuevo"
+         function desactivarTodoExceptoNuevo() {
+             // Desactivar campos de entrada
+             const campos = document.querySelectorAll('.categoria');
+             campos.forEach(campo => {
+                 campo.disabled = true;
+             });
+    
+             // Desactivar botones "Guardar", "Actualizar" y "Cancelar"
+             const botones = document.querySelectorAll('.b');
+             botones.forEach(boton => {
+                 if (boton.value !== 'Nuevo') {
+                     boton.disabled = true;
+                     boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                     boton.style.cursor = 'not-allowed';
+                 } 
+                 else {
+                     // Activar botón "Nuevo"
+                     boton.disabled = false;
+                     boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                     boton.style.cursor = 'pointer';
+                 }
+             });
+         }
+    
+         // Llamar a la función para desactivar todo excepto "Nuevo" al hacer clic en "Cancelar"
+         document.querySelector('.b[value="Cancelar"]').addEventListener('click', desactivarTodoExceptoNuevo);
+
+    </script>
+
+</body>
+</html>

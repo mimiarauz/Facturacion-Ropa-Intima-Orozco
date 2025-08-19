@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restablecer Contraseña</title>
+    <link rel="stylesheet" href="rcontraseña.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="contenedor">
+             <div class="formulario">
+                <form action="#">
+                    <h2 id="Inicio">Recuperación de Contraseña</h2>
+                    <div class="centro">
+                        <img src="../../imagenes/co.webp" alt="">
+                        <input type="email" id="txtcorreo" required>
+                        <label for="#" id="Inicio">Correo Electrónico</label>
+                    </div>
+                </form>
+                <div>
+                    <button id="Inicio" onclick="verificarCorreoUser()">Acceder</button>
+                    <div class="recuperar"></div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <script>
+        function verificarCorreoUser() {
+    var correo = document.getElementById('txtcorreo').value;
+
+    fetch(`/CtrlUsuario/VerificarCorreo/${correo}`)
+        .then(response => {
+            if (!response.ok) {
+                throw new Error(`HTTP error! Status: ${response.status}`);
+            }
+            return response.json();
+        })
+        .then(json => {
+
+console.log(json)
+
+// Capturo los datos devueltos
+var user = json['usuario1'];
+var clave = json['contraseña'];
+
+           // Existe el correo
+           alert("Datos recuperados");
+
+           alert("Su Usuario es:  "+"("+user+")"+"  Y su contraseña es:  "+"("+clave+")");
+
+           //llama al login y muestra los datos de la cuenta
+           window.location.href = "../Login.html"; 
+
+             // Acceder a los valores del JSON
+             //llama al home
+          //window.location.href = "../../Hom/home.html";
+
+        })
+        .catch(error => {
+            // Maneja de error de contrasena
+            alert("Lo sentimos ¡No existe una cuenta con este correo!");
+            console.error('Error en la autenticación:', error);
+        });
+    }
+    </script>
+
+</body>
+</html>

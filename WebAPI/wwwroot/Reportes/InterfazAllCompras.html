@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Informe de Compras</title>
+    <link rel="stylesheet" href="InterfazAllCompras.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.7/css/jquery.dataTables.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/datetime/1.5.1/css/dataTables.dateTime.min.css" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>   
+    <script src="https://cdn.datatables.net/1.13.7/js/jquery.dataTables.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/dataTables.buttons.min.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.print.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+    <script src="https://cdn.datatables.net/buttons/2.4.2/js/buttons.html5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.2/moment.min.js"></script>
+    <script src="https://cdn.datatables.net/datetime/1.5.1/js/dataTables.dateTime.min.js"></script>
+    <link rel="icon" href="../imagenes/R.ico" >   
+</head>
+<body class="bg-light">
+    <div class="container mt-3">
+        <h1 class="text-center mb-4" id="InformeVentas">Informe de Compras
+            <img src="Logo.jpg" alt="" width="90px" height="50px">
+        </h1>
+        <div class="row mb-4">
+            <div class="col-md-6 offset-md-3">
+                <form>
+                    <div class="form-row align-items-center">
+                        <div class="col">
+                            <label for="min" id="Fecha">Fecha de Inicio:</label>
+                            <input type="text" class="form-control" id="min" name="min">
+                        </div>
+                        <div class="col">
+                            <label for="max" id="Fecha">Fecha de Fin:</label>
+                            <input type="text" class="form-control" id="max" name="max">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <table id="ventasTable" class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>No Compra</th>
+                    <th>Fecha</th>
+                    <th>Cédula</th>
+                    <th>Nombre</th>
+                    <th>Total Géneral</th>
+                    <th>Imprimir</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <script>
+        var tabla;
+        $(document).ready(function () {
+            tabla = $('#ventasTable').DataTable({
+            // 
+            // Funciona para que cuando yo busque algun datos no se recarguen la pagina 
+            // y no se borre algo que ya este escrito en la pagina
+            // Ajax manda a llamar a una url para que y si esta url le devuelve datos va a
+            // recargar esos datos hasta donde yo le diga
+            // Esto sirve para mandar a llamar sin recargar la pagina
+            
+                ajax: {
+                    url: 'http://localhost:5282/AllComprasController/', 
+                    dataSrc: 'data'
+                },
+                dom: 'Bfrtip',
+                buttons: [
+                    'copyHtml5',
+                    'excelHtml5',
+                    'csvHtml5',
+                    'pdfHtml5',
+                    'print'
+                ],
+                columns: [
+                    { data: 'idCompras' },
+                    { data: 'fechaCompras' },
+                    { data: 'cedula' },
+                    // Agrega aquí las columnas correspondientes
+                    { data: 'nombrePersona' },
+                    { data: 'totalGeneral' },
+                    {
+                        data: null,
+                        defaultContent: '<button>Imprimir Factura</button>',
+                        targets: -5
+                    },                    
+                ],
+                language: {
+                    url: '//cdn.datatables.net/plug-ins/1.13.7/i18n/es-ES.json',
+                },
+            });
+            
+			//Comportamiento del boton imprimir
+            tabla.on('click', 'button', function (e) {
+            let dato = tabla.row(e.target.closest('tr')).data();
+            let url = 'http://localhost:5282/ImprimirCompController/' + dato.idCompras;
+            window.open(url, '_blank');
+        });
+
+        });
+        
+        let fMin, fMax;
+ 
+        // Funcion para buscar datos por fechas
+        DataTable.ext.search.push(function (settings, data, dataIndex) {
+            let min = fMin.val();
+            let max = fMax.val();
+            //fecha=new Date()
+            let fecha = new Date(data[1]);
+            console.log(fMin);
+            console.log(fMax);
+            console.log(fecha);
+            if (
+                (min === null && max === null) ||
+                (min === null && fecha <= max) ||
+                (min <= fecha && max === null) ||
+                (min <= fecha && fecha <= max)
+            ) {
+                return true;
+            }
+            return false;
+        });
+        
+        // Creando las entradas
+        fMin = new DateTime('#min', {
+            format: 'MMMM Do YYYY' 
+            
+        });
+        fMax = new DateTime('#max', {
+            format: 'MMMM Do YYYY'
+        });
+        
+        
+        // Vuelve a pintar la tabla
+        document.querySelectorAll('#min, #max').forEach((el) => {
+            el.addEventListener('change', () => tabla.draw());
+            
+        });
+    </script>
+</body>
+</html>

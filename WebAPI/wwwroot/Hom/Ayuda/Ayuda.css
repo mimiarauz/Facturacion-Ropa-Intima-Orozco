@@ -1,0 +1,40 @@
+body{
+    background-color: rgb(245, 223, 240);
+    font-family: 'Merriweather', serif;
+}
+#frmayuda{
+    font-family: 'Merriweather', serif;
+    line-height: 1.5;
+    font-size: 14px;
+    text-align: justify;
+    width: 80%;
+    height: 850px;
+    border: solid 3px silver;
+    margin-top: 3%;
+    margin-left: 10%;
+    background-color: rgb(93, 72, 112);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    margin-top: 2%;
+    color: white;
+}
+#imgayuda{
+    width: 15%;
+    height: 20%;
+}
+p{
+   padding: 1%;
+   color: white;
+}
+@media screen and (max-width:600px){
+ 
+    h1{
+        font-size: 15px;
+    }
+    p{
+       font-size: 15px;
+     }
+}

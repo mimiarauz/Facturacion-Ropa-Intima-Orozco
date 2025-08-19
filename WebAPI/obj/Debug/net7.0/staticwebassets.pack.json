@@ -1,0 +1,433 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
+      "PackagePath": "staticwebassets\\Acerca de\\Acerca.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
+      "PackagePath": "staticwebassets\\Acerca de\\Acerca.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
+      "PackagePath": "staticwebassets\\CambioContraseña\\CabiodeContrasena.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
+      "PackagePath": "staticwebassets\\CambioContraseña\\CambioContraseña.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.css",
+      "PackagePath": "staticwebassets\\Compra\\Compra.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.html",
+      "PackagePath": "staticwebassets\\Compra\\Compra.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
+      "PackagePath": "staticwebassets\\Facturacion\\Facturacion.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
+      "PackagePath": "staticwebassets\\Facturacion\\Facturacion.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
+      "PackagePath": "staticwebassets\\Hom\\Ayuda\\Ayuda.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
+      "PackagePath": "staticwebassets\\Hom\\Ayuda\\Ayuda.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.css",
+      "PackagePath": "staticwebassets\\Hom\\Home.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.html",
+      "PackagePath": "staticwebassets\\Hom\\Home.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
+      "PackagePath": "staticwebassets\\Hom\\Info\\Info.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
+      "PackagePath": "staticwebassets\\Hom\\Info\\Info.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
+      "PackagePath": "staticwebassets\\Inventario\\Inventario.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
+      "PackagePath": "staticwebassets\\Inventario\\Inventario.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
+      "PackagePath": "staticwebassets\\Inventario\\ReporteStock\\ReporteStock.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
+      "PackagePath": "staticwebassets\\Inventario\\ReporteStock\\ReporteStock.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.css",
+      "PackagePath": "staticwebassets\\Login\\Login.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.html",
+      "PackagePath": "staticwebassets\\Login\\Login.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
+      "PackagePath": "staticwebassets\\Login\\Rcontraseña\\Rcontraseña.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
+      "PackagePath": "staticwebassets\\Login\\Rcontraseña\\Rcontraseña.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
+      "PackagePath": "staticwebassets\\Mantenimiento\\Respaldo\\Respaldo.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
+      "PackagePath": "staticwebassets\\Mantenimiento\\Respaldo\\Respaldo.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
+      "PackagePath": "staticwebassets\\Mantenimiento\\Restauracion\\Restauracion.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
+      "PackagePath": "staticwebassets\\Mantenimiento\\Restauracion\\Restauracion.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
+      "PackagePath": "staticwebassets\\Registro\\Cliente\\Cliente.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
+      "PackagePath": "staticwebassets\\Registro\\Cliente\\Cliente.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Categoria\\Categoria.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Categoria\\Categoria.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\ColorP\\Color.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\ColorP\\Color.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Marca\\Marca.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Marca\\Marca.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Talla\\Talla.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
+      "PackagePath": "staticwebassets\\Registro\\Datos\\Talla\\Talla.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
+      "PackagePath": "staticwebassets\\Registro\\Producto\\Catalogo.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
+      "PackagePath": "staticwebassets\\Registro\\Producto\\Catalogo.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
+      "PackagePath": "staticwebassets\\Registro\\Producto\\Catalogo.js"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
+      "PackagePath": "staticwebassets\\Registro\\Proveedor\\Proveedor.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
+      "PackagePath": "staticwebassets\\Registro\\Proveedor\\Proveedor.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
+      "PackagePath": "staticwebassets\\Registro\\Usuario\\Usuario.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
+      "PackagePath": "staticwebassets\\Registro\\Usuario\\Usuario.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes.zip",
+      "PackagePath": "staticwebassets\\Reportes.zip"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
+      "PackagePath": "staticwebassets\\Reportes\\InterfazAllCompras.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
+      "PackagePath": "staticwebassets\\Reportes\\InterfazAllCompras.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
+      "PackagePath": "staticwebassets\\Reportes\\InterfazAllFact.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
+      "PackagePath": "staticwebassets\\Reportes\\InterfazAllFact.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
+      "PackagePath": "staticwebassets\\Reportes\\Logo.jpg"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
+      "PackagePath": "staticwebassets\\Reportes\\Reportes.css"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
+      "PackagePath": "staticwebassets\\Reportes\\Reportes.html"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\154-thumb.jpg"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\73552.png",
+      "PackagePath": "staticwebassets\\imagenes\\73552.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
+      "PackagePath": "staticwebassets\\imagenes\\Alcantara.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
+      "PackagePath": "staticwebassets\\imagenes\\BotonAyuda.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
+      "PackagePath": "staticwebassets\\imagenes\\Categoria.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
+      "PackagePath": "staticwebassets\\imagenes\\CategoriaReporte.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Color.png",
+      "PackagePath": "staticwebassets\\imagenes\\Color.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
+      "PackagePath": "staticwebassets\\imagenes\\ColorReporte.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Compra.png",
+      "PackagePath": "staticwebassets\\imagenes\\Compra.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
+      "PackagePath": "staticwebassets\\imagenes\\ComprasReportes.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
+      "PackagePath": "staticwebassets\\imagenes\\Corereo.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
+      "PackagePath": "staticwebassets\\imagenes\\Desempeño.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Emely.png",
+      "PackagePath": "staticwebassets\\imagenes\\Emely.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
+      "PackagePath": "staticwebassets\\imagenes\\Guardar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Home.png",
+      "PackagePath": "staticwebassets\\imagenes\\Home.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
+      "PackagePath": "staticwebassets\\imagenes\\Imprimir.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
+      "PackagePath": "staticwebassets\\imagenes\\Inventario.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
+      "PackagePath": "staticwebassets\\imagenes\\Khaterine.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
+      "PackagePath": "staticwebassets\\imagenes\\Logo.jpg"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
+      "PackagePath": "staticwebassets\\imagenes\\ProductosVendidos.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\R.ico",
+      "PackagePath": "staticwebassets\\imagenes\\R.ico"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
+      "PackagePath": "staticwebassets\\imagenes\\ReporteInventario.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
+      "PackagePath": "staticwebassets\\imagenes\\Reportes.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
+      "PackagePath": "staticwebassets\\imagenes\\Ropa.webp"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Stock.png",
+      "PackagePath": "staticwebassets\\imagenes\\Stock.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Talla.png",
+      "PackagePath": "staticwebassets\\imagenes\\Talla.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
+      "PackagePath": "staticwebassets\\imagenes\\TallaReporte.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
+      "PackagePath": "staticwebassets\\imagenes\\VentasReportes.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
+      "PackagePath": "staticwebassets\\imagenes\\c-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
+      "PackagePath": "staticwebassets\\imagenes\\clasificacion.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\co.webp",
+      "PackagePath": "staticwebassets\\imagenes\\co.webp"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondo.png",
+      "PackagePath": "staticwebassets\\imagenes\\fondo.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
+      "PackagePath": "staticwebassets\\imagenes\\fondologinoficial2.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\hogar.png",
+      "PackagePath": "staticwebassets\\imagenes\\hogar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
+      "PackagePath": "staticwebassets\\imagenes\\iconoActualizar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
+      "PackagePath": "staticwebassets\\imagenes\\iconoFactura.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
+      "PackagePath": "staticwebassets\\imagenes\\icons8-eliminar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img1.png",
+      "PackagePath": "staticwebassets\\imagenes\\img1.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img2.png",
+      "PackagePath": "staticwebassets\\imagenes\\img2.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img3.png",
+      "PackagePath": "staticwebassets\\imagenes\\img3.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img4.png",
+      "PackagePath": "staticwebassets\\imagenes\\img4.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img5.png",
+      "PackagePath": "staticwebassets\\imagenes\\img5.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
+      "PackagePath": "staticwebassets\\imagenes\\inventario2.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
+      "PackagePath": "staticwebassets\\imagenes\\lapiz_editar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\marca.png",
+      "PackagePath": "staticwebassets\\imagenes\\marca.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
+      "PackagePath": "staticwebassets\\imagenes\\menu (2).png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
+      "PackagePath": "staticwebassets\\imagenes\\perfil-del-usuario.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
+      "PackagePath": "staticwebassets\\imagenes\\respaldo-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
+      "PackagePath": "staticwebassets\\imagenes\\restaurar.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
+      "PackagePath": "staticwebassets\\imagenes\\u-removebg-preview.png"
+    },
+    {
+      "Id": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\usuario.png",
+      "PackagePath": "staticwebassets\\imagenes\\usuario.png"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.build.WebAPI.props",
+      "PackagePath": "build\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildMultiTargeting.WebAPI.props",
+      "PackagePath": "buildMultiTargeting\\WebAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net7.0\\staticwebassets\\msbuild.buildTransitive.WebAPI.props",
+      "PackagePath": "buildTransitive\\WebAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

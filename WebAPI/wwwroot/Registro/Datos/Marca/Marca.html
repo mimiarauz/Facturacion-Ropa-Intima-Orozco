@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marca</title>
+    <link rel="stylesheet" href="marca.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../../imagenes/R.ico" >      
+</head>
+<body>
+    <div class="fondo">
+        <form action="">
+            <div class="encabezado">
+                
+                <h2>Registro de Clasificación</h2>
+            </div>
+      <!--Menu de Daotos-->
+            <nav>
+                    <input type="checkbox" id="chek">
+                    <label for="chek" class="chekbtn">
+                     <img src="../../../imagenes/menu (2).png" alt="Menu" id="me">
+                    </label>
+                <ul>
+                    <li><a class="active" id="active" href="#" >Clasificación</a></li>
+                    <li><a id="active" href="../../Usuario/usuario.html">Usuario</a></li>
+                    <li><a id="active" href="../../Cliente/cliente.html">Clientes</a></li>
+                    <li><a id="active" href="../../Proveedor/proveedor.html">Proveedores</a></li>
+                    <li><a id="active" href="../../Producto/catalogo.html">Productos</a></li>
+                </ul>
+            </nav>
+            <a href="../../../Hom/Home.html"><img src="../../../imagenes/hogar.png" style="margin-left:84.5%;margin-top: -60px;" alt="Home"></a>
+            <div class="contenido">
+                <div class="datos">
+                    <h2 class="c">Marca</h2>
+    
+                    <input type="text" name="" class="marca" id="txtidmarca" placeholder="ID" required>
+                    <input type="text" class="marca" id="txtmarca" placeholder="Marca" required pattern="[a-zA-Z]+">
+            
+                    <input type="text" id="raya1" disabled>
+                    <input type="text" id="raya2" disabled>
+                    <div class="central">
+                            
+                       <!--Creacion de tabla-->
+                       <div class="conteyner">
+                        <table id="tablamarca">
+                         <thead>
+                          <tr>
+                              <th>ID</th>
+                              <th>Marca</th>
+                              <th>Editar</th>
+                              <th>Eliminar</th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td><input type="button" name="editarar" id="editarentabla"></td>
+                              <td><input type="button" name="eliminar" id="eliminarentabla"></td>
+                          </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                           
+                            <!--Botones-->
+                           <div class="botones">
+                            <input type="button" class="b" id="nuevoBtn" value="Nuevo">
+                            <input type="button" class="b" id="guardarBtn" value="Guardar" onclick="createMarca()">
+                            <input type="button" class="b" id="actualizarBtn" value="Actualizar" onclick="updateMarca()">
+                            <input type="button" class="b" id="cancelarBtn" value="Cancelar">
+                           </div>
+                   </div>
+                    
+                </div>
+                
+
+               <!--clasif-->
+                <div class="br">
+                    <div class="info"><a href="#" class="active"><img src="../../../imagenes/Marca.png" alt=""><h5>Marca</h5><p>Registra tu marca para los productos que gestionas</p></a></div>
+                    <div class="info"><a href="../Categoria/Categoria.html" ><img src="../../../imagenes/Categoria.png" alt=""><h5>Categoría</h5><p>Organiza tus productos mediante la implementación de categorías</p></a></div>
+                    <div class="info"><a href="../ColorP/Color.html"><img src="../../../imagenes/Color.png" alt=""><h5>Color</h5><p>Registra un color exclusivo para caracterizarlos</p></a></div>
+                    <div class="info"><a href="../Talla/Talla.html"><img src="../../../imagenes/Talla.png" alt=""><h5>Talla</h5><p>Crea tallas para personalizar tus nuevas prendas de vestir</p></a></div>
+                </div>
+             
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <!--Funciones de js-->
+    <script>
+
+        function getMarca() {
+            // Realizar una solicitud GET para obtener Marcas
+            fetch('/CtrlMarca/Get')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    
+
+        function createMarca() {
+            // Obtener valores de los campos de entrada
+            const idMarca = document.getElementById('txtidmarca').value;
+            const nombreMarca = document.getElementById('txtmarca').value;
+            if(idMarca==""){
+                alert("Rellene el id de la marca")
+                e.preventDefault()
+            }
+            if(nombreMarca==""){
+                alert("Rellene el nombre de la marca")
+                e.preventDefault()
+            }
+            
+            // Crear un objeto Marca con los valores
+            const marca = {
+                idMarca: idMarca,
+                marca1: nombreMarca
+            };
+            
+            // Realizar una solicitud POST para crear una nueva marca
+            fetch('/CtrlMarca/Create', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(marca)
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+                // Verificar si la respuesta indica éxito
+                if (data === true) 
+                {
+                    console.log('Marca creada exitosamente');
+                    updateTable();
+                } 
+                else 
+                {
+                    console.error('Error al crear la Marca');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+        
+
+        function updateMarca() {
+        // Obtener valores de los campos de entrada
+        const idMarca = document.getElementById('txtidmarca').value;
+        const nombreMarca = document.getElementById('txtmarca').value;
+    
+        // Crear un objeto Marca con los valores
+        const marca = {
+            idMarca: idMarca,
+            marca1: nombreMarca
+        };
+    
+        // Realizar una solicitud PUT para actualizar la marca
+        fetch(`/CtrlMarca/Update/${idMarca}`,
+        {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(marca)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Verificar si la respuesta indica éxito
+            if (data === true) {
+                console.log('Marca actualizada exitosamente');
+                
+                // Actualizar la tabla con los datos actualizados
+                updateTable();
+            }
+            else
+            {
+                console.error('Error al actualizar la marca');
+            }
+        })
+        .catch(error => console.error('Error:', error));
+        }
+    
+
+        function removeMarca(idMarca) {
+            // Obtener el ID del  la marca a eliminar
+            //const idMarca = document.getElementById('txtidmarca').value;
+            // Realizar una solicitud DELETE para eliminar la marca
+            fetch(`/CtrlMarca/Remove?code=${idMarca}`, {
+                method: 'DELETE'
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                
+                // Verificar si la respuesta indica éxito
+                if (data === true) {
+                    console.log('Marca eliminada exitosamente');
+                    // Actualizar la tabla con los datos actualizados
+                    updateTable();
+                } 
+                else 
+                {
+                    console.error('Error al eliminar el marca');
+                }
+            })
+            .catch(error => console.error('Error:', error));
+        }
+    
+        
+        function updateTable(idMarca) {
+        // Realizar una solicitud GET para obtener las marca
+        fetch('/CtrlMarca/Get')
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+    
+                // Obtener la referencia a la tabla
+                const tableBody = document.querySelector('.conteyner tbody');
+    
+                // Limpiar el contenido actual de la tabla
+                tableBody.innerHTML = '';
+    
+                // Iterar sobre los datos y agregar filas a la tabla
+                data.forEach(marca => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${marca.idMarca}</td>
+                        <td>${marca.marca1}</td>
+                        <td>Editar</td>
+                        <td>Eliminar</td>
+                    `;
+                    tableBody.appendChild(row);
+                });
+            })
+            .catch(error => console.error('Error:', error));
+    }
+    
+    
+
+
+
+     // Función para manejar el evento dblclick
+     function manejarDobleClic(event)
+        {
+            // Verificar si el clic fue en la columna "Eliminar"
+            if (event.target.textContent.toLowerCase() === 'eliminar') 
+            {
+                // Obtener la fila en la que se hizo clic
+                var fila = event.target.parentNode;
+    
+                // Obtener el valor de la primera celda (index 0) en la fila (ID en este caso)
+                var ID = fila.cells[0].innerText;
+    
+                var confirmacion = window.confirm('¿Estás seguro de que deseas eliminar esta Marca?');
+
+                if (confirmacion) {
+                    // Mostrar el ID (puedes hacer lo que quieras con el valor aquí)
+                    removeMarca(ID);
+                }
+            }
+
+             // Verificar si el clic fue en la columna "Eliminar"
+             else if (event.target.textContent.toLowerCase() === 'editar') 
+            {
+                // Obtener la fila en la que se hizo clic
+                var fila = event.target.parentNode;
+    
+                //Mostramos los datos en los txt
+                document.getElementById('txtidmarca').value=fila.cells[0].innerText;
+                document.getElementById('txtmarca').value=fila.cells[1].innerText;
+
+                
+                    // Habilitar campos de entrada
+                    document.getElementById('txtidmarca').disabled = false;
+                    document.getElementById('txtmarca').disabled = false;
+
+                    // Desactivar botones "Nuevo" y "Guardar"
+                    document.getElementById('nuevoBtn').disabled = true;
+                    // Desactivar botón "Nuevo" con la señal de advertencia
+             document.getElementById('nuevoBtn').style.opacity = '0.5';  
+             document.getElementById('nuevoBtn').style.cursor = 'not-allowed';
+
+             document.getElementById('guardarBtn').disabled = true;
+             document.getElementById('guardarBtn').style.opacity = '0.5';  
+             document.getElementById('guardarBtn').style.cursor = 'not-allowed';
+
+             // Activar botones "Actualizar" y "Cancelar"
+             document.getElementById('actualizarBtn').disabled = false;
+             document.getElementById('actualizarBtn').style.opacity = '1';
+             document.getElementById('actualizarBtn').style.cursor = 'pointer';
+
+             document.getElementById('cancelarBtn').disabled = false;
+             document.getElementById('cancelarBtn').style.opacity = '1';
+             document.getElementById('cancelarBtn').style.cursor = 'pointer';
+                
+            }
+        }
+
+        // Función para manejar el clic en el botón "Cancelar" después de editar
+        document.getElementById('cancelarBtn').addEventListener('click', function() {
+              limpiarYDesactivar();
+         });
+
+
+        function limpiarYDesactivar() {
+            // Limpiar los campos de entrada
+            document.getElementById('txtidmarca').value = '';
+            document.getElementById('txtmarca').value = '';
+
+            // Desactivar campos de entrada y botones
+            desactivarTodoExceptoNuevo();
+
+            // Actualizar la tabla con los datos originales
+            updateTable();
+        }
+    
+        // Obtener la tabla por su ID
+        var tabla = document.getElementById('tablamarca');
+    
+        // Asignar el manejador de eventos dblclick a la tabla
+        tabla.addEventListener('dblclick', manejarDobleClic);
+
+        // Desactivar campos de entrada y botones al cargar la interfaz
+        function desactivarElementos() {
+             // Desactivar campos de entrada
+             const campos = document.querySelectorAll('.marca');
+             campos.forEach(campo => {
+             campo.disabled = true;
+         });
+
+         // Desactivar botones (haciéndolos no interactivos y cambiando su estilo), excepto el botón "Nuevo"
+         const botones = document.querySelectorAll('.b');
+         botones.forEach(boton => {
+         if (boton.value !== 'Nuevo') {
+              boton.disabled = true;
+              boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+              boton.style.cursor = 'not-allowed';
+         }
+         });
+     }
+
+     // Llamar a la función para desactivar elementos al cargar la página
+     window.onload = function() {
+             desactivarElementos();
+             updateTable();  // También llamamos a la función que actualiza la tabla
+         };
+
+         function activarNuevo() {
+             // Activar campos de entrada
+             const campos = document.querySelectorAll('.marca');
+             campos.forEach(campo => {
+             campo.disabled = false;
+         });
+
+             // Activar tabla (haciéndola interactiva)
+             const tabla = document.getElementById('tablamarca');
+             tabla.style.pointerEvents = 'auto';
+
+             // Activar botones "Guardar" y "Cancelar"
+             const botonesGuardarCancelar = document.querySelectorAll('.b[value="Guardar"], .b[value="Cancelar"]');
+             botonesGuardarCancelar.forEach(boton => {
+                 if (boton.value === 'Guardar' || boton.value === 'Cancelar') {
+                     boton.disabled = false;
+                      boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                     boton.style.cursor = 'pointer';
+                 } 
+                 else {
+                     // Desactivar botones "Nuevo" y "Actualizar"
+                      boton.disabled = true;
+                      boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                     boton.style.cursor = 'not-allowed';
+                 }
+             });
+
+              // Desactivar botón "Nuevo"
+             const botonNuevo = document.querySelector('.b[value="Nuevo"]');
+             botonNuevo.disabled = true;
+             botonNuevo.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+             botonNuevo.style.cursor = 'not-allowed';
+
+         }
+
+
+         // Llamar a la función para activar elementos al hacer clic en "Nuevo"
+         document.querySelector('.b[value="Nuevo"]').addEventListener('click', activarNuevo);
+
+         // Función para desactivar todos los campos, tabla y botones excepto "Nuevo"
+         function desactivarTodoExceptoNuevo() {
+             // Desactivar campos de entrada
+             const campos = document.querySelectorAll('.marca');
+             campos.forEach(campo => {
+                 campo.disabled = true;
+             });
+
+             // Desactivar botones "Guardar", "Actualizar" y "Cancelar"
+             const botones = document.querySelectorAll('.b');
+             botones.forEach(boton => {
+                 if (boton.value !== 'Nuevo') {
+                     boton.disabled = true;
+                     boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                     boton.style.cursor = 'not-allowed';
+                 } 
+                 else {
+                     // Activar botón "Nuevo"
+                     boton.disabled = false;
+                     boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                     boton.style.cursor = 'pointer';
+                 }
+             });
+         }
+
+         // Llamar a la función para desactivar todo excepto "Nuevo" al hacer clic en "Cancelar"
+         document.querySelector('.b[value="Cancelar"]').addEventListener('click', desactivarTodoExceptoNuevo);
+        </script>
+
+</body>
+</html>

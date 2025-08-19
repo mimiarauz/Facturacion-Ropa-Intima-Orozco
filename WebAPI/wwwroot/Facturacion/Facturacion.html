@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facturación</title>
+    <link rel="stylesheet" href="Facturacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" href="../imagenes/R.ico">
+</head>
+
+<body>
+    <div class="f">
+        <nav class="Facturacion">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/iconoFactura.png" alt="Logo" width="40" height="40"
+                        class="d-inline-block align-text-top">
+                    Facturación
+                </a>
+            </div>
+        </nav>
+        <div class="container" id="cont">
+            <div class="row">
+                <div class="col-sm-12 col-md-6" id="Contenedor2">
+                    <!-- Botón "Nueva Factura" y Selector de Fecha -->
+                    <div class="d-flex date-container justify-content-start mt-3" id="nf">
+                        <button class="btn btn-primary" id="BotonFactura">Nueva Factura</button>
+                        <input type="date" class="form-control ml-2" id="Fecha">
+                        <input type="text" id="idUser"
+                            style="background-color: transparent; border: none;width: 30px; color: transparent;">
+                        <input type="text" id="codigoCod"
+                            style="background-color: transparent; border: none;width: 30px; color: transparent;">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <!-- No. Factura, TextBox y Botón con espacio horizontal -->
+                    <div class="d-flex justify-content-start mt-3" id="Ayuda">
+                        <label id="TextoFactura">No. Factura</label>
+                        <input type="text" class="form-control ml-2 small-input" id="NoFactura">
+                        <button class="btn btn-primary ml-2" id="BotonAyuda">
+                            <a href="../../Hom/Home.html" class="icono-ayuda"> <img src="../imagenes/hogar.png"
+                                    alt="Icono de ayuda"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Datos del cliente -->
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Cliente">Datos del Cliente</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3" id="c">
+                                <div>
+                                    <label for="nombre" class="l">Nombre:</label>
+                                    <select name="nombre" id="nombre" class="form-control" required>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="Apellido" class="l">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Vendedor">Vendedor</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3" id="v">
+                                <div>
+                                    <label for="cedula" class="l">Cédula:</label>
+                                    <input type="text" class="form-control" id="cedula" name="nombre">
+                                </div>
+
+                                <div>
+                                    <label for="Nombre" class="l">Nombre:</label>
+                                    <input type="text" class="form-control" id="Nombre" name="apellido">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div>
+                    <fieldset class="group-box">
+                        <legend id="DatosProducto">Datos del Producto</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="codigo" class="l">Código:</label>
+                                <select name="codigo" id="codigo" class="form-control" required>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="distintivo" class="l">Distintivo:</label>
+                                <input type="text" class="form-control" id="distintivo" name="distintivo">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="categoria" class="l">Categoría:</label>
+                                <input type="text" class="form-control" id="categoria" name="categoria">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="marca" class="l">Marca:</label>
+                                <input type="text" class="form-control" id="marca" name="marca">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="color" class="l">Color:</label>
+                                <input type="text" class="form-control" id="color" name="color">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="talla" class="l">Talla:</label>
+                                <input type="text" class="form-control" id="talla" name="talla">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="descuento" class="l">Descuento:</label>
+                                <input type="text" class="form-control" id="descuento" name="descuento">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="precio" class="l">Precio:</label>
+                                <input type="text" class="form-control" id="precio" name="precio">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="cantidad" class="l">Cantidad:</label>
+                                <input type="text" class="form-control" id="cantidad" name="cantidad">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="Stock" class="l">Stock Actual:</label>
+                                <input type="text" class="form-control" id="Stock" name="Stock">
+                            </div>
+                            <div class="col-md-3" id="BotonAgregarCancelar">
+                                <button id="BotonAgregar" onclick="agregar()">Agregar +</button>
+                                <button id="BotonCancelar" onclick="limpiarcancelar()">Cancelar</button>
+                            </div>
+                            <div class="col-md-3">
+                                <button class="btn btn-primary ml-2" onclick="actualizarTabla()" id="BotonActualizar">
+                                    <img src="../imagenes/iconoActualizar.png" alt="Icono de actualizar"
+                                        class="icono-ayuda">
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Creación de tabla -->
+                <div class="col-sm-12 col-md-12">
+                    <div class="table-responsive custom-table">
+                        <table class="table table-bordered" id="miTabla">
+                            <thead>
+                                <tr id="encabezado">
+                                    <th>Id</th>
+                                    <th>Fecha</th>
+                                    <th>Código</th>
+                                    <th>Categoría</th>
+                                    <th>Marca</th>
+                                    <th>Color</th>
+                                    <th>Distintivo</th>
+                                    <th>Talla</th>
+                                    <th>Cantidad</th>
+                                    <th>Descuento</th>
+                                    <th>Precio</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <!-- Agregar un fieldset para los totales -->
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box" id="Totales">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="subtotal" id="LabelTotales">Subtotal:</label>
+                                <input type="text" class="form-control" id="subtotal" name="subtotal">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="iva" id="LabelTotales">IVA:</label>
+                                <input type="text" class="form-control" id="iva" name="iva">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="total" id="LabelTotales">Total Géneral:</label>
+                                <input type="text" class="form-control" id="total" name="total">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div>
+                        <button class="btn btn-primary ml-2" id="BotonActualizar">
+                            <img src="../imagenes/Guardar.png" alt="Icono de Guardar" class="Guardar">
+                            <label for="Guardar" class="LabelGuardar"
+                                onclick="createFactura(), deshabilitarControles()">Guardar</label>
+                        </button>
+                        <button class="btn btn-primary ml-2" id="BotonActualizar">
+                            <img src="../imagenes/Imprimir.png" alt="Icono de Imprimir" class="Imprimir">
+                            <label for="Imprimir" class="LabelImprimir" id="btnImprimir">Imprimir
+                            </label>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+            let dataIdCliente, dataIdUsuario, dataIdProd;
+
+            // COMBO BOX
+            {
+                function getDatos() {
+                    // Realizar solicitudes fetch para obtener datos
+                    Promise.all([
+                        fetch('/CtrlPersona/GetWithClientes').then(response => response.json()),
+                        fetch('/CtrlProducto/Get').then(response => response.json())
+                    ])
+                        .then(([cliente, producto, usuario]) => {
+                            dataIdCliente = cliente;
+                            dataIdProd = producto;
+
+                            fillComboBox('nombre', cliente, 'id', 'nombrePersona');
+                            fillComboBox('codigo', producto, 'idProducto', 'codProducto');
+                        })
+                        .catch(error => console.error('Error al obtener datos:', error));
+                }
+
+
+                // AGREGAR COMBO BOX
+                function fillComboBox(comboBoxId, data, valueField, textField) {
+                    const comboBox = document.getElementById(comboBoxId);
+                    // Limpiar combobox
+                    comboBox.innerHTML = "";
+
+                    // Agregar una opción por defecto
+                    const defaultOption = document.createElement("option");
+                    defaultOption.text = "Seleccionar...";
+                    comboBox.add(defaultOption);
+
+                    // Agregar opciones con los datos obtenidos
+                    data.forEach(item => {
+                        const option = document.createElement("option");
+                        option.value = item[valueField]; // Utilizar el campo especificado como valor
+                        option.text = item[textField];
+                        comboBox.add(option);
+                    });
+                }
+            }
+
+
+            // COMBO CLIENTE
+            {
+                const nombreComboBox = document.getElementById('nombre');
+                nombreComboBox.addEventListener('change', function () {
+                    const selectednombre = this.value; // Obtener el código seleccionado
+                    fillClientDetails(selectednombre);
+                });
+
+                function fillClientDetails(selectednombre) {
+                    // Realizar una solicitud fetch para obtener los detalles del cliente
+                    fetch(`/CtrlCliente/GetClienteDetails?id=${selectednombre}`)
+                        .then(response => response.json())
+                        .then(clienteDetails => {
+                            console.log(clienteDetails);
+                            if (clienteDetails) {
+                                document.getElementById('apellido').value = clienteDetails.apellidoPersona;
+                            } else {
+                                // Limpiar el input si no se encuentran detalles del cliente
+                                document.getElementById('apellido').value = '';
+                            }
+                        })
+                        .catch(error => console.error('Error al obtener detalles del cliente:', error));
+                }
+            }
+
+
+            // INPUT USUARIO
+            document.addEventListener('DOMContentLoaded', function () {
+                // Recuperar la información del usuario desde localStorage
+                var id = localStorage.getItem('id');
+                var cedula = localStorage.getItem('cedula');
+                var nombrePersona = localStorage.getItem('nombrePersona');
+
+                // Mostrar la información en los inputs
+                document.getElementById('idUser').value = id;
+                document.getElementById('cedula').value = cedula;
+                document.getElementById('Nombre').value = nombrePersona;
+            });
+
+
+            // COMBO CODIGO
+            {
+                const codComboBox = document.getElementById('codigo');
+                codComboBox.addEventListener('change', function () {
+                    const selectedCod = this.value;
+                    fillProductDetails(selectedCod)
+                });
+
+                function fillProductDetails(selectedCod) {
+                    fetch(`/CtrlProducto/GetDetails?id=${selectedCod}`)
+                        .then(response => response.json())
+                        .then(productDetails => {
+                            console.log(productDetails);
+                            if (productDetails) {
+                                document.getElementById('Stock').value = productDetails.stock;
+                                document.getElementById('distintivo').value = productDetails.distintivo;
+                                document.getElementById('categoria').value = productDetails.categoria;
+                                document.getElementById('marca').value = productDetails.marca1;
+                                document.getElementById('color').value = productDetails.color1;
+                                document.getElementById('talla').value = productDetails.talla1;
+                                document.getElementById('precio').value = productDetails.precioVenta;
+                                document.getElementById('codigoCod').value = productDetails.codigo;
+                            } else {
+                                document.getElementById('Stock').value = '';
+                                document.getElementById('distintivo').value = '';
+                                document.getElementById('categoria').value = '';
+                                document.getElementById('marca').value = '';
+                                document.getElementById('color').value = '';
+                                document.getElementById('talla').value = '';
+                                document.getElementById('precio').value = '';
+                                document.getElementById('codigoCod').value = '';
+                            }
+                        })
+                        .catch(error => console.error('Error al obtener detalles del producto:', error));
+                }
+            }
+
+
+            // OBTENER ID
+            function getIdFactura() {
+                fetch('/CtrlFacturacion/Get')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Verificar si hay compras
+                        if (data && data.length > 0) {
+                            // Obtener el ID más alto usando Math.max
+                            const maxId = Math.max(...data.map(item => item.idFactura));
+                            // Incrementar el ID en 1
+                            const nuevoId = maxId + 1;
+                            // Mostrar el ID en el input de texto\
+                            document.getElementById('NoFactura').value = nuevoId;
+                        } else {
+                            console.error('No se encontraron facturas.');
+                        }
+                    })
+            }
+
+
+            // AGREGAR DATOS
+            function agregar() {
+
+                const camposObligatorios = ['Fecha', 'nombre', 'codigo', 'cantidad', 'descuento'];
+
+                for (const campoId of camposObligatorios) {
+                    const campo = document.getElementById(campoId);
+
+                    if (campo.value.trim() === '') {
+                        alert(`El campo ${campoId} no puede estar vacío.`);
+                        return false;
+                    }
+
+                    if (campoId === 'cantidad') {
+                        const cantidadValue = parseInt(campo.value);
+
+                        if (isNaN(cantidadValue) || cantidadValue < 1) {
+                            alert(`El campo ${campoId} debe ser un número entero mayor a 1`);
+                            return false;
+                        }
+                    }
+
+                    if (campoId === 'descuento' && isNaN(parseFloat(campo.value))) {
+                        alert(`El campo ${campoId} debe ser un número.`);
+                        return false;
+                    }
+                }
+
+                // Obtener los valores de los campos   
+                const canstok = parseFloat(document.getElementById("Stock").value);
+                const cantventa = parseFloat(document.getElementById("cantidad").value);
+
+                // Verificar que la cantidad a vender no sea mayor al stock actual
+                if ( canstok < cantventa) {
+
+                    alert("Error: La cantidad no puede ser mayor al Stock");
+                    return
+                }
+
+
+                // Variable de celda
+                var id, fecha, codigo, categoria, marca, color, distintivo, talla, cant, desc, precio, total;
+
+                id = document.getElementById("codigo").value;
+                fecha = document.getElementById("Fecha").value;
+                cod = document.getElementById("codigoCod").value;
+                cate = document.getElementById("categoria").value;
+                marc = document.getElementById("marca").value;
+                color = document.getElementById("color").value;
+                distintivo = document.getElementById("distintivo").value;
+                talla = document.getElementById("talla").value;
+                cant = parseInt(document.getElementById("cantidad").value);
+                desc = parseInt(document.getElementById("descuento").value);
+                precioV = parseFloat(document.getElementById("precio").value);
+
+                let tabla = document.getElementById("miTabla");
+                let fila = tabla.insertRow();
+
+                let celdaid = fila.insertCell(0);
+                let celdafecha = fila.insertCell(1);
+                let celdacod = fila.insertCell(2);
+                let celdacate = fila.insertCell(3);
+                let celdamarca = fila.insertCell(4);
+                let celdacolor = fila.insertCell(5);
+                let celdadistintivo = fila.insertCell(6);
+                let celdatalla = fila.insertCell(7);
+                let celdacant = fila.insertCell(8);
+                let celdadesc = fila.insertCell(9);
+                let celdaprecio = fila.insertCell(10);
+                let celdaeditar = fila.insertCell(11);
+                let celdaeliminar = fila.insertCell(12);
+
+                celdaid.id = "id_" + id;
+                celdaid.innerHTML = id;
+                celdafecha.innerHTML = fecha;
+                celdacod.innerHTML = cod;
+                celdacate.innerHTML = cate;
+                celdamarca.innerHTML = marc;
+                celdacolor.innerHTML = color;
+                celdadistintivo.innerHTML = distintivo;
+                celdatalla.innerHTML = talla;
+                celdacant.innerHTML = cant;
+                celdadesc.innerHTML = desc;
+                celdaprecio.innerHTML = precioV;
+                celdaeditar.innerText = "Editar";
+                celdaeliminar.innerText = "Eliminar";
+
+                calcularTotales();
+
+            }
+
+
+            // ACTUALIZAR
+            function actualizarTabla() {
+                var codigo = document.getElementById("codigo").value;
+                var tabla = document.getElementById("miTabla");
+                for (var i = 1; i < tabla.rows.length; i++) {
+                    if (tabla.rows[i].cells.length >= 3 && tabla.rows[i].cells[0].textContent === codigo) {
+                        tabla.rows[i].cells[2].textContent = document.getElementById("codigoCod").value; // 2                    
+                        tabla.rows[i].cells[3].textContent = document.getElementById("categoria").value;
+                        tabla.rows[i].cells[4].textContent = document.getElementById("marca").value;
+                        tabla.rows[i].cells[5].textContent = document.getElementById("color").value;
+                        tabla.rows[i].cells[6].textContent = document.getElementById("distintivo").value;
+                        tabla.rows[i].cells[7].textContent = document.getElementById("talla").value;
+                        tabla.rows[i].cells[8].textContent = document.getElementById("cantidad").value;
+                        tabla.rows[i].cells[9].textContent = document.getElementById("descuento").value;
+                        tabla.rows[i].cells[10].textContent = document.getElementById("precio").value;
+                        calcularTotales();
+                        alert('Registro actualizado');
+                        document.getElementById("codigo").disabled = false;
+                        break;
+                    }
+                }
+            }
+
+
+            //  EVENTO ONCLICK
+            function manejarDobleClic(event) {
+                if (event.target.textContent.toLowerCase() === 'eliminar') {
+                    // Obtener la fila en la que se hizo clic
+                    var fila = event.target.parentNode;
+                    fila.remove();
+                    calcularTotales();
+
+                    alert("Registro eliminado");
+                }
+
+                if (event.target.textContent.toLowerCase() === 'editar') {
+
+                    var fila = event.target.parentNode;
+
+                    document.getElementById("codigo").value = fila.cells[0].textContent;
+                    document.getElementById("categoria").value = fila.cells[3].textContent;
+                    document.getElementById("marca").value = fila.cells[4].textContent;
+                    document.getElementById("color").value = fila.cells[5].textContent;
+                    document.getElementById("distintivo").value = fila.cells[6].textContent;
+                    document.getElementById("talla").value = fila.cells[7].textContent;
+                    document.getElementById("cantidad").value = fila.cells[8].textContent;
+                    document.getElementById("descuento").value = fila.cells[9].textContent;
+                    document.getElementById("precio").value = fila.cells[10].textContent;
+
+                    // Validaciones
+                    {
+                        document.getElementById("codigo").disabled = true;
+                        document.getElementById("distintivo").disabled = true;
+                        document.getElementById("categoria").disabled = true;
+                        document.getElementById("marca").disabled = true;
+                        document.getElementById("color").disabled = true;
+                        document.getElementById("talla").disabled = true;
+                        document.getElementById("precio").disabled = true;
+                        document.getElementById("Stock").disabled = true;
+                        document.getElementById("BotonAgregar").disabled = true;
+                        document.getElementById("BotonActualizar").disabled = false;
+                    }
+
+                }
+            }
+
+
+            // AGREGAR EVENTO ONCLICK
+            {
+                var tabla = document.getElementById('miTabla');
+                tabla.addEventListener('dblclick', manejarDobleClic);
+            }
+
+
+            // Calcular totales
+            function calcularTotales() {
+                let descuento = 0;
+                let subtotal = 0;
+                let iva = 0;
+                let totalgeneral = 0;
+
+                for (let i = 1; i < tabla.rows.length; i++) {
+
+                    let CantCCell = tabla.rows[i].cells[8];
+                    let PorcCell = tabla.rows[i].cells[9];
+                    let PrecioCCell = tabla.rows[i].cells[10];
+
+                    if (PorcCell && CantCCell && PrecioCCell && PorcCell.textContent && CantCCell.textContent && PrecioCCell.textContent) {
+                        let PorcC = parseInt(PorcCell.textContent.trim()) || 0;
+                        let CantC = parseFloat(CantCCell.textContent.trim()) || 0;
+                        let PrecioC = parseFloat(PrecioCCell.textContent.trim()) || 0;
+
+                        if (!isNaN(PorcC) && !isNaN(CantC) && !isNaN(PrecioC)) {
+                            // Calcular
+                            descuento += PorcC / 100;
+                            subtotal += parseFloat((CantC * PrecioC) - (PrecioC * descuento).toFixed(2));
+                            // subtotal += parseFloat((CantC * PrecioC).toFixed(2));
+                        }
+                    }
+                }
+
+                // Calcular IVA y total general
+                iva = parseFloat((subtotal * 0.15).toFixed(2));
+                totalgeneral = parseFloat((subtotal + iva).toFixed(2));
+
+                document.getElementById("subtotal").value = subtotal.toString();
+                document.getElementById("iva").value = iva.toString();
+                document.getElementById("total").value = totalgeneral.toString();
+            }
+
+
+            // Facturación
+            function createFactura() {
+
+                // Obtener valores de los campos de entrada
+                const fecha = document.getElementById('Fecha').value;
+                const porc = document.getElementById('descuento').value;
+                const cliente = document.getElementById('nombre').value;
+                const usuario = document.getElementById('idUser').value;
+                const total = document.getElementById('total').value;
+
+                // Crear un objeto Producto con los valores
+                const factura = {
+                    idFactura: 0,
+                    fechaFactura: fecha,
+                    descuentoFactura: porc,
+                    idCliente: cliente,
+                    idUsuario: usuario,
+                    totaFactura: total
+                };
+
+                console.log(factura);
+
+                // Realizar una solicitud POST para crear un nuevo producto
+                fetch('/CtrlFacturacion/Create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(factura)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        // Verificar si la respuesta indica éxito
+                        if (data === true) {
+                            console.log('Factura creada exitosamente');
+                        } else {
+                            console.error('Error al crear la Factura');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+
+
+                // DETALLE FACTURA
+                let tabla = document.getElementById("miTabla");
+
+                for (let i = 2; i < tabla.rows.length; i++) {
+
+                    // Obtener la fecha de la segunda columna de la fila actual
+                    let cantidad = tabla.rows[i].cells[8].innerHTML;
+                    let idProducto = tabla.rows[i].cells[0].innerHTML;
+                    let idFactura = document.getElementById("NoFactura").value;
+                    let precioV = tabla.rows[i].cells[10].innerHTML;
+
+                    console.log("cantidad: " + cantidad);
+                    console.log("id productos: " + idProducto);
+                    console.log("id de Factura: " + idFactura);
+                    console.log("precio ventas: " + precioV);
+
+                    const detallefactura = {
+                        cantidadProductosF: cantidad,
+                        idProducto: idProducto,
+                        idFactura: idFactura,
+                        precio: precioV
+                    };
+                    console.log(detallefactura);
+
+                    // Realizar la solicitud de la compra al servidor
+                    fetch('/CtrlDetalleFactura/Create', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(detallefactura)
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                            if (data === true) {
+                                console.log('Detalle de factura creada exitosamente');
+                                alert("Factura creada exitosamente")
+                            } else {
+                                console.error('Error al crear la factura');
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            }
+
+
+            // INICIAR
+            $(document).ready(function () {
+                // IMPRIMIR FACTURA
+                $("#btnImprimir").click(function () {
+                    var idFactura = $("#NoFactura").val();
+                    window.location.href = "/ImprimirFactController/" + idFactura;
+                });
+
+
+                // Deshabilita todos los controles al cargar la página
+                deshabilitarControles();
+
+
+                // Habilita todos los controles excepto los inputs de tipo texto al hacer clic en el botón "Nueva Compra"
+                $('#BotonFactura').click(function () {
+                    $(':input').prop('disabled', false); // Habilita todos los controles
+                    $('input[type="text"]').prop('disabled', true); // Deshabilita los inputs de tipo texto
+
+                    // Deshabilitar el input con el ID "miInput"
+                    $('#cantidad').prop('disabled', false);
+                    $('#precioC').prop('disabled', false);
+                    $('#NoFactura').prop('disabled', false);
+                    $('#descuento').prop('disabled', false);
+
+                    // Limpiar todo
+                    const camposLimpiar = ['nombre', 'apellido', 'codigo', 'distintivo',
+                        'categoria', 'marca', 'color', 'talla', 'descuento', 'precio', 'cantidad', 'Stock',
+                        'subtotal', 'iva', 'total'];
+
+                    // Iterar sobre la lista y limpiar cada campo
+                    camposLimpiar.forEach(idCampo => {
+                        document.getElementById(idCampo).value = '';
+                    });
+
+                    $('#miTabla tbody tr').not(':first').remove();
+                    getIdFactura();
+                });
+            });
+
+
+            //Desabilitar  General
+            function deshabilitarControles() {
+                // Deshabilita todos los controles excepto el botón "Nueva Compra"
+                $(':input').not('#BotonFactura,#BotonAyuda,#BotonActualizar').prop('disabled', true);
+            }
+
+
+            //funcion lipiar al cacelar
+            function limpiarcancelar() {
+                // Lista de IDs de campos a limpiar
+                const camposLimpiar = ['codigo', 'distintivo', 'categoria', 'marca', 'color', 'talla', 'descuento', 'precio', 'cantidad', 'Stock'];
+
+                // Iterar sobre la lista y limpiar cada campo
+                camposLimpiar.forEach(idCampo => {
+                    document.getElementById(idCampo).value = '';
+
+                });
+            }
+
+
+            // Llamar Cargar la página
+            window.onload = function () {
+                getDatos();
+                let tabla = document.getElementById("miTabla");
+                getIdFactura();
+            };
+
+
+        </script>
+</body>
+
+</html>

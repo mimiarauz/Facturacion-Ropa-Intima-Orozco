@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restauración de Base de Datos</title>
+    <link rel="stylesheet" href="Restauracion.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/R.ico" >
+</head>
+<body>
+        <section>
+            <a href="../../Hom/Home.html" id="hom"><img src="../../imagenes/hogar.png"  alt="Home" style="height: 100%;width: 100%;margin: 0;padding: 0;"></a>
+            <div class="contenedor">
+                <div class="encabezado">
+                    <a href="../Respaldo/Respaldo.html" id="activo1">Respaldo</a>
+                    <a href="#" id="activo">Restauración</a>
+                </div>
+                <div class="cuerpo">
+                    <div class="formulario">
+                        <form action="#">
+                            <h2 id="activo">Restauraración de BD</h2>
+                           
+                                <img src="../../imagenes/restaurar.png" alt="Icono">
+                    
+                            <div class="buscar">
+                                <label for="#">
+                                    <input type="file" id="fileInput" accept=".bak" />
+                                </label>
+                            </div>
+                        </form>
+                        <div>
+                            <button id="btnRestaurar">Restaurar</button>
+                            <div class="recuperar"></div>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        
+        <script>
+            document.getElementById("btnRestaurar").addEventListener("click", function () {
+    var fileInput = document.getElementById("fileInput");
+    var file = fileInput.files[0];
+
+    if (file) {
+        // Solo envía el nombre del archivo, no la ruta completa
+        var formData = new FormData();
+        formData.append("filePath", file.name);
+
+        // Resto del código AJAX...
+        fetch('/CtrlRestauracion/RestoreDatabase', {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                alert("Restauración exitosa");
+            } else {
+                alert("Error en la restauración: " + data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error en la solicitud:', error);
+        });
+    } else {
+        alert("Selecciona un archivo de respaldo (.bak) antes de intentar restaurar.");
+    }
+});
+
+        </script>
+</body>
+</html>

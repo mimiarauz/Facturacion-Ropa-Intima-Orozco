@@ -1,0 +1,620 @@
+/*DISEÑO DEL BODY*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 223, 240) !important;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+.f{
+    margin: 0px;
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    border: 20px silver solid;
+}
+
+/*DISEÑO DE LA BARRA DE NAVEGACION*/
+.Facturacion {
+    height: 50px;
+    background-image: linear-gradient(to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    transition: background-image 0.3s; /* Transición para el fondo */
+}
+
+.Facturacion:hover {
+    background-image: linear-gradient(to right, #a800d6 5%, #d97df2 34%, #f797f3 63%, #ffdf99 100%);
+}
+/*DISEÑO DEL CONTENEDOR*/
+.container{
+    max-width: 100vh;
+    width: 100vh;
+}
+
+
+/*DISEÑO DE TIPOGRAFÍA*/
+label {
+    font-family: 'Merriweather', serif;
+}
+
+.Facturacion, .Fecha, #BotonFactura, #BotonAgregar, #BotonCancelar, table, th, td{
+    font-family: 'Merriweather', serif;
+} 
+#Cliente, #Vendedor, #DatosProducto{
+    font-family: 'Merriweather', serif;
+}
+
+
+
+/* Estilo para el group-box en estado normal */
+.group-box {
+    border: 3px solid purple; /* Borde más grueso y color más pronunciado */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones para el borde y la sombra */
+}
+
+/* Estilo para el group-box cuando el cursor pasa sobre él */
+.group-box:hover {
+    border-color: magenta; /* Cambia el color del borde al pasar el cursor */
+    box-shadow: 0 0 10px rgba(128, 0, 128, 0.5); /* Agrega una sombra con efecto de brillo */
+}
+
+
+
+
+/* Estilo para los campos de entrada de texto en estado normal */
+.form-control {
+    border: 1px solid #ccc; /* Borde sutil de color gris */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones para el borde y la sombra */
+}
+
+/* Estilo para los campos de entrada de texto cuando el cursor pasa sobre ellos */
+.form-control:hover {
+    border-color: #888; /* Cambia el color del borde a un tono de gris más oscuro al pasar el cursor */
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5); /* Agrega una sombra de tono gris con efecto sutil */
+}
+
+/* Estilo para los botones con iconos en estado normal */
+.btn i {
+    margin-right: 5px;
+}
+
+/* Estilo para los botones con iconos cuando el cursor pasa sobre ellos */
+.btn:hover i {
+    color: #000; /* Cambia el color del icono a negro al pasar el cursor */
+}
+
+/* Estilo para todos los botones en estado normal */
+.btn, .btn i {
+    border: 1px solid #ccc; /* Borde sutil de color gris */
+    background-color: #fff; /* Fondo blanco */
+    color: #333; /* Color del texto */
+    transition: border-color 0.3s, box-shadow 0.3s, background-color 0.3s, color 0.3s; /* Transiciones para el borde, la sombra, el fondo y el color de texto */
+}
+
+/* Estilo para todos los botones cuando el cursor pasa sobre ellos */
+.btn:hover, .btn:hover i {
+    border-color: #888; /* Cambia el color del borde a un tono de gris más oscuro al pasar el cursor */
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5); /* Agrega una sombra de tono gris con efecto sutil */
+    background-color: #f0f0f0; /* Cambia el fondo a un tono de gris más claro al pasar el cursor */
+    color: #000; /* Cambia el color del texto a negro al pasar el cursor */
+}
+
+
+
+
+
+/*DISEÑO DE TODOS LOS BOTONES E ICONOS*/
+#BotonFactura {
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 15px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+
+#BotonFactura:hover {
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+/* Estilo para eliminar los bordes y el relleno del botón */
+
+/* Estilo para ajustar el margen entre el botón y el input de fecha */
+.d-flex.justify-content-start button {
+    margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+}
+
+#BotonAyuda {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+#editarentabla{
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    background-image: url(../imagenes/lapiz_editar.png);
+    background-repeat: repeat;
+    background-size: cover;
+}
+#eliminarentabla{
+    border: none;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    background-image: url(../imagenes/icons8-eliminar.png);
+    background-repeat: repeat;
+    background-size: cover;   
+}
+
+#BotonAgregar {
+    margin-left: 15px;
+    margin-top: 22px;
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 10px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+
+#BotonAgregar:hover {
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black ; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}
+
+
+#BotonCancelar{
+    margin-left: 10px;
+    margin-top: -100px;
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 14px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+
+#BotonCancelar:hover {
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}
+
+#BotonActualizar{
+    margin-left: 110px;
+    margin-top: 25px;
+    margin-right: 10px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+}
+
+.icono-ayuda {
+    width: 35px;
+    height: 35px;
+    border: none;
+    padding: 0;
+    margin-right: -30px;
+}
+.Guardar{
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin-right: -30px;
+}
+
+.Imprimir{
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin-right: -30px;
+}
+
+.LabelGuardar, .LabelImprimir{
+    margin-left: 30px;
+    margin-top: 5px;
+    color: black;
+    font-size: 16px;
+}
+
+/* Alinea los elementos a la izquierda */
+#TextoFactura, #NoFactura, #BotonAyuda {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+
+/*DISEÑO DE CLIENTE Y VENDEDOR*/
+#c{
+    margin: 0;
+    padding: 0;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+#v{
+    width: 80%;
+    max-width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*DISEÑO DE LOS TXT*/
+#subtotal,
+#iva,
+#total {
+    margin: 0;
+    margin-left: 5px;
+    width: 150px;
+    justify-content: center;
+}
+#LabelTotales{
+    margin-left: 7px;
+}
+
+#nf{
+    display: grid;
+    float: none;
+    width: 100%;
+    justify-content:initial;
+}
+
+/*Tamaño de letra*/
+#Datos{
+    font-size: 18px;
+}
+
+#Vendedor{
+    font-size: 18px;
+}
+
+#DatosProducto{
+    font-size: 18px;
+}
+
+/* Estilo para la fecha para que no sea tan larga */
+input[type="date"] {
+    width: 150px; /* Ajusta el ancho según tus preferencias */
+}
+
+.l{
+    margin-left: 11px;
+}
+
+#TextoFactura {
+    margin-right: 10px; 
+}
+
+#Cliente{
+    font-size: 18px;
+}
+
+.Fecha {
+    width: 120px;
+}
+
+#Ayuda{
+    margin-right: 20px;
+}
+
+.form-control{
+    margin-left: 10px;
+}
+
+.mr-2{
+    display: flex;
+    padding-left: 20px;
+}
+
+label {
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+/* Estilo para ajustar el margen entre los elementos y alinearlos a la izquierda */
+.d-flex.justify-content-start {
+    align-items: center;
+    float: right;
+}
+
+/*Estilo para el ícono en el botón*/
+.fa {
+    font-size: 16px;
+    margin-right: 5px;
+}
+
+.group-box {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/* Estilo para los campos de entrada de texto en el groupbox "Datos del cliente" */
+.group-box input[type="text"] {
+    width: 230px; /* Ajusta el ancho según tus preferencias */
+}
+.d-flex{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*DISEÑO DE LA TABLA*/
+/* Estilo para la tabla */
+table {
+    width: 100% !important;
+    max-width: 100% !important;
+    border-collapse: collapse !important;
+    margin-top: 25px !important;
+    background-color: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1) !important;
+    transition: background-color 0.3s !important;
+}
+
+/* Estilo para las celdas del encabezado (thead) */
+thead th {
+    background-color: #8c0097 !important;
+    color: white !important;
+    border: 1px solid #8c0097 !important;
+    padding: 15px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    font-size: 14px !important;
+    text-align: center !important;
+}
+
+/* Estilo para las celdas de datos (td) */
+tbody td {
+    border: 1px solid #ccc !important;
+    padding: 15px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s !important;
+}
+
+/* Estilo para las filas impares */
+tbody tr:nth-child(odd) {
+    background-color: #dcdcdc !important;
+}
+
+/* Estilo para las celdas de datos (td) */
+tbody td {
+    border: 1px solid #ccc !important;
+    padding: 15px !important;
+    text-align: center !important;
+    font-size: 16px !important;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s !important; /* Agregamos una transición */
+    background-color: white; /* Cambiamos el fondo a blanco por defecto */
+}
+
+/* Estilo para la fila seleccionada al pasar el ratón */
+tbody tr:hover {
+    background-color: #c0c0c0 !important;
+    box-shadow: 0 0 10px rgba(192, 192, 192, 0.5) !important; /* Agregamos una sombra con efecto de brillo */
+}
+
+
+
+/*RESPONSIVE*/
+@media screen and (max-width:800px){
+
+    .f{
+        width: 100%;
+        height: 100vh;
+        border: 0;
+        border-radius: 0;
+    }
+    #c{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+    #v{
+        width: 100%;
+        max-width: 100%;
+        display: block;
+        margin-top: 5px;
+    }
+    .group-box input[type="text"] {
+        width:95%; /* Ajusta el ancho según tus preferencias */
+    }  
+
+    /* Estilo para la tabla */
+    table {
+        width: 100%; /* Hacer que la tabla se ajuste al ancho de su contenedor */
+        max-width: 100%;
+        border-collapse: collapse;
+        margin-top: 25px;
+        background-color: white;
+        border: 1px solid #ccc;
+        table-layout: fixed;
+    }
+  
+    /* Estilo para las celdas del encabezado (thead) */
+    thead th {
+        background-color: purple;
+        color: white;
+        border: 1px solid #ccc;
+        padding: 10px 5px; /* Reducir el espacio interno */
+        font-weight: bold;
+        text-transform: uppercase;
+        font-size: 12px; /* Reducir el tamaño de fuente */
+        text-align: center;
+    }
+  
+    /* Estilo para las celdas de datos (td) */
+    tbody td {
+        border: 1px solid #ccc;
+        padding: 5px; /* Reducir el espacio interno */
+        text-align: center;
+        font-size: 10px; /* Reducir el tamaño de fuente */
+    }
+  
+    /* Estilo para las filas impares */
+    tbody tr:nth-child(odd) {
+        background-color: rgba(75, 67, 67, 0.2);
+    }
+  
+     /* Estilo para las filas pares */
+    tbody tr:nth-child(even) {
+        background-color: white;
+    }
+  
+    /* Estilo para la fila seleccionada al pasar el ratón */
+    tbody tr:hover {
+        background-color: palevioletred;
+    }
+  
+
+
+    /* Estilos para hacer la tabla más compacta en pantallas pequeñas (máximo 800px) */
+    @media screen and (max-width: 800px) {
+    table {
+        table-layout: auto;
+        width: auto;
+        }
+    }
+
+    #BotonAgregar {
+        margin-left: 45px;
+        margin-top: 22px;
+        background-color: #d97df2; /* Color de fondo */
+        border: 2px solid black;
+        color: rgb(0, 0, 0); /* Color del texto */
+        padding: 5px 15px; /* Espacio interno */
+        border-radius: 10px; /* Borde redondeado */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background-color 0.3s, border 0.3s; /* Transición suave */
+    }
+    
+    #BotonAgregar:hover {
+        background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+        border: 2px solid black ; /* Cambio de color de los bordes (más oscuro) */
+        color: white;
+    }
+
+    #BotonCancelar{
+        margin-left: 10px;
+        margin-top: -100px;
+        background-color: #d97df2; /* Color de fondo */
+        border: 2px solid black;
+        color: rgb(0, 0, 0); /* Color del texto */
+        padding: 5px 20px; /* Espacio interno */
+        border-radius: 10px; /* Borde redondeado */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background-color 0.3s, border 0.3s; /* Transición suave */
+    }
+    
+    #BotonCancelar:hover {
+        background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+        border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+        color: white;
+    }
+
+    #BotonActualizar{
+        margin-left: 290px;
+        margin-top: -66px;
+        margin-right: 10px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+    }
+
+    #BotonFactura {
+        margin-left: 70px;
+        background-color: #d97df2; /* Color de fondo */
+        border: 2px solid black;
+        color: rgb(0, 0, 0); /* Color del texto */
+        padding: 5px 15px; /* Espacio interno */
+        border-radius: 10px; /* Borde redondeado */
+        cursor: pointer; /* Cambia el cursor al pasar el mouse */
+        transition: background-color 0.3s, border 0.3s; /* Transición suave */
+    }
+    
+    #BotonFactura:hover {
+        background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+        border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+        color: white;
+    }
+
+    /* Estilo para la fecha para que no sea tan larga */
+    input[type="date"] {
+        margin: 0px;
+    }
+
+    /* Alinea los elementos a la izquierda */
+    #TextoFactura, #NoFactura, #BotonAyuda {
+        margin-right: 25px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    #subtotal, #iva, #total {
+        margin: 0;
+        margin-left: 5px;
+        width: 150px;
+        justify-content: center;
+    }
+    #LabelTotales{ 
+        margin-left: 7px;
+    }
+
+    .Guardar{
+        margin-left: -340px;
+        margin-top: 80px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        padding: 0;
+        margin-right: -30px;
+    }
+    
+    .Imprimir{
+        margin-left: -50px;
+        margin-top: -20px;
+        width: 50px;
+        height: 50px;
+        border: none;
+        padding: 0;
+        margin-right: -30px;
+    }
+    
+    .LabelGuardar, .LabelImprimir{
+        color: black;
+        font-size: 16px;
+    }
+
+}

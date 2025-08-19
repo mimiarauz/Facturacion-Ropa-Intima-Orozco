@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cambio de Contraseña</title>
+    <link rel="stylesheet" href="CabiodeContrasena.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/R.ico" >
+</head>
+<body>
+    <nav class="cambiocontra">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../imagenes/R.ico" alt="Logo" width="45" height="45" class="d-inline-block align-text-top">
+                Cambio de Contraseña
+            </a>
+        </div>
+    </nav>
+    <section>
+                        <form id="cambiarContraseñaForm" method="POST" action="/CambiarContraseñaController/CambiarContra">
+                            <div class="cont">
+                                <div class="cen">
+                                    <div class="inputBox">
+                                        <input type="text" id="usuario" name="usuario" placeholder="Usuario">
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="password" id="contraseñaActual" name="contraseñaActual" placeholder="Contraseña actual">
+                                    </div>
+                                    <div class="inputBox">
+                                        <input type="password" id="nuevaContraseña" name="nuevaContraseña" placeholder="Nueva contraseña">
+                                    </div>
+                                    <div class="inputBox" >
+                                        <input type="submit" id="btncambiar"  style="background-color: blueviolet; border-radius: 10px; margin-left:30%;" value="Guardar" onclick="cambiarContraseña(event)">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+    </section>
+    <script>
+
+        document.getElementById('cambiarContraseñaForm').addEventListener('submit', async function(event) {
+           event.preventDefault();
+
+           const usuario = document.getElementById('usuario').value;
+           const contraseñaActual = document.getElementById('contraseñaActual').value;
+           const nuevaContraseña = document.getElementById('nuevaContraseña').value;
+
+           const data = new URLSearchParams();
+           data.append('usuario', usuario);
+           data.append('contraseñaActual', contraseñaActual);
+           data.append('nuevaContraseña', nuevaContraseña);
+
+           try {
+                const response = await fetch('/CambiarContraseñaController/CambiarContra', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/x-www-form-urlencoded'
+                    },
+                    body: data
+                });
+
+                if (!response.ok) {
+                    const errorMessage = await response.text();
+                    throw new Error(errorMessage || 'Hubo un problema al cambiar la contraseña.');
+                }
+
+                const result = await response.text();
+                alert(result); // Mostrar mensaje de éxito
+            } catch (error) {
+                alert(error.message); // Mostrar mensaje de error
+            }
+        });
+    </script>
+</body>
+</html>

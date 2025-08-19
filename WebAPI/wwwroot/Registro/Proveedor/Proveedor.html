@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedor</title>
+    <link rel="stylesheet" href="proveedor.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../imagenes/R.ico" >   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script> 
+</head>
+<body>
+    <div class="fondo">
+        <form action="">
+            <div class="encabezado">
+              
+                <h2>Registro de Proveedor</h2>
+            </div>
+      <!--Menu de Daotos-->
+            <nav>
+                    <input type="checkbox" id="chek">
+                    <label for="chek" class="chekbtn">
+                     <img src="../../imagenes/menu (2).png" alt="Menu" id="me">
+                    </label>
+                <ul>
+                    <li><a id="active" href="../Datos/Categoria/Categoria.html" >Clasificación</a></li>
+                    <li><a class="active" id="active" href="#">Proveedores</a></li>
+                    <li><a id="active" href="../Usuario/usuario.html">Usuario</a></li>
+                    <li><a id="active" href="../Cliente/cliente.html">Clientes</a></li>
+                    <li><a id="active" href="../Producto/catalogo.html">Productos</a></li>
+                </ul>
+            </nav>
+            <a href="../../Hom/Home.html"><img src="../../imagenes/hogar.png" style="margin-left:90%;" alt="Home"></a>
+            <div class="contenido">
+                <div class="datos">
+                    <h2 class="c">Datos de Proveedor</h2>
+                    <div class="txt">    
+                        <div class="bloque1">
+                            <input type="text" name="" class="t" id="txtcedula" placeholder="Cédula" required maxlength="16">
+                            <input type="text" class="t" id="txtnombre" placeholder="Nombre" required pattern="[a-zA-Z]+">  
+                            <input type="text" class="t" id="txtapellido" placeholder="Apellido" required pattern="[a-zA-Z]+">   
+                        </div>
+                        <div class="bloque2">
+                            <input type="number" class="t" id="txtnumero" placeholder="N. Telefono" required pattern="[0-9]+" maxlength="8"> 
+                            <input type="email" class="t" id="correo" placeholder="Correo" required>   
+                           <input type="text" class="t" id="txtdireccion" placeholder="Dirección" required minlength="10">    
+                        </div> 
+                        <div class="bloque3">
+                            <label for="cbestado" class="t" id="se" placeholder="Estado" required></label>
+                            <select name="Estado" id="cbestado" class="t" required>
+                                <option value="">Estado</option>
+                                <option value="Activo">Activo</option >
+                                <option value="Inactivo">Inactivo</option>
+                            </select> 
+                        </div> 
+                    </div>
+                             
+                    <input type="text" id="raya1" disabled>
+                    <input type="text" id="raya2" disabled>
+                    <div class="central">
+                            
+                       <!--Creacion de tabla-->
+                       <div class="conteyner">
+                        <table id="tablaproveedor">
+                         <thead>
+                          <tr>
+                            <th>Id</th>
+                              <th>Nombre</th>
+                              <th>Apellido</th>
+                              <th>Cédula</th>
+                              <th>Número</th>
+                              <th>Dirección</th>
+                              <th>Correo</th>
+                              <th>Estado</th>
+                              <th>Editar</th>
+                              <th>Eliminar</th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td><input type="button" name="editarar" id="editarentabla"></td>
+                              <td><input type="button" name="eliminar" id="eliminarentabla"></td>
+                          </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                           
+                            <!--Botones-->
+                           <div class="botones">
+                            <input type="button" class="b" id="nuevoBtn" value="Nuevo">
+                            <input type="button" class="b" id="guardarBtn" value="Guardar" onclick="createProveedor()">
+                            <input type="button" class="b" id="actualizarBtn" value="Actualizar" onclick="updateProveedor()">
+                            <input type="button" class="b" id="cancelarBtn" value="Cancelar">
+                           </div>
+                   </div>
+                    
+                </div>
+             
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <script>
+        
+
+        // Métodos para manejar operaciones CRUD de proveedor
+        function getProveedor() {
+        // Realizar una solicitud GET para obtener
+        fetch('/CtrlProveedor/Get')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    
+
+    function getPersona() {
+        // Realizar una solicitud GET para obtener
+        fetch('/CtrlProveedor/Get')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Puedes manejar la respuesta aquí, por ejemplo, mostrar los colores en la interfaz de usuario
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+
+    function createProveedor() {
+    // Obtener valores de los campos de entrada
+    const nombrePersona = document.getElementById('txtnombre').value;
+    const apellidoPersona = document.getElementById('txtapellido').value;
+    const cedula = document.getElementById('txtcedula').value;
+    const numero = document.getElementById('txtnumero').value;
+    const direccion = document.getElementById('txtdireccion').value;
+    const correoProveedor = document.getElementById('correo').value;
+    const estado = document.getElementById('cbestado').value;
+
+        // Validación de cédula completa
+        if (cedula === "") {
+             alert("Rellene el campo de Cédula");
+             e.preventDefault();
+             return; 
+         } 
+         else if (!validarCedula(cedula) || cedula.length !== 16) {
+             alert("La cédula no es válida o no tiene 16 caracteres.");
+             e.preventDefault();
+             return;
+         }
+
+         if (nombrePersona === "") {
+             alert("Rellene el Nombre");
+             e.preventDefault();
+        } 
+        else if (nombrePersona.length > 10) {
+             alert("El nombre no puede tener más de 10 caracteres.");
+             e.preventDefault();
+         }
+
+        if(apellidoPersona==""){
+            alert("Rellene el Apellido")
+            e.preventDefault()
+        }
+        else if (apellidoPersona.length > 10) {
+            alert("El apellido no puede tener más de 10 caracteres.");
+        }
+        
+        if(numero==""){
+            alert("Favor ingrese un Número")
+            e.preventDefault()
+        }
+        else if (numero.length !== 8) {
+            alert("El número de teléfono debe tener 8 dígitos.");
+        }
+
+        if(correoProveedor==""){
+            alert("Rellene el campo de Correo")
+            e.preventDefault()
+        }
+        else if (correoProveedor.length > 30) {
+            alert("El correo no puede tener más de 30 caracteres.");
+        }
+
+        if(direccion==""){
+            alert("Favor ingrese una Dirección")
+            e.preventDefault()
+        }
+        else if (direccion.length > 20) {
+            alert("La dirección no puede tener más de 20 caracteres.");
+        }
+        
+        if(estado==""){
+            alert("Elija un Estado")
+            e.preventDefault()
+        }
+
+    //Crear un objeto con los datos de persona y usuario
+    const data = {
+        id: 0,
+        nombrePersona: nombrePersona,
+        apellidoPersona: apellidoPersona,
+        cedula: cedula,
+        proveedor: {
+            idProveedor: 0,
+            numProveedor: numero,
+            direccionProveedor: direccion,
+            correoProveedor: correoProveedor,
+            estado: estado
+        }
+    };
+    console.log(data);
+
+    // Realizar una solicitud POST para crear una nueva persona y usuario
+    fetch('/CtrlProveedor/Create', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+        // Verificar si la respuesta indica éxito
+        if (data === true) 
+        {
+            console.log('Persona y proveedor creados exitosamente');
+            // Actualizar la tabla con la nueva persona y usuario
+            updateCombinedTable();
+            // Puedes realizar acciones adicionales aquí, como actualizar la interfaz de usuario
+        } 
+        else 
+        {
+            console.error('Error al crear la persona y proveedor');
+        }
+    })
+    .catch(error => console.error('Error en la solicitud:', error));
+    limpiarYDesactivar();
+    desactivarTodoExceptoNuevo();
+}
+
+
+        function updateProveedor() {
+
+            // Obtener valores de los campos de entrada
+            const cedula = document.getElementById('txtcedula').value;
+            const nombrePersona = document.getElementById('txtnombre').value;
+            const apellidoPersona = document.getElementById('txtapellido').value;
+            const numero = document.getElementById('txtnumero').value;
+            const direccion = document.getElementById('txtdireccion').value;
+            const correo = document.getElementById('correo').value;
+            const estado = document.getElementById('cbestado').value;
+    
+            // Crear un objeto Usuario con los valores
+            const data = {
+                idProveedor: ID,
+                numProveedor: numero,
+                direccionProveedor: direccion,
+                correoProveedor: correo,
+                estado: estado,
+                nombrePersona: nombrePersona,
+                apellidoPersona: apellidoPersona,
+                cedula: cedula
+            }
+            console.log(data);
+
+            $.ajax({
+                url: 'http://localhost:5282/CtrlProveedor/Update/' + ID + '?idProveedor=' + ID,
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    updateCombinedTable()
+                    console.log('Actualización exitosa:', data);
+                },
+                error: function (error) {
+                    console.error('Error en la actualización:', error);
+                }
+            });
+        }
+    
+
+        function removeProveedor(id) {
+    
+    fetch(`/CtrlProveedor/Remove/${id}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        // Verificar si la respuesta fue exitosa
+        if (!response.ok) {
+            throw new Error('La respuesta del servidor no fue exitosa');
+        }
+
+        // Convertir la respuesta a JSON
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+
+        // Verificar si la respuesta indica éxito
+        if (data.success === true) {
+            console.log('Persona y proveedor eliminados exitosamente');
+            // Actualizar la tabla con los datos actualizados
+            updateCombinedTable();
+        } else {
+            console.error('Error al eliminar la persona y proveedor');
+        }
+    })
+    .catch(error => console.error('Error en la solicitud:', error.message || error));
+    limpiarYDesactivar();
+}
+
+
+        // Función para actualizar la tabla con los datos de usuario y persona
+        function updateCombinedTable() {
+    // Obtener la referencia a la tabla
+    const tableBody = document.querySelector('.conteyner tbody');
+
+    // Limpiar el contenido actual de la tabla
+    tableBody.innerHTML = '';
+
+    // Realizar una solicitud GET para obtener los datos de ambas tablas
+    Promise.all([
+        fetch('/CtrlPersona/GetWithProveedores').then(response => response.json()),
+        fetch('/CtrlProveedor/Get').then(response => response.json())
+    ])
+    .then(([dataPersona, dataProveedor]) => {
+        console.log(dataPersona);
+        console.log(dataProveedor);
+
+        // Iterar sobre los datos y agregar filas a la tabla
+        const maxRows = Math.max(dataPersona.length, dataProveedor.length);
+        for (let i = 0; i < maxRows; i++) {
+            const row = document.createElement('tr');
+
+            // Datos de la tabla Persona
+            const persona = dataPersona[i] || {};
+            row.innerHTML += `
+                <td>${persona.id}</td>
+                <td>${persona.nombrePersona}</td>
+                <td>${persona.apellidoPersona}</td>
+                <td>${persona.cedula}</td>
+            `;
+
+            // Datos de la tabla Proveedor (agregar celdas vacías si no hay datos)
+            const proveedor = dataProveedor[i] || {};
+            row.innerHTML += `
+                <td>${proveedor.numProveedor || ''}</td>
+                <td>${proveedor.direccionProveedor || ''}</td>
+                <td>${proveedor.correoProveedor || ''}</td>
+                <td>${proveedor.estado || ''}</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+            `;
+
+            tableBody.appendChild(row);
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+
+
+var ID;
+// Función para manejar el evento dblclick
+function manejarDobleClic(event)
+        {
+            // Verificar si el clic fue en la columna "Eliminar"
+            if (event.target.textContent.toLowerCase() === 'eliminar') 
+            {
+                var fila = event.target.parentNode;
+                ID = fila.cells[0].innerText;
+    
+                var confirmacion = window.confirm('¿Estás seguro de que deseas eliminar este Proveedor?');
+
+                  // Si el usuario hace clic en "Aceptar" en el cuadro de diálogo de confirmación, eliminar la marca
+             if (confirmacion) {
+                 removeProveedor(ID);
+             }
+            }
+
+             // Verificar si el clic fue en la columna "Eliminar"
+             if (event.target.textContent.toLowerCase() === 'editar') 
+            {
+                var fila = event.target.parentNode;
+                ID = fila.cells[0].innerText;
+
+                document.getElementById('txtnombre').value=fila.cells[1].innerText;
+                document.getElementById('txtapellido').value=fila.cells[2].innerText;
+                document.getElementById('txtcedula').value=fila.cells[3].innerText;
+                document.getElementById('txtnumero').value=fila.cells[4].innerText;
+                document.getElementById('txtdireccion').value=fila.cells[5].innerText;
+                document.getElementById('correo').value=fila.cells[6].innerText;
+                document.getElementById('cbestado').value=fila.cells[7].innerText;
+                console.log(ID);
+
+                // Validaciones
+                {
+                    // Habilitar campos de entrada Cliente
+             document.getElementById('txtcedula').disabled = false;
+             document.getElementById('txtnombre').disabled = false;
+             document.getElementById('txtapellido').disabled = false;
+             document.getElementById('txtnumero').disabled = false;
+             document.getElementById('correo').disabled = false;
+             document.getElementById('txtdireccion').disabled = false;
+             document.getElementById('cbestado').disabled = false;
+
+            // Desactivar botones "Nuevo" y "Guardar" Cliente
+             document.getElementById('nuevoBtn').disabled = true;
+             document.getElementById('nuevoBtn').style.opacity = '0.5';
+             document.getElementById('nuevoBtn').style.cursor = 'not-allowed';
+
+             document.getElementById('guardarBtn').disabled = true;
+
+             // Activar botones "Actualizar" y "Cancelar" Cliente
+             document.getElementById('actualizarBtn').disabled = false;
+             document.getElementById('actualizarBtn').style.opacity = '1';
+             document.getElementById('actualizarBtn').style.cursor = 'pointer';
+
+             document.getElementById('cancelarBtn').disabled = false;
+             document.getElementById('cancelarBtn').style.opacity = '1';
+             document.getElementById('cancelarBtn').style.cursor = 'pointer';
+                }
+            }
+        }
+    
+        // Obtener la tabla por su ID
+        var tabla = document.getElementById('tablaproveedor');
+    
+        // Asignar el manejador de eventos dblclick a la tabla
+        tabla.addEventListener('dblclick', manejarDobleClic);
+
+        // Llamar a updateCombinedTable al cargar la página
+        window.onload = function() {
+            updateCombinedTable();
+         desactivarTodoExceptoNuevo();
+         limpiarYDesactivar();
+        };
+
+        //VALIDACIONES
+        {
+            //VALIDACIONES PROVEEDOR
+
+     // Evento input para el campo de cédula
+     document.getElementById('txtcedula').addEventListener('input', function (event) {
+         // Obtener el valor actual de la cédula
+         let cedula = event.target.value;
+
+         // Eliminar cualquier guión existente
+         cedula = cedula.replace(/-/g, '');
+
+         // Verificar que la cédula no tenga más de 16 caracteres
+         if (cedula.length > 16) {
+             cedula = cedula.substring(0, 16);
+         }
+
+         // Aplicar formato con guiones
+         if (cedula.length > 3 && cedula.length <= 9) {
+             cedula = cedula.substring(0, 3) + '-' + cedula.substring(3, 9);
+         } 
+         else if (cedula.length > 9 && cedula.length <= 15) {
+             cedula = cedula.substring(0, 3) + '-' + cedula.substring(3, 9) + '-' + cedula.substring(9);
+         }
+
+         // Asignar el valor formateado de vuelta al campo de cédula
+         event.target.value = cedula;
+     });
+
+     // Evento keypress para el campo de cédula (para permitir solo una letra al final)
+     document.getElementById('txtcedula').addEventListener('keypress', function (event) {
+         // Obtener el valor actual de la cédula
+         let cedula = event.target.value;
+
+         // Obtener el carácter ingresado en el evento keypress
+         const charCode = event.charCode;
+         const char = String.fromCharCode(charCode);
+
+         // Permitir solo una letra al final
+         if (/^[a-zA-Z]$/.test(char) && cedula.length === 15) {
+             // Permitir la entrada de la letra
+         } 
+         else if (cedula.length >= 16) {
+             // Evitar que se ingresen más caracteres después de la letra
+             event.preventDefault();
+         }
+     });
+
+     function validarCedula(cedula) {
+         // Verificar que la cédula tenga 16 caracteres (15 números y 1 letra)
+         if (cedula.length !== 16) {
+             return false;
+         }
+    
+         // Verificar que el último carácter sea una letra
+         const letra = cedula.charAt(15);
+         if (!/^[a-zA-Z]$/.test(letra)) {
+             return false;
+         }
+    
+         return true;
+     }
+
+     // Evento keypress para el campo de nombre y apellido (permitir solo letras)
+     document.getElementById('txtnombre').addEventListener('keypress', function (event) {
+         const charCode = event.charCode;
+         const char = String.fromCharCode(charCode);
+
+         // Permitir solo letras
+         if (!/^[a-zA-Z]+$/.test(char)) {
+             event.preventDefault();
+         }
+     });
+
+     document.getElementById('txtapellido').addEventListener('keypress', function (event) {
+         const charCode = event.charCode;
+         const char = String.fromCharCode(charCode);
+
+         // Permitir solo letras
+         if (!/^[a-zA-Z]+$/.test(char)) {
+             event.preventDefault();
+         }
+     });
+
+
+     // Función para desactivar todos los campos, tabla y botones excepto "Nuevo"
+     function desactivarTodoExceptoNuevo() {
+         console.log('Desactivando todo excepto Nuevo');
+         // Desactivar campos de entrada
+         const campos = document.querySelectorAll('.t');
+         campos.forEach(campo => {
+             campo.disabled = true;
+         });
+
+         // Desactivar botones "Guardar", "Actualizar" y "Cancelar"
+         const botones = document.querySelectorAll('.b');
+         botones.forEach(boton => {
+             if (boton.value !== 'Nuevo') {
+                 boton.disabled = true;
+                 boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                 boton.style.cursor = 'not-allowed';
+             } 
+             else {
+                 // Activar botón "Nuevo"
+                 boton.disabled = false;
+                 boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                 boton.style.cursor = 'pointer';
+             }
+         });
+     }
+
+     // Llamar a la función para desactivar elementos al cargar la página
+     window.onload = function() {
+         desactivarTodoExceptoNuevo();
+         updateCombinedTable();  // También llamamos a la función que actualiza la tabla
+     };
+
+     function activarNuevo() {
+         console.log('Limpiando y desactivando');
+         // Activar campos de entrada
+         const campos = document.querySelectorAll('.t');
+         campos.forEach(campo => {
+         campo.disabled = false;
+     });
+
+         // Activar tabla (haciéndola interactiva)
+         const tabla = document.getElementById('tablaproveedor');
+         tabla.style.pointerEvents = 'auto';
+
+         // Activar botones "Guardar" y "Cancelar"
+         const botonesGuardarCancelar = document.querySelectorAll('.b[value="Guardar"], .b[value="Cancelar"]');
+         botonesGuardarCancelar.forEach(boton => {
+             if (boton.value === 'Guardar' || boton.value === 'Cancelar') {
+                 boton.disabled = false;
+                 boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                 boton.style.cursor = 'pointer';
+            } 
+             else {
+                 // Desactivar botones "Nuevo" y "Actualizar"
+                 boton.disabled = true;
+                 boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                 boton.style.cursor = 'not-allowed';
+             }
+         });
+
+         // Desactivar botón "Nuevo"
+         const botonNuevo = document.querySelector('.b[value="Nuevo"]');
+         botonNuevo.disabled = true;
+         botonNuevo.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+         botonNuevo.style.cursor = 'not-allowed';
+     }
+
+     // Función para manejar el clic en el botón "Cancelar" después de editar
+     document.getElementById('cancelarBtn').addEventListener('click', function() {
+         limpiarYDesactivar();
+     });
+
+     function limpiarYDesactivar() {
+        console.log('Limpiando y desactivando');
+        document.getElementById('txtcedula').value = "";
+        document.getElementById('txtnombre').value = "";
+        document.getElementById('txtapellido').value = "";
+        document.getElementById('txtnumero').value = "";
+        document.getElementById('correo').value = "";
+        document.getElementById('txtdireccion').value = "";
+        document.getElementById('cbestado').value = "";
+    }
+     // Obtener la tabla por su ID
+     var tabla = document.getElementById('tablaproveedor');
+
+     // Asignar el manejador de eventos dblclick a la tabla
+     tabla.addEventListener('dblclick', manejarDobleClic);
+
+    
+     // Desactivar campos de entrada y botones al cargar la interfaz
+     function desactivarElementos(desactivar) {
+         // Desactivar campos de entrada
+         const campos = document.querySelectorAll('.t');
+         campos.forEach(campo => {
+             campo.disabled = desactivar;
+         });
+         // Desactivar o activar el select cbestado
+         const cbestado = document.getElementById('cbestado');
+         cbestado.disabled = desactivar;
+
+         // Desactivar botones (haciéndolos no interactivos y cambiando su estilo), excepto el botón "Nuevo"
+         const botones = document.querySelectorAll('.b');
+         botones.forEach(boton => {
+             boton.disabled = desactivar;
+         });
+     }
+
+    
+     document.getElementById('nuevoBtn').addEventListener('click', function () {
+        // Llamar a la función para desactivar y activar elementos
+        activarNuevo(false);
+    });
+
+     document.getElementById('cancelarBtn').addEventListener('click', function () {
+         desactivarTodoExceptoNuevo(true);
+     });
+
+
+     // Función para manejar el clic en el botón "Cancelar" después de editar
+     document.getElementById('cancelarBtn').addEventListener('click', function() {
+         limpiarYDesactivar();
+     });
+        }
+
+
+
+    </script>
+
+</body>
+</html>

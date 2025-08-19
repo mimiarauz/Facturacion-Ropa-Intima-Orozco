@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respaldo de Base de Datos</title>
+    <link rel="stylesheet" href="Respaldo.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="../imagenes/R.ico" />
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  </head>
+  <body>
+    <section>
+      <a href="../../Hom/Home.html" id="hom"><img src="../../imagenes/hogar.png"  alt="Home" style="height: 100%;width: 100%;margin: 0;padding: 0;"></a>
+      <div class="contenedor">
+        <div class="encabezado">
+          <a href="#" id="activo">Respaldo</a>
+          <a href="../Restauracion/restauracion.html">Restauración</a>
+        </div>
+        <div class="cuerpo">
+          <div class="formulario">
+            <form action="#">
+              <h2 id="activo">Realizar Respaldo</h2>
+              <img src="../../imagenes/respaldo-removebg-preview.png" alt="" id="img" />
+            </form>
+            <div>
+              <button id="btnRespaldo">Respaldar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      document
+        .getElementById("btnRespaldo")
+        .addEventListener("click", function () {
+          // Realizar la solicitud AJAX al controlador
+          fetch("/CtrlBackup/RealizarRespaldo", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+          })
+            .then((response) => response.json())
+            .then((data) => {
+              if (data.success) {
+                alert("Respaldo exitoso");
+              } else {
+                alert("Error en el respaldo: " + data.message);
+              }
+            })
+            .catch((error) => {
+              console.error("Error en la solicitud:", error);
+            });
+        });
+    </script>
+  </body>
+</html>

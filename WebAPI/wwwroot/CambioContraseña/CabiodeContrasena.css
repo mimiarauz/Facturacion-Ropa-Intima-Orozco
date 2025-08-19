@@ -1,0 +1,90 @@
+/*DISEÑO DEL BODY*/
+body {
+    background-color: rgb(233, 187, 233) !important;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+/*DISEÑO DE LA BARRA DE NAVEGACION*/
+.cambiocontra {
+    height: 50px;
+    background-image: linear-gradient(to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    transition: background-image 0.3s; /* Transición para el fondo */
+}
+
+.cambiocontra:hover {
+    background-image: linear-gradient(to right, #a800d6 5%, #d97df2 34%, #f797f3 63%, #ffdf99 100%);
+}
+form{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 180px;
+}
+.cont{
+    border: #c0c0c0 5px solid;
+    border-radius: 10px;
+    background-color: transparent;
+    width: 250px;
+    height: 300pxpx;
+    justify-content: center;
+    align-items: center;
+}
+.cen{
+    margin-top: 35px;
+}
+.inputBox{
+    background-color:transparent;
+    width: 80%;
+    display: block;
+    margin: 15px;
+    margin-left: 10%;
+    align-items: center;
+}
+input{
+    border: 1px solid #ccc; /* Borde sutil de color gris */
+    transition: border-color 0.3s, box-shadow 0.3s;
+
+    border: none;
+    font-size: 15px;
+    padding: 8px;
+    border-radius: 10px;
+    display: flow-root;
+    margin-top: 10px;
+    margin-left: 15%;
+    padding-left: 8px;
+}
+input:hover{
+    border-color: #888; /* Cambia el color del borde a un tono de gris más oscuro al pasar el cursor */
+    box-shadow: 0 0 5px rgba(136, 136, 136, 0.5); /* Agrega una sombra de tono gris con efecto sutil */
+
+}
+
+.btncambiar{
+    padding: 6px;
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    margin-left: 30px;
+    
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 14px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+.btncambiar{
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}

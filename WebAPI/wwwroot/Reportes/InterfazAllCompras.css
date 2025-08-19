@@ -1,0 +1,39 @@
+#InformeVentas, #Fecha, #ventasTable{
+    font-family: 'Merriweather', serif;
+}
+#Fecha{
+    font-size: 19px;
+}
+
+#ventasTable th,
+#ventasTable td {
+    text-align: center;
+}
+
+#ventasTable th:first-child,
+#ventasTable td:first-child {
+    text-align: left;
+}
+
+#ventasTable tbody button {
+    text-align: center;
+}
+
+.dataTables_wrapper .dt-buttons {
+    margin-bottom: 20px;
+}
+
+.dt-button {
+    background-color: #d97df2;
+    color: rgb(0, 0, 0);
+    padding: 3px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border 0.3s;
+}
+
+.dt-button:hover {
+    background-color: #8c0097;
+    border: 2px solid black;
+    color: white;
+}

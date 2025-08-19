@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#activo{
+    font-family: 'Merriweather', serif;
+}
+
+ #hom{
+    position: absolute;
+    font-size: 20px;
+    margin-top: -500px;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url(../../imagenes/fondo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor{
+    position: relative;
+    width: 400px;
+    border: 4px solid rgb(80, 65, 79);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 450px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.cuerpo{
+    position: relative;
+    width: 400px;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.encabezado{
+    width: 100%;
+    height: 50px;
+    background: linear-gradient( to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    border-radius:18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.encabezado a{
+ color: #fff;
+ text-decoration: none;
+ font-size: 1.5em;
+ margin-left: 25px;
+ border-radius: 10px;
+ padding: 5px;
+}
+.encabezado #activo{
+    color: black;
+}
+
+.encabezado a:hover{
+    pointer-events: painted;
+    background-color: #a800d6;
+}
+
+.formulario{
+    margin-top: -70px;
+}
+
+.contenedor h2{
+    font-size: 26px;
+    color: #fff;
+    text-align: center;
+}
+
+.centro{
+    position: relative;
+    margin: 30px 0;
+    width: 300px;
+    border-bottom: 2px solid #fff;
+}
+.centro label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translatey(-50%);
+    color: #fff;
+    font-size: 1rem;
+    pointer-events: none;
+    transition: .6s;
+    font-weight: bold;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.centro input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    padding: -35px 0 5px;
+    color: #a800d6;
+}
+ img{
+    margin-left: 35%;
+    font-size: 1.6rem;
+    right: 9px;
+    width: 30%;
+    height: 30%;
+    margin-top: 10px;
+}
+#c{
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    margin-top: 3px;
+}
+.buscar{
+    margin: -15px 0 15;
+    font-size: 0.9rem;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.buscar label input{
+    transition: .3s;
+    font-size: 1.5em;
+    border-radius: 6px;
+    padding: 4px;
+    background-color: #fff;
+    border: none;
+}
+.buscar label input:hover{
+    background-color: #d9a2dd; /* Cambio de color de fondo al pasar el mouse */
+    color: white;
+}
+
+button{
+    margin-top: 20px;
+    width: 100%;
+    height: 40px;
+    border-radius: 40px;
+    background:   #d9a2dd;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    transition: .4s;
+    color: white;
+}
+button:hover{
+    opacity: .7;
+}

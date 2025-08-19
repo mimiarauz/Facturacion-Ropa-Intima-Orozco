@@ -1,0 +1,274 @@
+/*DISEÑO DEL BODY*/
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 223, 240) !important;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+.f{
+    width: 90%;
+    height: 100%;
+    border-radius: 20px;
+    border: 20px silver solid;
+}
+
+/*DISEÑO DE LA BARRA DE NAVEGACION*/
+.Inventario {
+    height: 50px;
+    background-image: linear-gradient(to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    transition: background-image 0.3s; /* Transición para el fondo */
+}
+
+.Inventario:hover {
+    background-image: linear-gradient(to right, #a800d6 5%, #d97df2 34%, #f797f3 63%, #ffdf99 100%);
+}
+
+/*DISEÑO DEL CONTENEDOR*/
+.container{
+    max-width: 100%;
+    width: 100%;
+}
+
+/*DISEÑO DE TIPOGRAFÍA*/
+label {
+    font-family: 'Merriweather', serif;
+}
+
+.Inventario, #BtnRepInventario, #BtnRepStock{
+    font-family: 'Merriweather', serif;
+} 
+
+#BotonAyuda {
+    margin-left: 900px;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-right: 10px;
+}
+#BotonInventario{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-right: 10px;
+}
+#BotonStock{
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.icono-ayuda {
+    margin-left: 100px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    padding: 0;
+    margin-right: -30px;
+}
+#totales{
+    background-color: aqua;
+}
+
+/*DISEÑO DEL GROUPBOX*/
+.group-box {
+    height: 460px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+
+/*ICONOS*/
+.IconoInventario{
+    margin-left: 200px;
+    margin-top: -20px;
+    width: 200px;
+    height: 200px;
+}
+.IconoStock{
+    margin-left: 680px;
+    margin-top: -240px;
+    width: 200px;
+    height: 200px;
+}
+#BtnRepInventario{
+    margin-left: 230px;
+    justify-content: center;
+    white-space: nowrap; /* Evita el salto de línea del texto */
+
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 20px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+#BtnRepInventario:hover{
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}
+#BtnRepStock{
+    margin: 0;
+    margin-left: 720px;
+    position: relative; /* O absolute, según tu diseño */
+    top: -37px;
+    white-space: nowrap; /* Evita el salto de línea del texto */
+
+    background-color: #d97df2; /* Color de fondo */
+    border: 2px solid black;
+    color: rgb(0, 0, 0); /* Color del texto */
+    padding: 5px 20px; /* Espacio interno */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s, border 0.3s; /* Transición suave */
+}
+#BtnRepStock:hover{
+    background-color: #8c0097; /* Cambio de color de fondo al pasar el mouse */
+    border: 2px solid black; /* Cambio de color de los bordes (más oscuro) */
+    color: white;
+}
+
+/*DISEÑO DE IMAGENES INVENTARIO Y STOCK*/
+/* Estilo para las imágenes con transiciones */
+.icono-ayuda,
+.IconoInventario,
+.IconoStock {
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
+}
+
+/* Cambia la escala y la opacidad al pasar el cursor */
+.icono-ayuda:hover,
+.IconoInventario:hover,
+.IconoStock:hover {
+  transform: scale(1.1); /* Escala al 110% del tamaño original */
+  opacity: 0.8; /* Reduce la opacidad al 80% */
+  background-color: rgba(255, 255, 255, 0.3); /* Fondo translúcido */
+}
+
+/* Estilo base del group-box */
+.group-box {
+    border: 1px solid #ccc; /* Borde normal de 1px de grosor */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transiciones para el borde y la sombra */
+}
+  
+/* Borde brillante de color rosa solo al pasar el cursor */
+.group-box:hover {
+    border-color: #ff6ec7; /* Cambia el color del borde al pasar el cursor */
+    box-shadow: 0 0 10px rgba(255, 110, 199, 0.5); /* Agrega una sombra con efecto de brillo */
+}
+
+#LabelInventario{
+    position: relative;
+    top: -0px;
+    font-size: 20px;
+    margin-left: 250px;
+}
+
+#LabelStock{
+    position: relative;
+    top: -30px;
+    font-size: 20px;
+    margin-left: 750px;
+    position: relative;
+}
+
+
+
+@media (max-width: 800px) {
+
+    body {
+        display: block;
+        max-width: 100%;
+    }
+    .d-flex {
+        display: flex !important;
+        flex-wrap: wrap;
+    }
+
+    .d-flex > * {
+       flex: 1;
+       max-width: 100%;
+       box-sizing: border-box;
+    }
+      
+    .f{
+        display: block;
+        border: 0;
+        border-radius: 0;
+        margin: 0;
+        margin-left: 0;
+        min-width: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+    .group-box{
+        margin: 0;
+        height: 100vh; 
+        width: 100%;
+        max-width: 100%;
+    }
+
+    #BotonAyuda {
+        margin-left: 230px;
+        border: none;
+        padding: 0;
+        background-color: transparent;
+        margin-right: 10px;
+    }
+
+    .IconoInventario{
+        width: 150px;
+        height: 150px;
+        margin-left: -110px;
+        position: relative;
+        top: -100px;
+    }
+    .IconoStock{
+        width: 150px;
+        height: 150px;
+        margin-left: -170px;
+        position: relative;
+        top: 300px;
+    }
+    #BtnRepInventario {
+        margin-left: -160px;
+        margin-top: 210px; /* Ajusta según tus necesidades */
+    }
+    #BtnRepStock {
+        margin-left: -140px;
+        position: relative;
+        top: 300px; /* Ajusta según tus necesidades */
+    }
+    #LabelInventario{
+        margin-left: 150px;
+        top: -200px;
+        font-size: 20px;
+    }
+    #LabelStock{
+        margin-left: -90px;
+        top: 70px;
+        font-size: 20px;
+    }
+    .navbar-brand{
+        max-width: 100%;
+    }
+    .container{
+        margin: 0;
+        padding: 0;
+        margin-left: 0;
+    }
+}

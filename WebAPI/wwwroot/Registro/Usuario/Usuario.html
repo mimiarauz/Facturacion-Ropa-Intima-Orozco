@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuario</title>
+    <link rel="stylesheet" href="usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../imagenes/R.ico" >   
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+    <div class="fondo">
+        <form action="">
+            <div class="encabezado">
+                
+                <h2>Registro de usuario</h2>
+            </div>
+      <!--Menu de Daotos-->
+            <nav>
+                    <input type="checkbox" id="chek">
+                    <label for="chek" class="chekbtn">
+                     <img src="../../imagenes/menu (2).png" alt="Menu" id="me">
+                    </label>
+                <ul>
+                    <li><a id="active" href="../Datos/Categoria/Categoria.html" >Clasificación</a></li>
+                    <li><a class="active" id="active" href="#">Usuario</a></li>
+                    <li><a id="active" href="../Cliente/cliente.html">Clientes</a></li>
+                    <li><a id="active" href="../Proveedor/proveedor.html">Proveedores</a></li>
+                    <li><a id="active" href="../Producto/catalogo.html">Productos</a></li>
+                </ul>
+            </nav>
+            <a href="../../Hom/Home.html"><img src="../../imagenes/hogar.png" style="margin-left:90%;" alt="Home"></a>
+            <div class="contenido">
+                <div class="datos">
+                    <h2 class="c">Datos de Usuario</h2>
+                    <div class="txt">    
+                        <div class="bloque1">
+                            <input type="text" name="" class="t" id="txtcedula" placeholder="Cédula" maxlength="16" required>
+                            <input type="text" class="t" id="txtnombre" placeholder="Nombre" pattern="[a-zA-Z]+" required>  
+                            <input type="text" class="t" id="txtapellido" placeholder="Apellido" pattern="[a-zA-Z]+" required>   
+                        </div>
+                        <div class="bloque2">
+                            <input type="email" class="t" id="correo" placeholder="Correo Electrónico" required>  
+                        <select name="tipo" id="cbtipo" class="t" required>
+                            <option value="">Tipo Usuario</option>
+                            <option value="Administrador">Administrador</option >
+                            <option value="Vendedor">Vendedor</option>
+                          </select>  
+                          <select name="Estado" id="cbestado" class="t" required>
+                            <option value="" class="t">Estado</option>
+                            <option value="Activo">Activo</option >
+                            <option value="Inactivo">Inactivo</option>
+                        </select>   
+
+                        </div> 
+                        <div class="bloque3">
+                            <input type="text" name="" class="t" id="txtusuario" placeholder="Usuario" required minlength="3"> 
+                            <input type="password" name="" class="t" id="txtcontraseña" placeholder="Contraseña" required minlength="3"> 
+                        </div> 
+                    </div>
+                             
+                    <input type="text" id="raya1" disabled>
+                    <input type="text" id="raya2" disabled>
+                    <div class="central">
+                            
+                       <!--Creacion de tabla-->
+                       <div class="conteyner">
+                        <table id="tablausuario">
+                         <thead>
+                          <tr>
+                              <th>Id</th>
+                              <th>Nombre</th>
+                              <th>Apellido</th>
+                              <th>Cédula</th>
+                              <th>Usuario</th>
+                              <th>Tipo Usuario</th>
+                              <th>Estado</th>
+                              <th>Correo</th>
+                              <th>Editar</th>
+                              <th>Eliminar</th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                          <tr>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td></td>
+                              <td>Editar</td>
+                              <td>Eliminar</td>
+                          </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                           
+                            <!--Botones-->
+                           <div class="botones">
+                            <input type="button" class="b" id="nuevoBtn" value="Nuevo">
+                            <input type="button" class="b" id="guardarBtn" value="Guardar" id="btnGuardar" onclick="createUser(event)">
+                            <input type="button" class="b" id="actualizarBtn" value="Actualizar" onclick="updateUser()">
+                            <input type="button" class="b" id="cancelarBtn" value="Cancelar">
+                           </div>
+                   </div>
+                    
+                </div>
+             
+            </div>
+            
+        </form>
+        
+    </div>
+
+    <script>
+        
+
+        // Métodos para manejar operaciones CRUD de usuario
+        function getUser() {
+        // Realizar una solicitud GET para obtener
+        fetch('/CtrlUsuario/Get')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+        })
+        .catch(error => console.error('Error:', error));
+    }
+    
+
+    function getPersona() {
+        // Realizar una solicitud GET para obtener
+        fetch('/CtrlPersona/Get')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data);
+            // Puedes manejar la respuesta aquí, por ejemplo, mostrar los colores en la interfaz de usuario
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+
+    function createUser() {
+    // Obtener valores de los campos de entrada
+    const nombrePersona = document.getElementById('txtnombre').value;
+    const apellidoPersona = document.getElementById('txtapellido').value;
+    const cedula = document.getElementById('txtcedula').value;
+    const usuario1 = document.getElementById('txtusuario').value;
+        const contraseña = document.getElementById('txtcontraseña').value;
+            const tipoUsuario = document.getElementById('cbtipo').value;
+            const estado = document.getElementById('cbestado').value;
+            const email = document.getElementById('correo').value;
+    //Crear un objeto con los datos de persona y usuario
+
+            //validaciones
+         if (cedula === "") {
+             alert("Rellene el campo de Cédula");
+             e.preventDefault();
+             return; 
+         } 
+         else if (!validarCedula(cedula)) {
+            alert("La cédula no es válida");
+            e.preventDefault();
+            return;
+        }
+
+         if (nombrePersona === "") {
+            alert("Rellene el Nombre");
+            e.preventDefault();
+         } 
+         else if (nombrePersona.length > 10) {
+             alert("El nombre no puede tener más de 10 caracteres.");
+             e.preventDefault();
+         }
+
+         if(apellidoPersona==""){
+             alert("Rellene el Apellido")
+             e.preventDefault()
+         }
+         else if (apellidoPersona.length > 10) {
+             alert("El apellido no puede tener más de 10 caracteres.");
+         }
+
+         if(usuario1==""){
+             alert("Favor cree un usuario")
+             e.preventDefault()
+         }
+         else if(usuario1.length > 8)
+         {
+            alert("El usuario no puede tener más de 8 Caracteres");
+         }
+         
+         if(contraseña==""){
+             alert("Favor ingrese una contraseña")
+             e.preventDefault()
+         }
+         else if(contraseña.length > 5)
+         {
+            alert("La contraseña no puede tener más de 5 caracteres")
+         }
+
+        if(tipoUsuario==""){
+             alert("Seleccione un tipo de usuario")
+             e.preventDefault()
+         }
+         
+         if(estado==""){
+             alert("Elija un estado")
+             e.preventDefault()
+         }
+         
+         if (email === "") {
+            alert("Ingrese un correo electrónico");
+            e.preventDefault();
+            return;
+        } else if (!isValidEmail(email)) {
+            alert("Ingrese un correo electrónico válido.");
+            e.preventDefault();
+            return;
+        }
+
+    const data = {
+        id: 0,
+        nombrePersona: nombrePersona,
+        apellidoPersona: apellidoPersona,
+        cedula: cedula,
+        usuario: {
+            idUsuario: 0,
+            usuario1: usuario1,
+            contraseña: contraseña,
+            tipoUsuario: tipoUsuario,
+            estado: estado,
+            email: email
+        }
+    };
+    console.log(data);
+
+    // Realizar una solicitud POST para crear una nueva persona y usuario
+    fetch('/CtrlUsuario/Create', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(data)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log(data);
+
+        // Verificar si la respuesta indica éxito
+        if (data === true) 
+        {
+            console.log('Persona y usuario creados exitosamente');
+            updateCombinedTable();
+        } 
+        else 
+        {
+            console.error('Error al crear la persona y usuario');
+        }
+    })
+    .catch(error => console.error('Error en la solicitud:', error));
+    limpiarYDesactivar();
+    desactivarTodoExceptoNuevo();
+}
+
+
+        function updateUser() {
+           
+            const nombrePersona = document.getElementById('txtnombre').value;
+            const apellidoPersona = document.getElementById('txtapellido').value;
+            const cedula = document.getElementById('txtcedula').value;
+            const usuario1 = document.getElementById('txtusuario').value;
+            const tipoUsuario = document.getElementById('cbtipo').value;
+            const estado = document.getElementById('cbestado').value;
+            const email = document.getElementById('correo').value;
+    
+            const data = {
+                idUsuario: ID,
+                usuario1: usuario1,
+                tipoUsuario: tipoUsuario,
+                estado: estado,
+                email: email,
+                nombrePersona: nombrePersona,
+                apellidoPersona: apellidoPersona,
+                cedula: cedula
+            }
+            console.log(data);
+
+            $.ajax({
+                url: 'http://localhost:5282/CtrlUsuario/Update/' + ID + '?idUsuario=' + ID,
+                type: 'PUT',
+                contentType: 'application/json',
+                data: JSON.stringify(data),
+                success: function (data) {
+                    updateCombinedTable()
+                    console.log('Actualización exitosa:', data);
+                },
+                error: function (error) {
+                    console.error('Error en la actualización:', error);
+                }
+            });
+        
+        }
+    
+        
+        function removeUser(id) {
+   
+    fetch(`/CtrlUsuario/Remove/${id}`, {
+        method: 'DELETE'
+    })
+    .then(response => {
+        // Verificar si la respuesta fue exitosa
+        if (!response.ok) {
+            throw new Error('La respuesta del servidor no fue exitosa');
+        }
+
+        // Convertir la respuesta a JSON
+        return response.json();
+    })
+    .then(data => {
+        console.log(data);
+
+        // Verificar si la respuesta indica éxito
+        if (data.success === true) {
+            console.log('Persona y usuario eliminados exitosamente');
+            // Actualizar la tabla con los datos actualizados
+            updateCombinedTable();
+        } else {
+            console.error('Error al eliminar la persona y usuario');
+        }
+    })
+    .catch(error => console.error('Error en la solicitud:', error.message || error));
+    limpiarYDesactivar();
+}
+
+
+        // Función para actualizar la tabla con los datos de usuario y persona
+        function updateCombinedTable() {
+    // Obtener la referencia a la tabla
+    const tableBody = document.querySelector('.conteyner tbody');
+
+    // Limpiar el contenido actual de la tabla
+    tableBody.innerHTML = '';
+
+    // Realizar una solicitud GET para obtener los datos de ambas tablas
+    Promise.all([
+        fetch('/CtrlPersona/GetWithUsers').then(response => response.json()),
+        fetch('/CtrlUsuario/Get').then(response => response.json())
+    ])
+    .then(([dataPersona, dataUsuario]) => {
+        console.log(dataPersona);
+        console.log(dataUsuario);
+
+        // Iterar sobre los datos y agregar filas a la tabla
+        const maxRows = Math.max(dataPersona.length, dataUsuario.length);
+        for (let i = 0; i < maxRows; i++) {
+            const row = document.createElement('tr');
+
+            // Datos de la tabla Persona
+            const persona = dataPersona[i] || {};
+            row.innerHTML += `
+                <td>${persona.id}</td>
+                <td>${persona.nombrePersona}</td>
+                <td>${persona.apellidoPersona}</td>
+                <td>${persona.cedula}</td>
+            `;
+
+            // Datos de la tabla Usuario (agregar celdas vacías si no hay datos)
+            const usuario = dataUsuario[i] || {};
+            row.innerHTML += `
+                <td>${usuario.usuario1 || ''}</td>
+                <td>${usuario.tipoUsuario || ''}</td>
+                <td>${usuario.estado || ''}</td>
+                <td>${usuario.email || ''}</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+            `;
+
+            tableBody.appendChild(row);
+        }
+    })
+    .catch(error => console.error('Error:', error));
+}
+ 
+        var ID;
+        // Función para manejar el evento dblclick
+        function manejarDobleClic(event)
+        {
+            // Verificar si el clic fue en la columna "Eliminar"
+            if (event.target.textContent.toLowerCase() === 'eliminar') 
+            {
+                var fila = event.target.parentNode;
+                ID = fila.cells[0].innerText;
+    
+                var confirmacion = window.confirm('¿Estás seguro de que deseas eliminar este Usuario?');
+
+             // Si el usuario hace clic en "Aceptar" en el cuadro de diálogo de confirmación, eliminar la marca
+             if (confirmacion) {
+                 removeUser(ID);
+             }
+            }
+
+            // Verificar si el clic fue en la columna "Eliminar"
+            if (event.target.textContent.toLowerCase() === 'editar') 
+            {
+                var fila = event.target.parentNode;
+                ID = fila.cells[0].innerText;
+
+                document.getElementById('txtnombre').value=fila.cells[1].innerText;
+                document.getElementById('txtapellido').value=fila.cells[2].innerText;
+                document.getElementById('txtcedula').value=fila.cells[3].innerText;
+                document.getElementById('txtusuario').value=fila.cells[4].innerText;
+                document.getElementById('cbtipo').value=fila.cells[5].innerText;
+                document.getElementById('cbestado').value=fila.cells[6].innerText;
+                document.getElementById('correo').value=fila.cells[7].innerText;
+                console.log(ID);
+
+
+                // Validaciones
+                {
+                    // Habilitar campos de entrada Cliente
+             document.getElementById('txtcedula').disabled = false;
+             document.getElementById('txtnombre').disabled = false;
+             document.getElementById('txtapellido').disabled = false;
+             document.getElementById('correo').disabled = false;
+             document.getElementById('cbtipo').disabled = false;
+             document.getElementById('cbestado').disabled = false;
+             document.getElementById('txtusuario').disabled = false;
+             document.getElementById('txtcontraseña').disabled = false;
+
+             // Desactivar botones "Nuevo" y "Guardar" Cliente
+             document.getElementById('nuevoBtn').disabled = true;
+             document.getElementById('nuevoBtn').style.opacity = '0.5';
+             document.getElementById('nuevoBtn').style.cursor = 'not-allowed';
+
+             document.getElementById('guardarBtn').disabled = true;
+
+             // Activar botones "Actualizar" y "Cancelar" Cliente
+             document.getElementById('actualizarBtn').disabled = false;
+             document.getElementById('actualizarBtn').style.opacity = '1';
+             document.getElementById('actualizarBtn').style.cursor = 'pointer';
+
+             document.getElementById('cancelarBtn').disabled = false;
+             document.getElementById('cancelarBtn').style.opacity = '1';
+             document.getElementById('cancelarBtn').style.cursor = 'pointer';
+                }
+            }
+        }
+
+        document.getElementById('actualizarBtn').addEventListener('click', function() {
+        limpiarYDesactivar();
+        desactivarTodoExceptoNuevo();
+    });
+    
+        // Obtener la tabla por su ID
+        var tabla = document.getElementById('tablausuario');
+    
+        // Asignar el manejador de eventos dblclick a la tabla
+        tabla.addEventListener('dblclick', manejarDobleClic);
+        
+        // Llamar a updateCombinedTable al cargar la página
+        window.onload = function() {
+            desactivarTodoExceptoNuevo();
+            updateCombinedTable();
+            limpiarYDesactivar();
+            console.log(ID);
+        };
+
+
+        // VALIDACIONES
+        {
+            //VALIDACIONES PROVEEDOR
+
+     // Evento input para el campo de cédula
+     document.getElementById('txtcedula').addEventListener('input', function (event) {
+        // Obtener el valor actual de la cédula
+        let cedula = event.target.value;
+
+        // Eliminar cualquier guión existente
+        cedula = cedula.replace(/-/g, '');
+
+        // Verificar que la cédula no tenga más de 16 caracteres
+        if (cedula.length > 16) {
+            cedula = cedula.substring(0, 16);
+        }
+
+        // Aplicar formato con guiones
+        if (cedula.length > 3 && cedula.length <= 9) {
+            cedula = cedula.substring(0, 3) + '-' + cedula.substring(3, 9);
+        } 
+        else if (cedula.length > 9 && cedula.length <= 15) {
+            cedula = cedula.substring(0, 3) + '-' + cedula.substring(3, 9) + '-' + cedula.substring(9);
+        }
+
+        // Asignar el valor formateado de vuelta al campo de cédula
+        event.target.value = cedula;
+    });
+
+    // Evento keypress para el campo de cédula (para permitir solo una letra al final)
+    document.getElementById('txtcedula').addEventListener('keypress', function (event) {
+        // Obtener el valor actual de la cédula
+        let cedula = event.target.value;
+
+        // Obtener el carácter ingresado en el evento keypress
+        const charCode = event.charCode;
+        const char = String.fromCharCode(charCode);
+
+        // Permitir solo una letra al final
+        if (/^[a-zA-Z]$/.test(char) && cedula.length === 15) {
+            // Permitir la entrada de la letra
+        } 
+        else if (cedula.length >= 16) {
+            // Evitar que se ingresen más caracteres después de la letra
+            event.preventDefault();
+        }
+    });
+
+    function validarCedula(cedula) {
+        // Verificar que la cédula tenga 16 caracteres (15 números y 1 letra)
+        if (cedula.length !== 16) {
+            return false;
+        }
+   
+        // Verificar que el último carácter sea una letra
+        const letra = cedula.charAt(15);
+        if (!/^[a-zA-Z]$/.test(letra)) {
+            return false;
+        }
+   
+        return true;
+    }
+
+    function isValidEmail(email) {
+        // Utiliza una expresión regular más completa para validar correos electrónicos
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+    }
+
+    // Evento keypress para el campo de nombre y apellido (permitir solo letras)
+    document.getElementById('txtnombre').addEventListener('keypress', function (event) {
+        const charCode = event.charCode;
+        const char = String.fromCharCode(charCode);
+
+        if (!/^[a-zA-Z\s]+$/.test(char)) {
+            event.preventDefault();
+        }
+    });
+
+    document.getElementById('txtapellido').addEventListener('keypress', function (event) {
+        const charCode = event.charCode;
+        const char = String.fromCharCode(charCode);
+
+        if (!/^[a-zA-Z\s]+$/.test(char)) {
+            event.preventDefault();
+        }
+    });
+
+     // Función para desactivar todos los campos, tabla y botones excepto "Nuevo"
+     function desactivarTodoExceptoNuevo() {
+        console.log('Desactivando todo excepto Nuevo');
+        // Desactivar campos de entrada
+        const campos = document.querySelectorAll('.t');
+        campos.forEach(campo => {
+            campo.disabled = true;
+        });
+
+        // Desactivar botones "Guardar", "Actualizar" y "Cancelar"
+        const botones = document.querySelectorAll('.b');
+        botones.forEach(boton => {
+            if (boton.value !== 'Nuevo') {
+                boton.disabled = true;
+                boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                boton.style.cursor = 'not-allowed';
+            } 
+            else {
+                // Activar botón "Nuevo"
+                boton.disabled = false;
+                boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                boton.style.cursor = 'pointer';
+            }
+        });
+    }
+
+     function activarNuevo() {
+         console.log('Limpiando y desactivando');
+         // Activar campos de entrada
+         const campos = document.querySelectorAll('.t');
+         campos.forEach(campo => {
+         campo.disabled = false;
+     });
+
+         // Activar tabla (haciéndola interactiva)
+         const tabla = document.getElementById('tablausuario');
+         tabla.style.pointerEvents = 'auto';
+
+         // Activar botones "Guardar" y "Cancelar"
+         const botonesGuardarCancelar = document.querySelectorAll('.b[value="Guardar"], .b[value="Cancelar"]');
+         botonesGuardarCancelar.forEach(boton => {
+             if (boton.value === 'Guardar' || boton.value === 'Cancelar') {
+                 boton.disabled = false;
+                 boton.style.opacity = '1';  // Restaurar la opacidad a su valor original
+                 boton.style.cursor = 'pointer';
+            } 
+             else {
+                 // Desactivar botones "Nuevo" y "Actualizar"
+                 boton.disabled = true;
+                 boton.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+                 boton.style.cursor = 'not-allowed';
+             }
+         });
+
+         // Desactivar botón "Nuevo"
+         const botonNuevo = document.querySelector('.b[value="Nuevo"]');
+         botonNuevo.disabled = true;
+         botonNuevo.style.opacity = '0.5';  // Puedes ajustar este valor según lo desees
+         botonNuevo.style.cursor = 'not-allowed';
+     }
+
+     // Función para manejar el clic en el botón "Cancelar" después de editar
+     document.getElementById('cancelarBtn').addEventListener('click', function() {
+         limpiarYDesactivar();
+     });
+
+     function limpiarYDesactivar() {
+         console.log('Limpiando y desactivando');
+         document.getElementById('txtcedula').value = "";
+         document.getElementById('txtnombre').value = "";
+         document.getElementById('txtapellido').value = "";
+         document.getElementById('correo').value = "";
+         document.getElementById('cbtipo').value = "";
+         document.getElementById('cbestado').value = "";
+         document.getElementById('txtusuario').value = "";
+         document.getElementById('txtcontraseña').value = "";
+    }
+     // Obtener la tabla por su ID
+     var tabla = document.getElementById('tablausuario');
+
+     // Asignar el manejador de eventos dblclick a la tabla
+     tabla.addEventListener('dblclick', manejarDobleClic);
+
+     function desactivarElementos(desactivar) {
+         // Desactivar campos de entrada
+         const campos = document.querySelectorAll('.t');
+         campos.forEach(campo => {
+             campo.disabled = desactivar;
+         });
+         
+         const cbtipo = document.getElementById('cbtipo');
+         cbtipo.disabled = desactivar;
+         
+         const cbestado = document.getElementById('cbestado');
+         cbestado.disabled = desactivar;
+
+        // Desactivar botones (haciéndolos no interactivos y cambiando su estilo), excepto el botón "Nuevo"
+         const botones = document.querySelectorAll('.b');
+         botones.forEach(boton => {
+             boton.disabled = desactivar;
+         });
+     }
+
+   
+     document.getElementById('nuevoBtn').addEventListener('click', function () {
+         // Llamar a la función para desactivar y activar elementos
+         activarNuevo(false);
+     });
+
+     document.getElementById('cancelarBtn').addEventListener('click', function () {
+         desactivarTodoExceptoNuevo(true);
+     });
+
+     // Función para manejar el clic en el botón "Cancelar" después de editar
+     document.getElementById('cancelarBtn').addEventListener('click', function() {
+         limpiarYDesactivar();
+     });
+
+     
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/R.ico" >
+</head>
+<body>
+    <section>
+        <div class="contenedor">
+             <div class="formulario">
+                <form action="#">
+                    <h2 id="Inicio">Iniciar Sesión</h2>
+                    <div class="centro">
+                        <img src="../imagenes/u-removebg-preview.png" alt="">
+                        <input type="text" id="txtusuario">
+                        <label for="#" id="Inicio">Usuario</label>
+                    </div>
+
+                    <div class="centro">
+                        <img src="../imagenes/c-removebg-preview.png" id="c" alt="">
+                        <input type="password" id="txtcontraseña" required>
+                        <label for="#" id="Inicio">Contraseña</label>
+                    </div>
+
+                    <div class="olvidar">
+                        <label for="#">
+                            <a href="Rcontraseña/rcontraseña.html" id="Inicio">¿Olvidó su contraseña?</a>
+                        </label>
+                    </div>
+                </form>
+                <div>
+                    <button id="Inicio" onclick="AutenticarUser()">Acceder</button>
+                    <div class="recuperar"></div>
+                </div>
+             </div>
+        </div>
+    </section>
+
+    <script>
+    
+        // function AutenticarUser() {
+        // var usuario = document.getElementById('txtusuario').value;
+        // var contrasena = document.getElementById('txtcontraseña').value;
+    
+        // fetch( `/CtrlUsuario/Autenticar/${usuario}/${contrasena} `)
+        //     .then(response => {
+        //         if (!response.ok) {
+        //             throw new Error( `HTTP error! Status: ${response.status}`);
+        //         }
+        //         return response.json();
+        //     })
+        //     .then(json => {
+               
+        //   // Verificamos el estado y el tipo
+        //   var estado = json['estado'];
+        //   var tipo = json['tipoUsuario'];
+        //   var nombre = json['nombrePersona']
+    
+        //  //VALIDA EL TIPO DE USUARIO
+        //   if (estado === "Activo" && tipo === "Administrador") {
+            
+        //    // Autenticación exitosa
+        //      alert("¡Bienvenido!" + " " + usuario);
+        //      window.location.href = "../Hom/home.html";
+        //     } else if (estado === "Activo" && tipo === "Vendedor") {
+              
+        //      alert("¡Bienvenido!" + " " + usuario);
+        //     //llama al home
+        //       window.location.href = "../Hom/home.html";
+    
+        //     // Desactivar la ventana de registro
+        //        document.addEventListener('DOMContentLoaded', function() {
+        //       // Desactivar el enlace
+        //        var miEnlace = document.getElementById('ventanaRegistro');
+        //        miEnlace.removeAttribute('href');
+        //         });
+      
+        //         document.addEventListener('DOMContentLoaded', function() {
+        //       // Desactivar el enlace
+        //        var miEnlace = document.getElementById('inventario');
+        //        miEnlace.removeAttribute('href');
+        //         });
+    
+        //     } 
+        //     else 
+        //     {
+        //         alert("Usuario inactivo");
+        //     }
+    
+        //     })
+        //     .catch(error => {
+        //         // Maneja de error de contrasena
+        //         alert("Usuario o contraseña incorrecta");
+        //     });
+        // }
+
+        function AutenticarUser() 
+        {
+            var usuario = document.getElementById('txtusuario').value;
+            var contrasena = document.getElementById('txtcontraseña').value;
+            fetch(`/CtrlUsuario/Autenticar/${usuario}/${contrasena}`)
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+                return response.json();
+            })
+            .then(json => {
+                // Imprime el objeto JSON en la consola para depuración
+                console.log(json);
+            
+                // Almacenar la información del usuario en localStorage
+                localStorage.setItem('id', json.id);
+                localStorage.setItem('usuario', json.usuario1);
+                localStorage.setItem('tipoUsuario', json.tipoUsuario);
+                localStorage.setItem('nombrePersona', json.nombrePersona);
+                localStorage.setItem('estado', json.estado);
+                localStorage.setItem('cedula', json.cedula);
+            
+                var estado = json.estado;
+                var tipo = json.tipoUsuario;
+                var nombrePersona = json.nombrePersona;
+                
+                //VALIDA EL TIPO DE USUARIO
+                if (estado === "Activo" && tipo === "Administrador") {
+                    alert("¡Bienvenido!" + " " + nombrePersona);
+                    window.location.href = "../Hom/home.html";
+            } else if (estado === "Activo" && tipo === "Vendedor") {
+              
+             alert("¡Bienvenido!" + " " + nombrePersona);
+             
+              window.location.href = "../Hom/home.html";
+    
+            // Desactivar la ventana de registro
+               document.addEventListener('DOMContentLoaded', function() {
+              // Desactivar el enlace
+               var miEnlace = document.getElementById('ventanaRegistro');
+               miEnlace.removeAttribute('href');
+                });
+      
+                document.addEventListener('DOMContentLoaded', function() {
+              // Desactivar el enlace
+               var miEnlace = document.getElementById('inventario');
+               miEnlace.removeAttribute('href');
+                });
+    
+            } 
+            else 
+            {
+                alert("Usuario inactivo");
+            }
+    
+            })
+            .catch(error => {
+                // Maneja de error de contrasena
+                alert("Usuario o contraseña incorrecta");
+            });
+        }
+
+    </script>
+</body>
+</html>

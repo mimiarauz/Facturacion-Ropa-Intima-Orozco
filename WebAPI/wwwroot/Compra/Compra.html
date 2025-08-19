@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compra</title>
+    <link rel="stylesheet" href="Compra.css">
+    <link rel="stylesheet" href="Facturacion.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <link rel="icon" href="../imagenes/R.ico">
+</head>
+
+<body>
+    <div class="f">
+        <nav class="Facturacion">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/Compra.png" alt="Logo" width="35" height="35"
+                        class="d-inline-block align-text-top">
+                    Compras
+                </a>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6" id="Contenedor2">
+                    <!-- Botón "Nueva Factura" y Selector de Fecha -->
+                    <div class="d-flex date-container justify-content-start mt-3" id="nf">
+                        <button class="btn btn-primary" id="BotonFactura">Nueva Compra</button>
+                        <input type="text" id="codigoCod"
+                            style="background-color: transparent; border: none;width: 30px; color: transparent;">
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <!-- No. Factura, TextBox y Botón con espacio horizontal -->
+                    <div class="d-flex justify-content-start mt-3" id="Ayuda">
+                        <label id="TextoFactura">No. Compra</label>
+                        <input type="text" class="form-control ml-2 small-input" id="NoFactura">
+                        <button class="btn btn-primary ml-2" id="BotonAyuda">
+                            <a href="../../Hom/Home.html" class="icono-ayuda"> <img src="../imagenes/hogar.png"
+                                    alt="Icono de ayuda"></a>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Datos del cliente -->
+            <div class="row mt-3">
+
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Cliente">Datos del Proveedor</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3" id="c">
+                                <div>
+                                    <label for="nombre" class="l">Nombre:</label>
+                                    <select name="nombre" id="nombre" class="form-control" required>
+                                        <option value=""></option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <label for="Apellido" class="l">Apellido:</label>
+                                    <input type="text" class="form-control" id="apellido" name="apellido">
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <label for="Fecha" id="LabelFecha">Fecha:</label>
+                    <input type="date" class="form-control ml-2" id="Fecha">
+                </div>
+
+                <div>
+                    <fieldset class="group-box">
+                        <legend id="DatosProducto">Datos de Compra y Venta</legend>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="codigo" class="l">Código:</label>
+                                <select name="codigo" id="codigo" class="form-control" required>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label for="distintivo" class="l">Distintivo:</label>
+                                <input type="text" class="form-control" id="distintivo" name="distintivo">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="categoria" class="l">Categoría:</label>
+                                <input type="text" class="form-control" id="categoria" name="categoria">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="marca" class="l">Marca:</label>
+                                <input type="text" class="form-control" id="marca" name="marca">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="color" class="l">Color:</label>
+                                <input type="text" class="form-control" id="color" name="color">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="talla" class="l">Talla:</label>
+                                <input type="text" class="form-control" id="talla" name="talla">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <label for="cantidad" class="l">Cantidad:</label>
+                                <input type="text" class="form-control" id="cantidad" name="cantidad">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="precio" class="l">Precio Compra:</label>
+                                <input type="text" class="form-control" id="precioC" name="precio">
+                            </div>
+                            <div class="col-md-3">
+                                <label for="precio" class="l">Precio Venta:</label>
+                                <input type="text" class="form-control" id="precioV" name="precio">
+                            </div>
+                            <div class="col-md-3" id="BotonAgregarCancelar">
+                                <button id="BotonAgregar" onclick="agregar()">Agregar +</button>
+                                <button id="BotonCancelar" onclick="limpiarcancelar()">Cancelar</button>
+                                <button class="btn btn-primary ml-2" onclick="actualizarTabla()" id="BotonActualizar">
+                                    <img src="../imagenes/iconoActualizar.png" alt="Icono de actualizar"
+                                        class="icono-ayuda">
+                                </button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <!-- Creación de tabla -->
+                <div class="col-sm-12 col-md-12">
+                    <div class="table-responsive custom-table">
+                        <table class="table table-bordered" id="miTabla">
+                            <thead>
+                                <tr id="encabezado">
+                                    <th>Id</th>
+                                    <th>Fecha</th>
+                                    <th>Código</th>
+                                    <th>Categoría</th>
+                                    <th>Marca</th>
+                                    <th>Color</th>
+                                    <th>Distintivo</th>
+                                    <th>Talla</th>
+                                    <th>Cantidad</th>
+                                    <th>Precio Compra</th>
+                                    <th>Precio Venta</th>
+                                    <th>Editar</th>
+                                    <th>Eliminar</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Agregar un fieldset para los totales -->
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box" id="Totales">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="subtotal" id="LabelTotales">Subtotal:</label>
+                                <input type="text" class="form-control" id="subtotal" name="subtotal">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="iva" id="LabelTotales">IVA:</label>
+                                <input type="text" class="form-control" id="iva" name="iva">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="total" id="LabelTotales">Total:</label>
+                                <input type="text" class="form-control" id="total" name="total">
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div>
+                        <button class="btn btn-primary ml-2" id="BotonActualizar1">
+                            <img src="../imagenes/Guardar.png" alt="Icono de Guardar" class="Guardar">
+                            <label for="Guardar" class="LabelGuardar"
+                                onclick="createCompra(), deshabilitarControles()">Guardar</label>
+                        </button>
+                        <button class="btn btn-primary ml-2" id="BotonActualizar1">
+                            <img src="../imagenes/Imprimir.png" alt="Icono de Imprimir" class="Imprimir">
+                            <label for="Imprimir" class="LabelImprimir" id="btnImprimir">Imprimir
+                            </label>
+                        </button>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+
+
+            let dataProveedor, dataIdProducto;
+
+            // COMBO BOX
+            {
+                function getDatos() {
+                    // Realizar solicitudes fetch para obtener datos
+                    Promise.all([
+                        fetch('/CtrlPersona/GetWithProveedores').then(response => response.json()),
+                        fetch('/CtrlProducto/Get').then(response => response.json())
+                    ])
+                        .then(([proveedor, cod]) => {
+                            // Asignar los datos a las variables globales
+                            dataProveedor = proveedor;
+                            dataIdProducto = cod;
+
+                            // Llenar los combobox con los datos obtenidos
+                            fillComboBox('nombre', proveedor, 'id', 'nombrePersona');
+                            fillComboBox('codigo', cod, 'idProducto', 'codProducto');
+                        })
+                        .catch(error => console.error('Error al obtener datos:', error));
+                }
+
+
+                // COMBOS
+                function fillComboBox(comboBoxId, data, valueField, textField) {
+                    const comboBox = document.getElementById(comboBoxId);
+                    // Limpiar combobox
+                    comboBox.innerHTML = "";
+
+                    // Agregar una opción por defecto
+                    const defaultOption = document.createElement("option");
+                    defaultOption.text = "Seleccionar...";
+                    comboBox.add(defaultOption);
+
+                    // Agregar opciones con los datos obtenidos
+                    data.forEach(item => {
+                        const option = document.createElement("option");
+                        option.value = item[valueField];
+                        option.text = item[textField];
+                        comboBox.add(option);
+                    });
+                }
+            }
+
+
+            // COMBO PROVEEDOR
+            {
+                const nombreComboBox = document.getElementById('nombre');
+                nombreComboBox.addEventListener('change', function () {
+                    const selectednombre = this.value; // Obtener name seleccionado
+                    fillClientDetails(selectednombre);
+                });
+
+                function fillClientDetails(selectednombre) {
+                    // Realizar una solicitud fetch para obtener los detalles del cliente
+                    fetch(`/CtrlProveedor/GetProveedorDetails?id=${selectednombre}`)
+                        .then(response => response.json())
+                        .then(proveedorDetails => {
+                            console.log(proveedorDetails);
+                            if (proveedorDetails) {
+                                document.getElementById('apellido').value = proveedorDetails.apellidoPersona;
+                            } else {
+                                // Limpiar el input si no se encuentran detalles del proveedor
+                                document.getElementById('apellido').value = '';
+                            }
+                        })
+                        .catch(error => console.error('Error al obtener detalles del proveedor:', error));
+                }
+            }
+
+
+            // COMBO CODIGO
+            {
+                // Agregar un evento de cambio al combobox de códigos
+                const codComboBox = document.getElementById('codigo');
+                codComboBox.addEventListener('change', function () {
+                    const selectedCod = this.value; // Obtener el código seleccionado
+                    fillProductDetails(selectedCod);
+                });
+                function fillProductDetails(selectedCod) {
+                    // Realizar una solicitud fetch para obtener los detalles del producto
+                    fetch(`/CtrlProducto/GetDetails?id=${selectedCod}`)
+                        .then(response => response.json())
+                        .then(productDetails => {
+                            console.log(productDetails);
+                            // Verificar si se encontraron detalles del producto
+                            if (productDetails) {
+                                document.getElementById('distintivo').value = productDetails.distintivo;
+                                document.getElementById('categoria').value = productDetails.categoria;
+                                document.getElementById('marca').value = productDetails.marca1;
+                                document.getElementById('color').value = productDetails.color1;
+                                document.getElementById('talla').value = productDetails.talla1;
+                                document.getElementById('precioV').value = productDetails.precioVenta;
+                                document.getElementById('codigoCod').value = productDetails.codigo;
+                            } else {
+                                // Limpiar los inputs si no se encuentran detalles del producto
+                                document.getElementById('Stock').value = '';
+                                document.getElementById('distintivo').value = '';
+                                document.getElementById('categoria').value = '';
+                                document.getElementById('marca').value = '';
+                                document.getElementById('color').value = '';
+                                document.getElementById('talla').value = '';
+                                document.getElementById('precioV').value = '';
+                                document.getElementById('codigoCod').value = '';
+                            }
+                        })
+                        .catch(error => console.error('Error al obtener detalles del producto:', error));
+                }
+            }
+
+
+            // OBTENER ID
+            function getIdCompra() {
+                fetch('/CtrlCompra/Get')
+                    .then(response => response.json())
+                    .then(data => {
+                        // Verificar si hay compras
+                        if (data && data.length > 0) {
+                            // Obtener el ID más alto usando Math.max
+                            const maxId = Math.max(...data.map(item => item.idCompras));
+
+                            // Incrementar el ID en 1
+                            const nuevoId = maxId + 1;
+
+                            // Mostrar el ID en el input de texto
+                            document.getElementById('NoFactura').value = nuevoId;
+                        } else {
+                            console.error('No se encontraron compras.');
+                        }
+                    })
+            }
+
+
+            // AGREGAR DATOS
+            function agregar() {
+                const camposObligatorios = ['Fecha', 'nombre', 'codigo', 'cantidad', 'precioC'];
+
+                for (const campoId of camposObligatorios) {
+                    const campo = document.getElementById(campoId);
+
+                    if (campo.value.trim() === '') {
+                        alert(`El campo ${campoId} no puede estar vacío.`);
+                        return false;
+                    }
+
+                    if (campoId === 'cantidad') {
+                        const cantidadValue = parseInt(campo.value);
+
+                        if (isNaN(cantidadValue) || cantidadValue < 1) {
+                            alert(`El campo ${campoId} debe ser un número entero mayor a 1`);
+                            return false;
+                        }
+                    }
+
+                    if (campoId === 'precioC' && isNaN(parseFloat(campo.value))) {
+                        alert(`El campo ${campoId} debe ser un número.`);
+                        return false;
+                    }
+                }
+
+                // Obtener los valores de los campos   
+                const precioCompra = parseFloat(document.getElementById("precioC").value);
+                const precioVenta = parseFloat(document.getElementById("precioV").value);
+
+                // Verificar si el precio de compra es mayor al precio de venta
+                if (precioCompra > precioVenta) {
+
+                    alert("Error: El precio de compra no puede ser mayor al precio de venta.");
+                    return
+                }
+
+                var id, fecha, cod, cate, marc, color, distintivo, talla, cant, precioC, precioV;
+
+                id = document.getElementById("codigo").value;
+                fecha = document.getElementById("Fecha").value;
+                cod = document.getElementById("codigoCod").value;
+                cate = document.getElementById("categoria").value;
+                marc = document.getElementById("marca").value;
+                color = document.getElementById("color").value;
+                distintivo = document.getElementById("distintivo").value;
+                talla = document.getElementById("talla").value;
+                cant = parseInt(document.getElementById("cantidad").value);
+                precioC = parseFloat(document.getElementById("precioC").value);
+                precioV = parseFloat(document.getElementById("precioV").value);
+
+                let tabla = document.getElementById("miTabla");
+                let fila = tabla.insertRow();
+
+                let celdaid = fila.insertCell(0);
+                let celdafecha = fila.insertCell(1);
+                let celdacod = fila.insertCell(2);
+                let celdacate = fila.insertCell(3);
+                let celdamarc = fila.insertCell(4);
+                let celdacolor = fila.insertCell(5);
+                let celdadistintivo = fila.insertCell(6);
+                let celdatalla = fila.insertCell(7);
+                let celdacant = fila.insertCell(8);
+                let celdaprecioc = fila.insertCell(9);
+                let celdapreciov = fila.insertCell(10);
+                let celdaeditar = fila.insertCell(11);
+                let celdaeliminar = fila.insertCell(12);
+
+                celdaid.id = "id_" + id;
+                celdaid.innerHTML = id;
+                celdafecha.innerHTML = fecha;
+                celdacod.innerHTML = cod;
+                celdacate.innerHTML = cate;
+                celdamarc.innerHTML = marc;
+                celdacolor.innerHTML = color;
+                celdadistintivo.innerHTML = distintivo;
+                celdatalla.innerHTML = talla;
+                celdacant.innerHTML = cant;
+                celdaprecioc.innerHTML = precioC;
+                celdapreciov.innerHTML = precioV;
+                celdaeditar.innerText = "Editar";
+                celdaeliminar.innerText = "Eliminar";
+
+                calcularTotales();
+            }
+
+
+            // ACTUALIZAR
+            function actualizarTabla() {
+                var codigo = document.getElementById("codigo").value;
+                var tabla = document.getElementById("miTabla");
+                for (var i = 1; i < tabla.rows.length; i++) {
+                    if (tabla.rows[i].cells.length >= 3 && tabla.rows[i].cells[0].textContent === codigo) {
+                        tabla.rows[i].cells[2].textContent = document.getElementById("codigoCod").value; // 2
+                        tabla.rows[i].cells[3].textContent = document.getElementById("categoria").value; // 3
+                        tabla.rows[i].cells[4].textContent = document.getElementById("marca").value;
+                        tabla.rows[i].cells[5].textContent = document.getElementById("color").value; //5
+                        tabla.rows[i].cells[6].textContent = document.getElementById("distintivo").value; // 6
+                        tabla.rows[i].cells[7].textContent = document.getElementById("talla").value; //7
+                        tabla.rows[i].cells[8].textContent = document.getElementById("cantidad").value; // 8
+                        tabla.rows[i].cells[9].textContent = document.getElementById("precioC").value; // 9
+                        tabla.rows[i].cells[10].textContent = document.getElementById("precioV").value;
+                        calcularTotales();
+                        alert('Registro actualizado');
+                        document.getElementById("codigo").disabled = false;
+                        break;
+                    }
+                }
+            }
+
+
+            // EVENTO ONCLICK
+            function manejarDobleClic(event) {
+                if (event.target.textContent.toLowerCase() === 'eliminar') {
+                    // Obtener la fila en la que se hizo clic
+                    var fila = event.target.parentNode;
+                    fila.remove();
+                    calcularTotales();
+
+                    alert("Registro eliminado");
+                }
+
+                if (event.target.textContent.toLowerCase() === 'editar') {
+
+                    var fila = event.target.parentNode;
+
+                    document.getElementById("codigo").value = fila.cells[0].textContent;
+                    document.getElementById("categoria").value = fila.cells[3].textContent;
+                    document.getElementById("marca").value = fila.cells[4].textContent;
+                    document.getElementById("color").value = fila.cells[5].textContent;
+                    document.getElementById("distintivo").value = fila.cells[6].textContent;
+                    document.getElementById("talla").value = fila.cells[7].textContent;
+                    document.getElementById("cantidad").value = fila.cells[8].textContent;
+                    document.getElementById("precioC").value = fila.cells[9].textContent;
+                    document.getElementById("precioV").value = fila.cells[10].textContent;
+
+                    // Validaciones
+                    {
+                        document.getElementById("codigo").disabled = true;
+                        document.getElementById("distintivo").disabled = true;
+                        document.getElementById("categoria").disabled = true;
+                        document.getElementById("marca").disabled = true;
+                        document.getElementById("color").disabled = true;
+                        document.getElementById("talla").disabled = true;
+                        document.getElementById("precioV").disabled = true;
+                        document.getElementById("BotonAgregar").disabled = true;
+                        document.getElementById("BotonActualizar").disabled = false;
+                    }
+                }
+            }
+
+
+            // AGREGAR EVENTO ONCLICK
+            {
+                var tabla = document.getElementById('miTabla');
+                tabla.addEventListener('dblclick', manejarDobleClic);
+            }
+
+
+            // CALCULAR TOTALES
+            function calcularTotales() {
+                let subtotal = 0;
+                let iva = 0;
+                let totalgeneral = 0;
+
+                for (let i = 1; i < tabla.rows.length; i++) {
+
+                    let CantCCell = tabla.rows[i].cells[8];
+                    let PrecioCCell = tabla.rows[i].cells[9];
+
+                    if (CantCCell && PrecioCCell && CantCCell.textContent && PrecioCCell.textContent) {
+                        let CantC = parseFloat(CantCCell.textContent.trim()) || 0;
+                        let PrecioC = parseFloat(PrecioCCell.textContent.trim()) || 0;
+
+                        if (!isNaN(CantC) && !isNaN(PrecioC)) {
+                            // Calcular los totales
+                            subtotal += parseFloat((CantC * PrecioC).toFixed(2));
+                        }
+                    }
+                }
+
+                // Calcular IVA y total general
+                iva = parseFloat((subtotal * 0.15).toFixed(2));
+                totalgeneral = parseFloat((subtotal + iva).toFixed(2));
+
+                document.getElementById("subtotal").value = subtotal.toString();
+                document.getElementById("iva").value = iva.toString();
+                document.getElementById("total").value = totalgeneral.toString();
+            }
+
+
+            // COMPRA
+            function createCompra() {
+
+                // Obtener valores de los campos de entrada
+                const fecha = document.getElementById('Fecha').value;
+                const proveedor = document.getElementById('nombre').value;
+                const total = document.getElementById('total').value;
+
+                // Crear un objeto Producto con los valores
+                const compra = {
+                    idCompras: 0,
+                    fechaCompras: fecha,
+                    idProveedor: proveedor,
+                    totalGeneral: total
+                };
+
+                console.log(compra);
+
+                // Realizar una solicitud POST para crear un nuevo producto
+                fetch('/CtrlCompra/Create', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(compra)
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        console.log(data);
+                        // Verificar si la respuesta indica éxito
+                        if (data === true) {
+                            console.log('Compra creado exitosamente');
+
+                        } else {
+                            console.error('Error al crear el producto');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+
+
+                // DETALLE COMPRA
+                let tabla = document.getElementById("miTabla");
+
+                for (let i = 2; i < tabla.rows.length; i++) {
+
+                    // Obtener la fecha de la segunda columna de la fila actual
+                    let idCompras = document.getElementById("NoFactura").value;
+                    let cantidad = tabla.rows[i].cells[8].innerHTML;
+                    let idProducto = tabla.rows[i].cells[0].innerHTML;
+                    let precioC = tabla.rows[i].cells[9].innerHTML;
+                    let precioV = tabla.rows[i].cells[10].innerHTML;
+
+                    console.log("id de compras: " + idCompras);
+                    console.log("cantidad: " + cantidad);
+                    console.log("id productos: " + idProducto);
+                    console.log("precio compras: " + precioC);
+                    console.log("precio ventas: " + precioV);
+
+                    const detallecompra = {
+                        idCompras: idCompras,
+                        cantidadProductosC: cantidad,
+                        idProducto: idProducto,
+                        precioC: precioC,
+                        precioV: precioV
+                    };
+                    console.log(detallecompra);
+
+                    // Realizar la solicitud de la compra al servidor
+                    fetch('/CtrlDetalleCompra/Create', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(detallecompra)
+                    })
+                        .then(response => response.json())
+                        .then(data => {
+                            console.log(data);
+                            if (data === true) {
+                                console.log('Detalle de compra creada exitosamente');
+                                alert("Compra creada exitosamente");
+                            } else {
+                                console.error('Error al crear la compra');
+                            }
+                        })
+                        .catch(error => console.error('Error:', error));
+                }
+            }
+
+
+
+
+            // INICIAR
+            $(document).ready(function () {
+
+                // IMPRIMIR FACTURA
+                $("#btnImprimir").click(function () {
+                    var idCompras = $("#NoFactura").val();
+                    window.location.href = "/ImprimirCompController/" + idCompras;
+                });
+
+
+                // Deshabilita todos los controles al cargar la página
+                deshabilitarControles();
+
+
+                // Habilita todos los controles excepto los inputs de tipo texto al hacer clic en el botón "Nueva Compra"
+                $('#BotonFactura').click(function () {
+                    $(':input').prop('disabled', false); // Habilita todos los controles
+                    $('input[type="text"]').prop('disabled', true); // Deshabilita los inputs de tipo texto
+
+                    // Deshabilitar el input con el ID "miInput"
+                    $('#cantidad').prop('disabled', false);
+                    $('#precioC').prop('disabled', false);
+                    $('#NoFactura').prop('disabled', false);
+
+                    const camposLimpiar = ['nombre', 'apellido', 'codigo', 'distintivo', 'categoria', 'marca',
+                        'color', 'talla', 'cantidad', 'precioC', 'precioV', 'subtotal', 'iva', 'total'];
+
+                    // Iterar sobre la lista y limpiar cada campo
+                    camposLimpiar.forEach(idCampo => {
+                        document.getElementById(idCampo).value = '';
+                    });
+
+                    $('#miTabla tbody tr').not(':first').remove();
+                    getIdCompra();
+                });
+            });
+
+
+            //Limpiar  General
+            function deshabilitarControles() {
+                // Deshabilita todos los controles excepto el botón "Nueva Compra"
+                $(':input').not('#BotonFactura, #BotonAyuda, #BotonActualizar1, #NoFactura').prop('disabled', true);
+            }
+
+
+            //funcion lipiar al cacelar
+            function limpiarcancelar() {
+                // Lista de IDs de campos a limpiar
+                const camposLimpiar = ['codigo', 'distintivo', 'categoria', 'marca', 'color', 'talla', 'cantidad', 'precioC', 'precioV'];
+
+                // Iterar sobre la lista y limpiar cada campo
+                camposLimpiar.forEach(idCampo => {
+                    document.getElementById(idCampo).value = '';
+
+                });
+            }
+
+
+            // Llamar al cargar la página
+            window.onload = function () {
+                getDatos();
+                let tabla = document.getElementById("miTabla");
+                getIdCompra();
+            };
+
+
+        </script>
+</body>
+
+</html>

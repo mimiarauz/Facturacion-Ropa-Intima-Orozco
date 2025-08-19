@@ -1,0 +1,32 @@
+/*DISEÑO DEL BODY*/
+body {
+    background-color: rgb(245, 223, 240) !important;
+    width: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+/*DISEÑO DE LA BARRA DE NAVEGACION*/
+.ReporteStock {
+    height: 50px;
+    background-image: linear-gradient(to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    font-size: 30px;
+    text-align: center;
+    width: 100%;
+    max-width: 100%;
+    transition: background-image 0.3s; /* Transición para el fondo */
+}
+
+.ReporteStock:hover {
+    background-image: linear-gradient(to right, #a800d6 5%, #d97df2 34%, #f797f3 63%, #ffdf99 100%);
+}
+
+
+/*DISEÑO DE TIPOGRAFÍA*/
+label {
+    font-family: 'Merriweather', serif;
+}
+
+.ReporteStock{
+    font-family: 'Merriweather', serif;
+} 

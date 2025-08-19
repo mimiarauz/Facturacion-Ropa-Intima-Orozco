@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reportes</title>
+    <link rel="stylesheet" href="reportes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/R.ico" >
+    <style>
+        #imagen {
+            height: 200px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+            position: relative; /* Para posicionar la imagen absolutamente dentro del contenedor */
+            
+        }
+        #image:hover{
+            border-color:aqua;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(178, 255, 110, 0.5)
+        }
+
+        /* Estilo para la imagen */
+        #imagen img {
+            width: 100%; /* La imagen ocupará el 100% del ancho del contenedor */
+            height: 100%; /* La imagen ocupará el 100% del alto del contenedor */
+            object-fit: cover; /* La imagen se ajustará manteniendo la relación de aspecto y cubriendo el contenedor */
+        }
+    </style>
+</head>
+<body>
+    <div class="f" id="Fondo">
+        <div class="cuadro"></div>
+        <nav class="Reportes">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="../imagenes/Reportes.png" alt="Logo" width="34" height="34" class="d-inline-block align-text-top">
+                    Reportes
+                </a>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="col-sm-12 col-md-6"  id="Contenedor2">
+                <button class="btn btn-primary ml-2" id="BotonAyuda">
+                    <a href="../../Hom/Home.html"  class="icono-ayuda"> <img src="../imagenes/hogar.png" alt="Icono de ayuda"></a>
+                </button>                                           
+            </div> 
+            <div class="row mt-3">
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Compras">Compras</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3"  id="c">
+                                <label class="LabelReportesC">Historial de Compras</label>
+                                <a href="..//Reportes/InterfazAllCompras.html" class="BTNVerReporte" id="ReporteCompra">Ver Reporte</a>
+                                <img src="../imagenes/ComprasReportes.png" alt="Icono de ayuda" class="icono-ComprasyVentas">
+                                <label class="LabelReportes" id="LabelCompras">Compras por:</label>
+                                <a href="http://localhost:5282/ComprasPorMesController" class="BTNVerReporte" id="BTNMesC">Mes</a>
+                                <a href="http://localhost:5282/ComprasPorA%C3%B1oController" class="BTNVerReporte" id="BTNAñoC">Año</a>
+                            </div> 
+                        </div>
+                    </fieldset>
+                </div>   
+    
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Compras">Ventas</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3"  id="v">
+                                <label class="LabelReportesV">Historial de Ventas</label>
+                                <a href="..//Reportes//InterfazAllFact.html" class="BTNVerReporteV" id="ReporteV">Ver Reporte</a>
+                                <img src="../imagenes/VentasReportes.png" alt="Icono de ayuda" class="icono-ComprasyVentas">
+                                <label class="LabelReportes" id="LabelCompras">Ventas por:</label>
+                                <a href="http://localhost:5282/VentasPorMesController" class="BTNVerReporte" id="BTNMesV">Mes</a>
+                                <a href="http://localhost:5282/VentasPorA%C3%B1oController" class="BTNVerReporte" id="BTNAñoV">Año</a>
+                            </div> 
+                        </div>
+                    </fieldset>
+                </div>
+    
+                <div class="col-sm-12 col-md-12">
+                    <fieldset class="group-box">
+                        <legend id="Compras">Productos más vendidos</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3"  id="v">
+                                <img src="../imagenes/ProductosVendidos.png" alt="Icono de ayuda" class="icono-Productos" id="Productos">
+
+                                <div class="botones-barra">
+                                    <a href="http://localhost:5282/ProdMasVendidoController" class="BTNVerReporteP" id="BtnProductos">Ver Reporte</a>
+                                </div>
+                            </div> 
+                        </div>
+                    </fieldset>
+                </div>
+    
+                <div class="col-sm-12 col-md-6">
+                    <fieldset id="imagen" class="group-box">
+                       
+                            <img src="../imagenes/Desempeño.png" >
+                        
+                    </fieldset>
+                </div>
+    
+                <div class="col-sm-12 col-md-6">
+                    <fieldset class="group-box">
+                        <legend id="Compras">Historial de Ventas</legend>
+                        <div class="d-flex">
+                            <div class="col-md-3" id="HV">
+                                <img src="../imagenes/perfil-del-usuario.png" alt="Icono de ayuda" class="icono-HistorialVentas" id="ProductosClientes">
+                                <label class="LabelReportes" id="LabelComprasC">Clientes</label>
+                                <a href="http://localhost:5282/HClienteController" class="btncliente" id="ReporteCliente">Ver Reporte</a>
+                                <img src="../imagenes/perfil-del-usuario.png" alt="Icono de ayuda" class="icono-HistorialVentas1" id="ProductosUsuarios">
+                                <label class="LabelReportes" id="LabelComprasU">Usuarios</label>
+                                <a href="http://localhost:5282/HUsuarioController" class="btnUsuario" id="ReporteUsuario">Ver Reporte</a>
+                            </div> 
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+</body>
+</html>

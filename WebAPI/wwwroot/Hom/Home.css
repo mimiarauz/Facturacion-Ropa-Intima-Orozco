@@ -1,0 +1,324 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.active, #TituloE{
+    font-family: 'Merriweather', serif;
+}
+
+nav{
+    background: linear-gradient( to right, #ffdf99 5%, #f797f3 34%, #d97df2 63%, #a800d6 100%);
+    height: 60px;
+    width: 100%;
+}
+.enlace{
+    position: absolute;
+    padding: 4.5px 30px;
+}
+
+#usuario{
+    width: 50px;
+    height: 50px;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0px 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 30px;
+    padding: 7px 13px;
+    border-radius: 10px;
+}
+li a.active, li a:hover{
+    background-color: #f797f3;
+    transition: .5s;
+}
+.chekbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 70px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#chek{
+    display: none;
+}
+#logo{
+    max-width: 200px;
+    max-height: 150px;
+    border-radius: 15px;
+    margin-left: 80%;
+    margin-top: 40px;
+}
+h1{
+    position: absolute;
+    margin-left: 20%;
+    margin-top: -120px;
+}
+p{
+    position: absolute;
+    max-width: 60%;
+    padding-left: 50px;
+    font-size: 22px;
+    margin-top: -70px;
+    text-justify: auto;
+}
+#raya{
+    width: 80%;
+    height: 4px;
+    background-color: rgb(192, 176, 188);
+    border: 0;
+    margin-top: 65px;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+.titulo{
+  text-align: center;
+  margin-top: 10px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.conteiner-slayder{
+    max-width: 1200px;
+    height: 800px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type=radio]{
+    display: none;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    max-height: 400px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.slaider-frame{
+    width: 400px;
+    height: auto;
+    margin: 50px auto 0;
+    overflow: hidden;
+    border-radius: 15px;
+
+    animation: slide 2s infinite alternate ease-in-out;
+}
+.slaider-frame ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+}
+.slaider-frame li{
+    list-style: none;
+    width: 100%;
+}
+.slaider-frame img{
+    width: 100%;
+    height: 100%;
+}
+#item-3:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5
+{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 0;
+}
+
+#item-2:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-2
+{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 0;
+}
+
+#item-4:checked ~ .cards #selector-5,
+#item-5:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-4
+{
+  transform: translateX(-40%) scale(0.8);
+  z-index: 0;
+}
+
+#item-5:checked ~ .cards #selector-4,
+#item-4:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-5
+{
+  transform: translateX(40%) scale(0.8);
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checked ~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3,
+#item-4:checked ~ .cards #selector-4,
+#item-5:checked ~ .cards #selector-5
+{
+  transform: translateX(0) scale(1);
+  z-index: 1;
+}
+
+ @media screen and (max-width:1450px){
+    .enlace{
+        padding-left: 25px;
+    }
+    nav ul li a{
+        font-size: 25px;
+    }
+    
+  }
+
+@media screen and (max-width:1350px){
+.enlace{
+    padding-left: 22px;
+}
+nav ul li a{
+    font-size: 22px;
+}
+}
+
+@media screen and  (max-width:1250px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and  (max-width:1180px){
+    .enlace{
+        padding-left: 15px;
+    }
+    nav ul li a{
+        font-size: 15px;
+    }
+   
+}
+@media screen and  (max-width:1000px){
+    .enlace{
+        padding-left: 10px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+}
+
+@media screen and  (max-width:780px){
+    
+    .coytainer{
+        display: none;
+    }
+
+    .slide{
+     display: none;
+    }
+    h1{
+        display: none;
+    }
+   
+    p{
+    display: none;
+    }
+    #raya{
+        display: none;
+    }
+
+    .chekbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100h;
+        background: #977d9e;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    #logo{
+       margin-left: 25%;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+       background:none;
+       color: #221027;
+    }
+    #chek:checked ~ul{
+        left: 0;
+    }
+    #chek:checked ~p{
+        display: none;
+    }
+
+    h3{
+        display: none;
+    }
+    .conteiner-slayder{
+        display: none;
+    }
+
+}
+
+

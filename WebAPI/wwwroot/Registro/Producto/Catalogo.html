@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="catalogo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="icon" href="../../imagenes/R.ico" >  
+</head>
+<body>
+    <div class="fondo">
+        <form action="">
+            <div class="encabezado">
+                <h2>Catálogo de Productos</h2>
+            </div>
+      <!--Menu de Daotos-->
+            <nav>
+                    <input type="checkbox" id="chek">
+                    <label for="chek" class="chekbtn">
+                     <img src="../../imagenes/menu (2).png" alt="Menu" id="me">
+                    </label>
+                <ul>
+                    <li><a id="active" href="../Datos/Categoria/Categoria.html" >Clasificación</a></li>
+                    <li><a class="active"  id="active" href="#">Productos</a></li>
+                    <li><a id="active" href="../Usuario/Usuario.html">Usuario</a></li>
+                    <li><a id="active" href="../Cliente/Cliente.html">Clientes</a></li>
+                    <li><a id="active" href="../Proveedor/proveedor.html">Proveedores</a></li>
+                </ul>
+            </nav>
+
+            <a href="../../Hom/Home.html"><img src="../../imagenes/hogar.png" style="margin-left:90%;" alt="Home"></a>
+            
+            <div class="contenido">
+                <div class="datos">
+                    <h2 class="c">Datos del Producto</h2>
+                    <div class="txt">    
+                        <div class="bloque" >
+                            <input type="text" name="" class="t" id="txtcodigo" placeholder="Código" required>
+                            <select name="categoria" id="cbcategoria" class="t" required>
+                                <option value=""></option>
+                            </select>
+                            <select name="marca" id="cbmarca" class="t" required>
+                                <option value="">Marca</option>
+                            </select>
+                            <select name="color" id="cbcolor" class="t" required>
+                                <option value="">Color</option>
+                            </select>
+                        </div>
+                        <div class="bloque" id="#bloque2">
+                            <select name="talla" id="cbtalla" class="t" required>
+                                <option value="">Talla</option>
+                            </select>   
+                           <input type="text" class="t" id="txtdisttintivo" placeholder="Distintivo" required>
+                           <input type="number" class="t" id="txtprecioventa" placeholder="Precio Venta" required pattern="[0-9]+">  
+                           <input type="text" class="t" id="txtstock" placeholder="Stock" required>  
+                        </div> 
+                        <div class="bloque" id="bloque3">
+                            <select name="Tipobusqueda" id="cbtipobusqueda" class="t" required>
+                                <option value="">Tipo de Búsqueda</option>
+                                <option value="Activo">Código</option >
+                                <option value="Inactivo">Id</option>
+                            </select> 
+                            <input type="text" name="" class="t" id="txtbuscar" placeholder="Buscar a:" required> 
+                            <input type="button" name="" class="t" id="btnbuscar" value="Buscar">
+                        </div> 
+                    </div>
+                             
+                    <input type="text" id="raya1" disabled>
+                    <input type="text" id="raya2" disabled>
+                    <div class="central">
+                            
+                       <!--Creacion de tabla-->
+                       <div class="conteyner">
+                        <table id="tablaproducto">
+                         <thead>
+                          <tr>
+                            <th>Id</th>
+                            <th>Codigo</th>
+                            <th>Categoria</th>
+                            <th>Marca</th>
+                            <th>Color</th>
+                            <th>Talla</th>
+                            <th>Distintivo</th>
+                            <th>Precio Venta</th>
+                            <th>Stock</th>
+                            <th>Editar</th>
+                            <th>Eliminar</th>
+                            </tr>
+                           </thead>
+                           <tbody>
+                           <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Editar</td>
+                            <th>Eliminar</th>
+                          </tr>
+                         </tbody>
+                      </table>
+                   </div>
+                           
+                            <!--Botones-->
+                            <div class="botones">
+                                <input type="button" class="b" id="nuevoBtn" value="Nuevo">
+                                <input type="button" class="b" id="guardarBtn" value="Guardar" onclick="createProducto(event)">
+                                <input type="button" class="b" id="actualizarBtn" value="Actualizar" onclick="updateprod()">
+                                <input type="button" class="b" id="cancelarBtn" value="Cancelar">
+                             </div>
+                   </div>
+                    
+                </div>
+             
+            </div>
+            
+        </form>
+        
+    </div>
+    <script src="../Producto/Catalogo.js"></script>
+</body>
+</html>

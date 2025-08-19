@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="icon" href="../imagenes/R.ico" > 
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="chek">
+        <label for="chek" class="chekbtn">
+          <img src="../imagenes/menu (2).png" alt="Menu">
+        </label>
+        <a href="../CambioContraseña/CambioContraseña.html" class="enlace">
+            <img src="../imagenes/usuario.png" alt="Usuario" id="usuario" class="usuario">
+        </a>
+        <ul>
+            <li><a class="active" href="#" >Home</a></li>
+            <li><a href="../Registro/Datos/Marca/Marca.html">Registros</a></li>
+            <li><a href="../Compra/Compra.html">Compra</a></li>
+            <li><a href="../Facturacion/Facturacion.html">Facturación</a></li>
+            <li><a href="../Inventario/Inventario.html">Inventario</a></li>
+            <li><a href="../Reportes/Reportes.html">Reportes</a></li>
+            <li><a href="../Mantenimiento/Respaldo/Respaldo.html">Mantenimiento</a></li>
+            <li><a href="../Acerca de/Acerca.html">Acerca De</a></li>
+            <li><a href="../Hom/Ayuda/Ayuda.html">Ayuda</a></li>
+        </ul>
+    </nav>
+    <img src="../imagenes/Logo.jpg"  id="logo" alt="Logo">
+
+    <!--Parrafo-->
+    <div id="texto">
+      <h1 class="Titulo">Ropa Íntima Orozco</h1>
+      <p>Ropa Íntima Orozco es un destino exclusivo para mujeres que buscan ropa de alta calidad y estilo 
+        excepcional. Nuestro establecimiento ofrece una amplia gama de blúmeres,
+         brasieres, calcetines, medias y más, confeccionados con los materiales más suaves y lujosos.
+        <a href="./info/info.html">Leer Más</a>
+     </p>
+    </div>
+    <input type="text" name="" id="raya" disabled>
+
+     <h3 class="titulo" id="TituloE">Elegancia</h3>
+     <div class="conteiner-slayder"> 
+        <div class="container">
+            <input type="radio" name="slider" id="item-1" checked>
+            <input type="radio" name="slider" id="item-2">
+            <input type="radio" name="slider" id="item-3">
+            <input type="radio" name="slider" id="item-4">
+            <input type="radio" name="slider" id="item-5">
+
+            <div class="cards">
+                <label class="card" for="item-1" id="selector-1"><img src="../imagenes/img1.png" alt="img1"> </label>
+                <label class="card" for="item-2" id="selector-2"><img src="../imagenes/img2.png" alt="img2"></label>
+                <label class="card" for="item-3" id="selector-3"><img src="../imagenes/img3.png" alt="img3"></label>
+                <label class="card" for="item-4" id="selector-4"><img src="../imagenes/img4.png" alt="img4"> </label>
+                <label class="card" for="item-5" id="selector-5"><img src="../imagenes/img5.png" alt="img5"> </label>
+            </div>
+        </div>
+      </div>
+</body>
+</html>
