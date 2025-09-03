@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ET+3aKtl8yjnyr/sNLWn0fi8G9BfQH/LeZz13RND7m0=",
+  "Hash": "U7e/iLlQMIaOtc6IaJVtGPYqBn36pzC2ZGNZVoTKEhQ=",
   "Source": "WebAPI",
   "BasePath": "_content/WebAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "WebAPI\\wwwroot",
       "Source": "WebAPI",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Acerca de/Acerca#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -38,10 +38,10 @@
       "OriginalItemSpec": "wwwroot\\Acerca de\\Acerca.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Acerca de/Acerca#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -59,10 +59,10 @@
       "OriginalItemSpec": "wwwroot\\Acerca de\\Acerca.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "CambioContraseña/CabiodeContrasena#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -80,10 +80,10 @@
       "OriginalItemSpec": "wwwroot\\CambioContraseña\\CabiodeContrasena.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "CambioContraseña/CambioContraseña#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -101,10 +101,10 @@
       "OriginalItemSpec": "wwwroot\\CambioContraseña\\CambioContraseña.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Compra/Compra#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -122,10 +122,10 @@
       "OriginalItemSpec": "wwwroot\\Compra\\Compra.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Compra/Compra#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -143,10 +143,10 @@
       "OriginalItemSpec": "wwwroot\\Compra\\Compra.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Facturacion/Facturacion#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -164,10 +164,10 @@
       "OriginalItemSpec": "wwwroot\\Facturacion\\Facturacion.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Facturacion/Facturacion#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -185,10 +185,10 @@
       "OriginalItemSpec": "wwwroot\\Facturacion\\Facturacion.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Ayuda/Ayuda#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -206,10 +206,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Ayuda\\Ayuda.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Ayuda/Ayuda#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -227,10 +227,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Ayuda\\Ayuda.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Home#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -248,10 +248,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Home.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Home#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -269,10 +269,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Home.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Info/Info#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -290,10 +290,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Info\\Info.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Hom/Info/Info#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -311,10 +311,10 @@
       "OriginalItemSpec": "wwwroot\\Hom\\Info\\Info.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/154-thumb#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -332,10 +332,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\154-thumb.jpg"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\73552.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\73552.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/73552#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -353,10 +353,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\73552.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Alcantara#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -374,10 +374,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Alcantara.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/BotonAyuda#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -395,10 +395,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\BotonAyuda.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/c-removebg-preview#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\c-removebg-preview.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Categoria#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -437,10 +437,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Categoria.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/CategoriaReporte#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -458,10 +458,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\CategoriaReporte.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/clasificacion#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -479,10 +479,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\clasificacion.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\co.webp",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\co.webp",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/co#[.{fingerprint}]?.webp",
       "AssetKind": "All",
@@ -500,10 +500,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\co.webp"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Color.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Color.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Color#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -521,10 +521,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Color.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/ColorReporte#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -542,10 +542,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\ColorReporte.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Compra.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Compra.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Compra#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -563,10 +563,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Compra.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/ComprasReportes#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -584,10 +584,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\ComprasReportes.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Corereo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -605,10 +605,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Corereo.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Desempeño#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -626,10 +626,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Desempeño.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Emely.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Emely.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Emely#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -647,10 +647,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Emely.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondo.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondo.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/fondo#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -668,10 +668,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\fondo.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/fondologinoficial2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -689,10 +689,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\fondologinoficial2.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Guardar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -710,10 +710,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Guardar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\hogar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\hogar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/hogar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -731,10 +731,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\hogar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Home.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Home.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Home#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -752,10 +752,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Home.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/iconoActualizar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -773,10 +773,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\iconoActualizar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/iconoFactura#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -794,10 +794,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\iconoFactura.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/icons8-eliminar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -815,10 +815,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\icons8-eliminar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img1.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img1.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/img1#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -836,10 +836,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\img1.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img2.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img2.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/img2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -857,10 +857,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\img2.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img3.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img3.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/img3#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -878,10 +878,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\img3.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img4.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img4.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/img4#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -899,10 +899,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\img4.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img5.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img5.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/img5#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -920,10 +920,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\img5.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Imprimir#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -941,10 +941,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Imprimir.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Inventario#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -962,10 +962,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Inventario.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/inventario2#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -983,10 +983,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\inventario2.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Khaterine#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1004,10 +1004,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Khaterine.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/lapiz_editar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1025,10 +1025,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\lapiz_editar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Logo#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -1046,10 +1046,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Logo.jpg"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\marca.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\marca.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/marca#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1067,10 +1067,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\marca.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/menu (2)#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1088,10 +1088,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\menu (2).png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/perfil-del-usuario#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1109,10 +1109,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\perfil-del-usuario.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/ProductosVendidos#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1130,10 +1130,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\ProductosVendidos.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\R.ico",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\R.ico",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/R#[.{fingerprint}]?.ico",
       "AssetKind": "All",
@@ -1151,10 +1151,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\R.ico"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/ReporteInventario#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1172,10 +1172,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\ReporteInventario.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Reportes#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1193,10 +1193,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Reportes.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/respaldo-removebg-preview#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1214,10 +1214,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\respaldo-removebg-preview.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/restaurar#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1235,10 +1235,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\restaurar.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Ropa#[.{fingerprint}]?.webp",
       "AssetKind": "All",
@@ -1256,10 +1256,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Ropa.webp"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Stock.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Stock.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Stock#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1277,10 +1277,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Stock.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Talla.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Talla.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/Talla#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1298,10 +1298,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\Talla.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/TallaReporte#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1319,10 +1319,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\TallaReporte.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/u-removebg-preview#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1340,10 +1340,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\u-removebg-preview.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\usuario.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\usuario.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/usuario#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1361,10 +1361,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\usuario.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "imagenes/VentasReportes#[.{fingerprint}]?.png",
       "AssetKind": "All",
@@ -1382,10 +1382,10 @@
       "OriginalItemSpec": "wwwroot\\imagenes\\VentasReportes.png"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Inventario/Inventario#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1403,10 +1403,10 @@
       "OriginalItemSpec": "wwwroot\\Inventario\\Inventario.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Inventario/Inventario#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1424,10 +1424,10 @@
       "OriginalItemSpec": "wwwroot\\Inventario\\Inventario.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Inventario/ReporteStock/ReporteStock#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1445,10 +1445,10 @@
       "OriginalItemSpec": "wwwroot\\Inventario\\ReporteStock\\ReporteStock.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Inventario/ReporteStock/ReporteStock#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1466,10 +1466,10 @@
       "OriginalItemSpec": "wwwroot\\Inventario\\ReporteStock\\ReporteStock.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Login/Login#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1487,10 +1487,10 @@
       "OriginalItemSpec": "wwwroot\\Login\\Login.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Login/Login#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1508,10 +1508,10 @@
       "OriginalItemSpec": "wwwroot\\Login\\Login.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Login/Rcontraseña/Rcontraseña#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1529,10 +1529,10 @@
       "OriginalItemSpec": "wwwroot\\Login\\Rcontraseña\\Rcontraseña.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Login/Rcontraseña/Rcontraseña#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1550,10 +1550,10 @@
       "OriginalItemSpec": "wwwroot\\Login\\Rcontraseña\\Rcontraseña.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Mantenimiento/Respaldo/Respaldo#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1571,10 +1571,10 @@
       "OriginalItemSpec": "wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Mantenimiento/Respaldo/Respaldo#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1592,10 +1592,10 @@
       "OriginalItemSpec": "wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Mantenimiento/Restauracion/Restauracion#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1613,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Mantenimiento/Restauracion/Restauracion#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1634,10 +1634,10 @@
       "OriginalItemSpec": "wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Cliente/Cliente#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1655,10 +1655,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Cliente\\Cliente.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Cliente/Cliente#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1676,10 +1676,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Cliente\\Cliente.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Categoria/Categoria#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1697,10 +1697,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Categoria\\Categoria.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Categoria/Categoria#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1718,10 +1718,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Categoria\\Categoria.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/ColorP/Color#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1739,10 +1739,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\ColorP\\Color.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/ColorP/Color#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1760,10 +1760,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\ColorP\\Color.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Marca/Marca#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1781,10 +1781,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Marca\\Marca.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Marca/Marca#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1802,10 +1802,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Marca\\Marca.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Talla/Talla#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1823,10 +1823,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Talla\\Talla.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Datos/Talla/Talla#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1844,10 +1844,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Datos\\Talla\\Talla.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Producto/Catalogo#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1865,10 +1865,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Producto\\Catalogo.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Producto/Catalogo#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1886,10 +1886,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Producto\\Catalogo.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Producto/Catalogo#[.{fingerprint}]?.js",
       "AssetKind": "All",
@@ -1907,10 +1907,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Producto\\Catalogo.js"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Proveedor/Proveedor#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1928,10 +1928,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Proveedor\\Proveedor.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Proveedor/Proveedor#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1949,10 +1949,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Proveedor\\Proveedor.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Usuario/Usuario#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -1970,10 +1970,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Usuario\\Usuario.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Registro/Usuario/Usuario#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -1991,10 +1991,10 @@
       "OriginalItemSpec": "wwwroot\\Registro\\Usuario\\Usuario.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes.zip",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes.zip",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes#[.{fingerprint}]?.zip",
       "AssetKind": "All",
@@ -2012,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes.zip"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/InterfazAllCompras#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2033,10 +2033,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\InterfazAllCompras.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/InterfazAllCompras#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -2054,10 +2054,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\InterfazAllCompras.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/InterfazAllFact#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2075,10 +2075,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\InterfazAllFact.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/InterfazAllFact#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -2096,10 +2096,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\InterfazAllFact.html"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/Logo#[.{fingerprint}]?.jpg",
       "AssetKind": "All",
@@ -2117,10 +2117,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\Logo.jpg"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/Reportes#[.{fingerprint}]?.css",
       "AssetKind": "All",
@@ -2138,10 +2138,10 @@
       "OriginalItemSpec": "wwwroot\\Reportes\\Reportes.css"
     },
     {
-      "Identity": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
+      "Identity": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
       "SourceId": "WebAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\WebFactura\\WebAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\",
       "BasePath": "_content/WebAPI",
       "RelativePath": "Reportes/Reportes#[.{fingerprint}]?.html",
       "AssetKind": "All",
@@ -2162,7 +2162,7 @@
   "Endpoints": [
     {
       "Route": "Acerca de/Acerca.3zzqbq4l06.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2183,7 +2183,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2207,7 +2207,7 @@
     },
     {
       "Route": "Acerca de/Acerca.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2228,7 +2228,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2244,7 +2244,7 @@
     },
     {
       "Route": "Acerca de/Acerca.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2265,7 +2265,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:56:22 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2281,7 +2281,7 @@
     },
     {
       "Route": "Acerca de/Acerca.lc8bvb4os7.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Acerca de\\Acerca.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2302,7 +2302,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:56:22 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2326,7 +2326,7 @@
     },
     {
       "Route": "CambioContraseña/CabiodeContrasena.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2347,7 +2347,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 16:36:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2363,7 +2363,7 @@
     },
     {
       "Route": "CambioContraseña/CabiodeContrasena.yknkwc5gk6.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CabiodeContrasena.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2384,7 +2384,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 16:36:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2408,7 +2408,7 @@
     },
     {
       "Route": "CambioContraseña/CambioContraseña.adzxwwmlom.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2429,7 +2429,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 16:24:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2453,7 +2453,7 @@
     },
     {
       "Route": "CambioContraseña/CambioContraseña.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\CambioContraseña\\CambioContraseña.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2474,7 +2474,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 16:24:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2490,7 +2490,7 @@
     },
     {
       "Route": "Compra/Compra.10hr6o0c2q.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2511,7 +2511,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 May 2024 00:33:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2535,7 +2535,7 @@
     },
     {
       "Route": "Compra/Compra.bumdmhx3v3.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2556,7 +2556,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2580,7 +2580,7 @@
     },
     {
       "Route": "Compra/Compra.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2601,7 +2601,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2617,7 +2617,7 @@
     },
     {
       "Route": "Compra/Compra.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Compra\\Compra.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Compra\\Compra.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2638,7 +2638,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 12 May 2024 00:33:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2654,7 +2654,7 @@
     },
     {
       "Route": "Facturacion/Facturacion.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2675,7 +2675,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:07:26 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2691,7 +2691,7 @@
     },
     {
       "Route": "Facturacion/Facturacion.hkgo29feum.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2712,7 +2712,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:07:26 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2736,7 +2736,7 @@
     },
     {
       "Route": "Facturacion/Facturacion.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2757,7 +2757,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 May 2024 20:36:56 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2773,7 +2773,7 @@
     },
     {
       "Route": "Facturacion/Facturacion.xgy9zbh6q7.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Facturacion\\Facturacion.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2794,7 +2794,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 13 May 2024 20:36:56 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2818,7 +2818,7 @@
     },
     {
       "Route": "Hom/Ayuda/Ayuda.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2839,7 +2839,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2855,7 +2855,7 @@
     },
     {
       "Route": "Hom/Ayuda/Ayuda.ggp1uj4n24.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2876,7 +2876,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2900,7 +2900,7 @@
     },
     {
       "Route": "Hom/Ayuda/Ayuda.hctg8klbro.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2921,7 +2921,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:46:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2945,7 +2945,7 @@
     },
     {
       "Route": "Hom/Ayuda/Ayuda.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Ayuda\\Ayuda.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -2966,7 +2966,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:46:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2982,7 +2982,7 @@
     },
     {
       "Route": "Hom/Home.2gqwqppqgr.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3003,7 +3003,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 05:31:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3027,7 +3027,7 @@
     },
     {
       "Route": "Hom/Home.4gxociwsrw.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3048,7 +3048,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3072,7 +3072,7 @@
     },
     {
       "Route": "Hom/Home.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3093,7 +3093,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3109,7 +3109,7 @@
     },
     {
       "Route": "Hom/Home.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Home.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Home.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3130,7 +3130,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 05:31:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3146,7 +3146,7 @@
     },
     {
       "Route": "Hom/Info/Info.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3167,7 +3167,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3183,7 +3183,7 @@
     },
     {
       "Route": "Hom/Info/Info.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3204,7 +3204,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3220,7 +3220,7 @@
     },
     {
       "Route": "Hom/Info/Info.mx6gksrlt4.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3241,7 +3241,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3265,7 +3265,7 @@
     },
     {
       "Route": "Hom/Info/Info.q0l5jgaoog.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Hom\\Info\\Info.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3286,7 +3286,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3310,7 +3310,7 @@
     },
     {
       "Route": "imagenes/154-thumb.2hhjgqdav3.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3331,7 +3331,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3355,7 +3355,7 @@
     },
     {
       "Route": "imagenes/154-thumb.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\154-thumb.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3376,7 +3376,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3392,7 +3392,7 @@
     },
     {
       "Route": "imagenes/73552.0ldppyvv91.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\73552.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\73552.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3413,7 +3413,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3437,7 +3437,7 @@
     },
     {
       "Route": "imagenes/73552.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\73552.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\73552.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3458,7 +3458,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3474,7 +3474,7 @@
     },
     {
       "Route": "imagenes/Alcantara.ltlircvb5n.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3495,7 +3495,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3519,7 +3519,7 @@
     },
     {
       "Route": "imagenes/Alcantara.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Alcantara.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3540,7 +3540,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3556,7 +3556,7 @@
     },
     {
       "Route": "imagenes/BotonAyuda.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3577,7 +3577,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3593,7 +3593,7 @@
     },
     {
       "Route": "imagenes/BotonAyuda.sx8tbxohzq.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\BotonAyuda.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3614,7 +3614,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3638,7 +3638,7 @@
     },
     {
       "Route": "imagenes/c-removebg-preview.656uqomy80.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3659,7 +3659,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3683,7 +3683,7 @@
     },
     {
       "Route": "imagenes/c-removebg-preview.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\c-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3704,7 +3704,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3720,7 +3720,7 @@
     },
     {
       "Route": "imagenes/Categoria.37lytnkozy.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3741,7 +3741,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3765,7 +3765,7 @@
     },
     {
       "Route": "imagenes/Categoria.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Categoria.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3786,7 +3786,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3802,7 +3802,7 @@
     },
     {
       "Route": "imagenes/CategoriaReporte.ec59iirhom.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3823,7 +3823,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3847,7 +3847,7 @@
     },
     {
       "Route": "imagenes/CategoriaReporte.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\CategoriaReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3868,7 +3868,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3884,7 +3884,7 @@
     },
     {
       "Route": "imagenes/clasificacion.ayt9xtj2nz.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3905,7 +3905,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3929,7 +3929,7 @@
     },
     {
       "Route": "imagenes/clasificacion.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\clasificacion.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3950,7 +3950,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3966,7 +3966,7 @@
     },
     {
       "Route": "imagenes/co.uov9a2z3nn.webp",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\co.webp",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\co.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -3987,7 +3987,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4011,7 +4011,7 @@
     },
     {
       "Route": "imagenes/co.webp",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\co.webp",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\co.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4032,7 +4032,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4048,7 +4048,7 @@
     },
     {
       "Route": "imagenes/Color.0gefdhgulj.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Color.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Color.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4069,7 +4069,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4093,7 +4093,7 @@
     },
     {
       "Route": "imagenes/Color.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Color.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Color.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4114,7 +4114,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4130,7 +4130,7 @@
     },
     {
       "Route": "imagenes/ColorReporte.hhr4i5a5ql.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4151,7 +4151,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4175,7 +4175,7 @@
     },
     {
       "Route": "imagenes/ColorReporte.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ColorReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4196,7 +4196,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4212,7 +4212,7 @@
     },
     {
       "Route": "imagenes/Compra.aev7gk6z74.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Compra.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Compra.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4233,7 +4233,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4257,7 +4257,7 @@
     },
     {
       "Route": "imagenes/Compra.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Compra.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Compra.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4278,7 +4278,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4294,7 +4294,7 @@
     },
     {
       "Route": "imagenes/ComprasReportes.iruqcbuveh.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4315,7 +4315,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4339,7 +4339,7 @@
     },
     {
       "Route": "imagenes/ComprasReportes.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ComprasReportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4360,7 +4360,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4376,7 +4376,7 @@
     },
     {
       "Route": "imagenes/Corereo.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4397,7 +4397,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4413,7 +4413,7 @@
     },
     {
       "Route": "imagenes/Corereo.q93q5afjlc.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Corereo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4434,7 +4434,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4458,7 +4458,7 @@
     },
     {
       "Route": "imagenes/Desempeño.8fzgadtsg9.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4479,7 +4479,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:04:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4503,7 +4503,7 @@
     },
     {
       "Route": "imagenes/Desempeño.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Desempeño.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4524,7 +4524,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:04:30 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4540,7 +4540,7 @@
     },
     {
       "Route": "imagenes/Emely.iyx2ma5xc9.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Emely.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Emely.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4561,7 +4561,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4585,7 +4585,7 @@
     },
     {
       "Route": "imagenes/Emely.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Emely.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Emely.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4606,7 +4606,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4622,7 +4622,7 @@
     },
     {
       "Route": "imagenes/fondo.5y5vm5qejg.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondo.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4643,7 +4643,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4667,7 +4667,7 @@
     },
     {
       "Route": "imagenes/fondo.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondo.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondo.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4688,7 +4688,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4704,7 +4704,7 @@
     },
     {
       "Route": "imagenes/fondologinoficial2.dvuermj6gw.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4725,7 +4725,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4749,7 +4749,7 @@
     },
     {
       "Route": "imagenes/fondologinoficial2.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\fondologinoficial2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4770,7 +4770,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4786,7 +4786,7 @@
     },
     {
       "Route": "imagenes/Guardar.6aqx7t2vnu.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4807,7 +4807,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4831,7 +4831,7 @@
     },
     {
       "Route": "imagenes/Guardar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Guardar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4852,7 +4852,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4868,7 +4868,7 @@
     },
     {
       "Route": "imagenes/hogar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\hogar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\hogar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4889,7 +4889,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:31:06 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4905,7 +4905,7 @@
     },
     {
       "Route": "imagenes/hogar.rybpc1tqka.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\hogar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\hogar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4926,7 +4926,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:31:06 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4950,7 +4950,7 @@
     },
     {
       "Route": "imagenes/Home.9bhvtt20c5.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Home.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Home.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4971,7 +4971,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:18:14 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4995,7 +4995,7 @@
     },
     {
       "Route": "imagenes/Home.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Home.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Home.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5016,7 +5016,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 21:18:14 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5032,7 +5032,7 @@
     },
     {
       "Route": "imagenes/iconoActualizar.b7xgw6vlou.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5053,7 +5053,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5077,7 +5077,7 @@
     },
     {
       "Route": "imagenes/iconoActualizar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoActualizar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5098,7 +5098,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5114,7 +5114,7 @@
     },
     {
       "Route": "imagenes/iconoFactura.59m2eii6g2.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5135,7 +5135,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5159,7 +5159,7 @@
     },
     {
       "Route": "imagenes/iconoFactura.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\iconoFactura.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5180,7 +5180,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5196,7 +5196,7 @@
     },
     {
       "Route": "imagenes/icons8-eliminar.moe19ylrz1.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5217,7 +5217,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5241,7 +5241,7 @@
     },
     {
       "Route": "imagenes/icons8-eliminar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\icons8-eliminar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5262,7 +5262,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5278,7 +5278,7 @@
     },
     {
       "Route": "imagenes/img1.gmu770i5z3.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img1.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5299,7 +5299,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5323,7 +5323,7 @@
     },
     {
       "Route": "imagenes/img1.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img1.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img1.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5344,7 +5344,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5360,7 +5360,7 @@
     },
     {
       "Route": "imagenes/img2.bxcmfiut1t.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5381,7 +5381,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5405,7 +5405,7 @@
     },
     {
       "Route": "imagenes/img2.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5426,7 +5426,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5442,7 +5442,7 @@
     },
     {
       "Route": "imagenes/img3.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img3.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5463,7 +5463,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5479,7 +5479,7 @@
     },
     {
       "Route": "imagenes/img3.vzkfq0sc4t.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img3.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img3.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5500,7 +5500,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5524,7 +5524,7 @@
     },
     {
       "Route": "imagenes/img4.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img4.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5545,7 +5545,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5561,7 +5561,7 @@
     },
     {
       "Route": "imagenes/img4.um512dl4h4.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img4.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img4.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5582,7 +5582,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5606,7 +5606,7 @@
     },
     {
       "Route": "imagenes/img5.nz0suvohci.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img5.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5627,7 +5627,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5651,7 +5651,7 @@
     },
     {
       "Route": "imagenes/img5.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\img5.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\img5.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5672,7 +5672,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5688,7 +5688,7 @@
     },
     {
       "Route": "imagenes/Imprimir.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5709,7 +5709,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5725,7 +5725,7 @@
     },
     {
       "Route": "imagenes/Imprimir.xpmoty3ikt.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Imprimir.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5746,7 +5746,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5770,7 +5770,7 @@
     },
     {
       "Route": "imagenes/Inventario.5b9t7ht5uu.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5791,7 +5791,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5815,7 +5815,7 @@
     },
     {
       "Route": "imagenes/Inventario.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Inventario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5836,7 +5836,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5852,7 +5852,7 @@
     },
     {
       "Route": "imagenes/inventario2.ghg2535q06.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5873,7 +5873,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5897,7 +5897,7 @@
     },
     {
       "Route": "imagenes/inventario2.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\inventario2.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5918,7 +5918,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5934,7 +5934,7 @@
     },
     {
       "Route": "imagenes/Khaterine.7ffutolm06.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -5955,7 +5955,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5979,7 +5979,7 @@
     },
     {
       "Route": "imagenes/Khaterine.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Khaterine.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6000,7 +6000,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6016,7 +6016,7 @@
     },
     {
       "Route": "imagenes/lapiz_editar.co75tktz67.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6037,7 +6037,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6061,7 +6061,7 @@
     },
     {
       "Route": "imagenes/lapiz_editar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\lapiz_editar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6082,7 +6082,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6098,7 +6098,7 @@
     },
     {
       "Route": "imagenes/Logo.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6119,7 +6119,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6135,7 +6135,7 @@
     },
     {
       "Route": "imagenes/Logo.ui0v0tdea6.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6156,7 +6156,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6180,7 +6180,7 @@
     },
     {
       "Route": "imagenes/marca.94i3jtyagt.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\marca.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\marca.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6201,7 +6201,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6225,7 +6225,7 @@
     },
     {
       "Route": "imagenes/marca.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\marca.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\marca.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6246,7 +6246,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6262,7 +6262,7 @@
     },
     {
       "Route": "imagenes/menu (2).png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6283,7 +6283,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6299,7 +6299,7 @@
     },
     {
       "Route": "imagenes/menu (2).vdzgo6ot36.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\menu (2).png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6320,7 +6320,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6344,7 +6344,7 @@
     },
     {
       "Route": "imagenes/perfil-del-usuario.pesnyfjs6d.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6365,7 +6365,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6389,7 +6389,7 @@
     },
     {
       "Route": "imagenes/perfil-del-usuario.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\perfil-del-usuario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6410,7 +6410,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6426,7 +6426,7 @@
     },
     {
       "Route": "imagenes/ProductosVendidos.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6447,7 +6447,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6463,7 +6463,7 @@
     },
     {
       "Route": "imagenes/ProductosVendidos.xdivkpi1c3.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ProductosVendidos.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6484,7 +6484,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6508,7 +6508,7 @@
     },
     {
       "Route": "imagenes/R.ico",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\R.ico",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\R.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6529,7 +6529,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jun 2023 05:57:00 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6545,7 +6545,7 @@
     },
     {
       "Route": "imagenes/R.nc67eu18fm.ico",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\R.ico",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\R.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6566,7 +6566,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 26 Jun 2023 05:57:00 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6590,7 +6590,7 @@
     },
     {
       "Route": "imagenes/ReporteInventario.fy3d357xzo.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6611,7 +6611,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6635,7 +6635,7 @@
     },
     {
       "Route": "imagenes/ReporteInventario.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\ReporteInventario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6656,7 +6656,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6672,7 +6672,7 @@
     },
     {
       "Route": "imagenes/Reportes.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6693,7 +6693,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6709,7 +6709,7 @@
     },
     {
       "Route": "imagenes/Reportes.tqc5jbxo67.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Reportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6730,7 +6730,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6754,7 +6754,7 @@
     },
     {
       "Route": "imagenes/respaldo-removebg-preview.dufxt0o0nr.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6775,7 +6775,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6799,7 +6799,7 @@
     },
     {
       "Route": "imagenes/respaldo-removebg-preview.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\respaldo-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6820,7 +6820,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6836,7 +6836,7 @@
     },
     {
       "Route": "imagenes/restaurar.gjxdcfzwp3.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6857,7 +6857,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6881,7 +6881,7 @@
     },
     {
       "Route": "imagenes/restaurar.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\restaurar.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6902,7 +6902,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6918,7 +6918,7 @@
     },
     {
       "Route": "imagenes/Ropa.l457con2oa.webp",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6939,7 +6939,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -6963,7 +6963,7 @@
     },
     {
       "Route": "imagenes/Ropa.webp",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Ropa.webp",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -6984,7 +6984,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7000,7 +7000,7 @@
     },
     {
       "Route": "imagenes/Stock.mvb7lsagjz.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Stock.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Stock.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7021,7 +7021,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7045,7 +7045,7 @@
     },
     {
       "Route": "imagenes/Stock.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Stock.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Stock.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7066,7 +7066,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7082,7 +7082,7 @@
     },
     {
       "Route": "imagenes/Talla.emooxkw6n4.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Talla.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Talla.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7103,7 +7103,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7127,7 +7127,7 @@
     },
     {
       "Route": "imagenes/Talla.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\Talla.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\Talla.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7148,7 +7148,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7164,7 +7164,7 @@
     },
     {
       "Route": "imagenes/TallaReporte.976vjsj6q0.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7185,7 +7185,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7209,7 +7209,7 @@
     },
     {
       "Route": "imagenes/TallaReporte.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\TallaReporte.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7230,7 +7230,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7246,7 +7246,7 @@
     },
     {
       "Route": "imagenes/u-removebg-preview.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7267,7 +7267,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7283,7 +7283,7 @@
     },
     {
       "Route": "imagenes/u-removebg-preview.r4nxwv9uxt.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\u-removebg-preview.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7304,7 +7304,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7328,7 +7328,7 @@
     },
     {
       "Route": "imagenes/usuario.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\usuario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\usuario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7349,7 +7349,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7365,7 +7365,7 @@
     },
     {
       "Route": "imagenes/usuario.tccv1f1h20.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\usuario.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\usuario.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7386,7 +7386,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7410,7 +7410,7 @@
     },
     {
       "Route": "imagenes/VentasReportes.6rt6ygaln2.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7431,7 +7431,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7455,7 +7455,7 @@
     },
     {
       "Route": "imagenes/VentasReportes.png",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\imagenes\\VentasReportes.png",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7476,7 +7476,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7492,7 +7492,7 @@
     },
     {
       "Route": "Inventario/Inventario.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7513,7 +7513,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Nov 2023 19:49:46 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7529,7 +7529,7 @@
     },
     {
       "Route": "Inventario/Inventario.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7550,7 +7550,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 23:40:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7566,7 +7566,7 @@
     },
     {
       "Route": "Inventario/Inventario.iztbdhmroz.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7587,7 +7587,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 21 Nov 2023 19:49:46 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7611,7 +7611,7 @@
     },
     {
       "Route": "Inventario/Inventario.ofa6xyyjgt.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\Inventario.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7632,7 +7632,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 23:40:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7656,7 +7656,7 @@
     },
     {
       "Route": "Inventario/ReporteStock/ReporteStock.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7677,7 +7677,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7693,7 +7693,7 @@
     },
     {
       "Route": "Inventario/ReporteStock/ReporteStock.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7714,7 +7714,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:55:24 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7730,7 +7730,7 @@
     },
     {
       "Route": "Inventario/ReporteStock/ReporteStock.obq83qtxq2.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7751,7 +7751,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:55:24 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7775,7 +7775,7 @@
     },
     {
       "Route": "Inventario/ReporteStock/ReporteStock.zx0lfie1wh.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Inventario\\ReporteStock\\ReporteStock.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7796,7 +7796,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7820,7 +7820,7 @@
     },
     {
       "Route": "Login/Login.9k51clp2pc.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7841,7 +7841,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 17:37:44 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7865,7 +7865,7 @@
     },
     {
       "Route": "Login/Login.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7886,7 +7886,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7902,7 +7902,7 @@
     },
     {
       "Route": "Login/Login.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7923,7 +7923,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 17:37:44 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7939,7 +7939,7 @@
     },
     {
       "Route": "Login/Login.r86y70hjap.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Login.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Login.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -7960,7 +7960,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -7984,7 +7984,7 @@
     },
     {
       "Route": "Login/Rcontraseña/Rcontraseña.7p9po32bb8.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8005,7 +8005,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8029,7 +8029,7 @@
     },
     {
       "Route": "Login/Rcontraseña/Rcontraseña.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8050,7 +8050,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8066,7 +8066,7 @@
     },
     {
       "Route": "Login/Rcontraseña/Rcontraseña.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8087,7 +8087,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 05:38:56 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8103,7 +8103,7 @@
     },
     {
       "Route": "Login/Rcontraseña/Rcontraseña.iovbchhx5m.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Login\\Rcontraseña\\Rcontraseña.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8124,7 +8124,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 05:38:56 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8148,7 +8148,7 @@
     },
     {
       "Route": "Mantenimiento/Respaldo/Respaldo.6petz3mniv.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8169,7 +8169,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:35 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8193,7 +8193,7 @@
     },
     {
       "Route": "Mantenimiento/Respaldo/Respaldo.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8214,7 +8214,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8230,7 +8230,7 @@
     },
     {
       "Route": "Mantenimiento/Respaldo/Respaldo.eagf9xo4cp.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8251,7 +8251,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8275,7 +8275,7 @@
     },
     {
       "Route": "Mantenimiento/Respaldo/Respaldo.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Respaldo\\Respaldo.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8296,7 +8296,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:35 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8312,7 +8312,7 @@
     },
     {
       "Route": "Mantenimiento/Restauracion/Restauracion.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8333,7 +8333,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:49 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8349,7 +8349,7 @@
     },
     {
       "Route": "Mantenimiento/Restauracion/Restauracion.gyxlxr88x4.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8370,7 +8370,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:20 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8394,7 +8394,7 @@
     },
     {
       "Route": "Mantenimiento/Restauracion/Restauracion.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8415,7 +8415,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:20 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8431,7 +8431,7 @@
     },
     {
       "Route": "Mantenimiento/Restauracion/Restauracion.qgwn9lnf7p.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Mantenimiento\\Restauracion\\Restauracion.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8452,7 +8452,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 08:11:49 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8476,7 +8476,7 @@
     },
     {
       "Route": "Registro/Cliente/Cliente.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8497,7 +8497,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8513,7 +8513,7 @@
     },
     {
       "Route": "Registro/Cliente/Cliente.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8534,7 +8534,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 00:26:24 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8550,7 +8550,7 @@
     },
     {
       "Route": "Registro/Cliente/Cliente.mthxxzpr3v.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8571,7 +8571,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 00:26:24 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8595,7 +8595,7 @@
     },
     {
       "Route": "Registro/Cliente/Cliente.rybopgelme.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Cliente\\Cliente.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8616,7 +8616,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8640,7 +8640,7 @@
     },
     {
       "Route": "Registro/Datos/Categoria/Categoria.61d2uqsqfy.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8661,7 +8661,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 18:31:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8685,7 +8685,7 @@
     },
     {
       "Route": "Registro/Datos/Categoria/Categoria.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8706,7 +8706,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8722,7 +8722,7 @@
     },
     {
       "Route": "Registro/Datos/Categoria/Categoria.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8743,7 +8743,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 18:31:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8759,7 +8759,7 @@
     },
     {
       "Route": "Registro/Datos/Categoria/Categoria.u5oahi0yac.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Categoria\\Categoria.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8780,7 +8780,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8804,7 +8804,7 @@
     },
     {
       "Route": "Registro/Datos/ColorP/Color.5gga5c3g3y.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8825,7 +8825,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Nov 2023 22:21:54 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8849,7 +8849,7 @@
     },
     {
       "Route": "Registro/Datos/ColorP/Color.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8870,7 +8870,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 17 Nov 2023 22:21:54 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8886,7 +8886,7 @@
     },
     {
       "Route": "Registro/Datos/ColorP/Color.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8907,7 +8907,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 02:51:28 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8923,7 +8923,7 @@
     },
     {
       "Route": "Registro/Datos/ColorP/Color.zouu07xfbc.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\ColorP\\Color.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8944,7 +8944,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 02:51:28 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -8968,7 +8968,7 @@
     },
     {
       "Route": "Registro/Datos/Marca/Marca.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -8989,7 +8989,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9005,7 +9005,7 @@
     },
     {
       "Route": "Registro/Datos/Marca/Marca.h5ulcelanu.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9026,7 +9026,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9050,7 +9050,7 @@
     },
     {
       "Route": "Registro/Datos/Marca/Marca.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9071,7 +9071,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 08:32:26 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9087,7 +9087,7 @@
     },
     {
       "Route": "Registro/Datos/Marca/Marca.pf855vbojj.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Marca\\Marca.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9108,7 +9108,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 08:32:26 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9132,7 +9132,7 @@
     },
     {
       "Route": "Registro/Datos/Talla/Talla.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9153,7 +9153,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9169,7 +9169,7 @@
     },
     {
       "Route": "Registro/Datos/Talla/Talla.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9190,7 +9190,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 04:58:02 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9206,7 +9206,7 @@
     },
     {
       "Route": "Registro/Datos/Talla/Talla.l6onwr82ys.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9227,7 +9227,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9251,7 +9251,7 @@
     },
     {
       "Route": "Registro/Datos/Talla/Talla.qmqxf014hh.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Datos\\Talla\\Talla.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9272,7 +9272,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 04:58:02 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9296,7 +9296,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.cnk96a2uj6.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9317,7 +9317,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:17:46 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9341,7 +9341,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9362,7 +9362,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:17:46 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9378,7 +9378,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9399,7 +9399,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:21:48 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9415,7 +9415,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.js",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9436,7 +9436,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:39:02 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9452,7 +9452,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.wpk5cgokna.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9473,7 +9473,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:21:48 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9497,7 +9497,7 @@
     },
     {
       "Route": "Registro/Producto/Catalogo.x9eb46i8sx.js",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Producto\\Catalogo.js",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9518,7 +9518,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 04:39:02 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9542,7 +9542,7 @@
     },
     {
       "Route": "Registro/Proveedor/Proveedor.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9563,7 +9563,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9579,7 +9579,7 @@
     },
     {
       "Route": "Registro/Proveedor/Proveedor.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9600,7 +9600,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 00:41:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9616,7 +9616,7 @@
     },
     {
       "Route": "Registro/Proveedor/Proveedor.vwetgp9282.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9637,7 +9637,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 05:14:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9661,7 +9661,7 @@
     },
     {
       "Route": "Registro/Proveedor/Proveedor.warco4nosz.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Proveedor\\Proveedor.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9682,7 +9682,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 00:41:52 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9706,7 +9706,7 @@
     },
     {
       "Route": "Registro/Usuario/Usuario.1ri0or1vhj.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9727,7 +9727,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 01:28:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9751,7 +9751,7 @@
     },
     {
       "Route": "Registro/Usuario/Usuario.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9772,7 +9772,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 23:03:20 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9788,7 +9788,7 @@
     },
     {
       "Route": "Registro/Usuario/Usuario.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9809,7 +9809,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 01 Dec 2023 01:28:42 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9825,7 +9825,7 @@
     },
     {
       "Route": "Registro/Usuario/Usuario.m2hp8rltz4.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Registro\\Usuario\\Usuario.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9846,7 +9846,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 30 Nov 2023 23:03:20 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9870,7 +9870,7 @@
     },
     {
       "Route": "Reportes.xz887bg5co.zip",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes.zip",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes.zip",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9891,7 +9891,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 May 2024 00:36:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9915,7 +9915,7 @@
     },
     {
       "Route": "Reportes.zip",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes.zip",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes.zip",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9936,7 +9936,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sat, 25 May 2024 00:36:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9952,7 +9952,7 @@
     },
     {
       "Route": "Reportes/InterfazAllCompras.48b05rl194.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -9973,7 +9973,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 Feb 2024 03:54:03 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -9997,7 +9997,7 @@
     },
     {
       "Route": "Reportes/InterfazAllCompras.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10018,7 +10018,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 19:28:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10034,7 +10034,7 @@
     },
     {
       "Route": "Reportes/InterfazAllCompras.eav9m5ze04.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10055,7 +10055,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 19:28:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10079,7 +10079,7 @@
     },
     {
       "Route": "Reportes/InterfazAllCompras.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllCompras.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10100,7 +10100,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Mon, 05 Feb 2024 03:54:03 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10116,7 +10116,7 @@
     },
     {
       "Route": "Reportes/InterfazAllFact.6lwxtofxdm.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10137,7 +10137,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 19:23:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10161,7 +10161,7 @@
     },
     {
       "Route": "Reportes/InterfazAllFact.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10182,7 +10182,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Thu, 16 Nov 2023 19:23:40 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10198,7 +10198,7 @@
     },
     {
       "Route": "Reportes/InterfazAllFact.ff1jl9qjxp.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10219,7 +10219,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:54:22 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10243,7 +10243,7 @@
     },
     {
       "Route": "Reportes/InterfazAllFact.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\InterfazAllFact.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10264,7 +10264,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 28 Nov 2023 22:54:22 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10280,7 +10280,7 @@
     },
     {
       "Route": "Reportes/Logo.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10301,7 +10301,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 10 Nov 2023 20:32:18 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10317,7 +10317,7 @@
     },
     {
       "Route": "Reportes/Logo.ui0v0tdea6.jpg",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Logo.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10338,7 +10338,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 10 Nov 2023 20:32:18 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10362,7 +10362,7 @@
     },
     {
       "Route": "Reportes/Reportes.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10383,7 +10383,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:58:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10399,7 +10399,7 @@
     },
     {
       "Route": "Reportes/Reportes.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10420,7 +10420,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:54:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10436,7 +10436,7 @@
     },
     {
       "Route": "Reportes/Reportes.we8kcwl6su.css",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.css",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10457,7 +10457,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:58:04 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -10481,7 +10481,7 @@
     },
     {
       "Route": "Reportes/Reportes.y4zkgv3rjs.html",
-      "AssetFile": "C:\\WebFactura\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
+      "AssetFile": "C:\\Users\\Admin\\OneDrive\\Desktop\\Facturacion-Ropa-Intima-Orozco\\WebAPI\\wwwroot\\Reportes\\Reportes.html",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -10502,7 +10502,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Wed, 29 Nov 2023 00:54:58 GMT"
+          "Value": "Tue, 02 Sep 2025 20:41:25 GMT"
         },
         {
           "Name": "Cache-Control",
