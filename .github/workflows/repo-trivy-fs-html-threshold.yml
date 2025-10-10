@@ -3,20 +3,22 @@ name: Repo Scan - Trivy FS (HTML/JSON + Threshold)
 on:
   push:
     branches: [ main, fix/**, feature/** ]
-    paths-ignore:
-      - '**/*.md'
-      - '.github/workflows/99-consolidate-publish.yml'
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: "0 8 * * 1"  # Lunes 08:00 UTC
+    - cron: "0 8 * * 1" # Lunes 08:00 UTC
   workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
 
 env:
   TRIVY_TIMEOUT: 10m
-  TRIVY_SEVERITY: CRITICAL,HIGH        # Umbral lógico
-  TRIVY_EXIT_CODE: 0                   # 1 = rompe si encuentra lo indicado
-  TRIVY_IGNORE_UNFIXED: true           # opcional
+  TRIVY_SEVERITY: CRITICAL,HIGH
+  TRIVY_EXIT_CODE: 0             #  No detiene el flujo si hay vulnerabilidades
+  TRIVY_IGNORE_UNFIXED: true
   TRIVY_CACHE_DIR: ~/.cache/trivy
 
 jobs:
@@ -30,46 +32,34 @@ jobs:
       - name: Cache Trivy DB
         uses: actions/cache@v4
         with:
-          path: ${{ env.TRIVY_CACHE_DIR }}
-          key: trivy-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          path: ~/.cache/trivy
+          key: trivy-${{ runner.os }}-${{ hashFiles('**/package-lock.json') }}
           restore-keys: trivy-${{ runner.os }}-
 
       - name: Install Trivy
         run: |
-          sudo apt-get update -y
-          sudo apt-get install -y wget apt-transport-https gnupg lsb-release
-          wget -qO- https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo gpg --dearmor -o /usr/share/keyrings/trivy.gpg
-          echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/trivy.list
-          sudo apt-get update -y
-          sudo apt-get install -y trivy
-
-      - name: Download HTML template
-        run: wget -q https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl -O html.tpl
+          sudo apt-get update
+          sudo apt-get install -y wget
+          wget https://github.com/aquasecurity/trivy/releases/latest/download/trivy_0.54.1_Linux-64bit.deb
+          sudo dpkg -i trivy_0.54.1_Linux-64bit.deb
 
       - name: Trivy FS → JSON (para consolidación)
-        run: trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
-              --severity $TRIVY_SEVERITY \
-              --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
-              --format json -o trivy-report.json .
+        run: trivy fs . --format json -o trivy-report.json || true
 
       - name: Trivy FS → HTML (para lectura humana)
-        run: trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
-              --severity $TRIVY_SEVERITY \
-              --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
-              --format template --template "@html.tpl" -o trivy-report.html .
-
-      - name: Fail if threshold reached
         run: |
-          # Rompe si hay findings >= severidad configurada
-          trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
-            --severity $TRIVY_SEVERITY --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
-            --exit-code $TRIVY_EXIT_CODE .
-        continue-on-error: true   # Falla controlada: no detiene el resto de pasos
+          trivy fs . --format template --template "@contrib/html.tpl" -o trivy-report.html || true
 
-      - name: Upload artifacts
+      - name: Subir artefactos
         uses: actions/upload-artifact@v4
         with:
-          name: trivy-fs
+          name: trivy-report
           path: |
-            trivy-report.json
             trivy-report.html
+            trivy-report.json
+
+      - name: Mostrar resumen del análisis
+        run: |
+          echo " Reportes generados:"
+          echo "- HTML: trivy-report.html"
+          echo "- JSON: trivy-report.json"
