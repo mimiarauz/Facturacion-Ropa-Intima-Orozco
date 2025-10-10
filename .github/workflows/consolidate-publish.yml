@@ -1,0 +1,102 @@
+name: Consolidate & Publish Security Reports
+
+on:
+  workflow_run:
+    workflows:
+      - "SAST - CodeQL (C#)"
+      - "SAST - DevSkim (.NET + Cache)"
+      - "Dependencies - OWASP DC (HTML + Threshold)"
+      - "Repo Scan - Trivy FS (HTML/JSON + Threshold)"
+      - "Secrets - Gitleaks"
+    types:
+      - completed
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout (gh-pages)
+        uses: actions/checkout@v4
+        with:
+          ref: gh-pages
+          fetch-depth: 0
+      - name: Ensure folder
+        run: mkdir -p reports
+
+      # Descarga artefactos de la ejecución más reciente de cada workflow
+      - name: Download artifacts
+        uses: actions/download-artifact@v4
+        with:
+          path: reports
+        continue-on-error: true
+
+      - name: Generate index.html
+        run: |
+          cat > reports/index.html << 'EOF'
+          <!doctype html>
+          <html><head><meta charset="utf-8"><title>Security Reports</title></head>
+          <body>
+            <h1>Security Reports</h1>
+            <ul>
+              <li><a href="./dependency-check-html/dependency-check-report.html">OWASP Dependency-Check (HTML)</a></li>
+              <li><a href="./trivy-fs/trivy-report.html">Trivy FS (HTML)</a></li>
+              <li><a href="./devskim-sarif/devskim.sarif">DevSkim (SARIF)</a></li>
+              <li><a href="./gitleaks-report/gitleaks-report.json">Gitleaks (JSON)</a></li>
+            </ul>
+            <p>Generado automáticamente.</p>
+          </body></html>
+          EOF
+
+      - name: Publish to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          publish_dir: ./reports
+          publish_branch: gh-pages
+          force_orphan: false
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Write run summary
+        run: |
+          echo "## Seguridad - Resumen" >> $GITHUB_STEP_SUMMARY
+          echo "- OWASP DC: **dependency-check-report.html**" >> $GITHUB_STEP_SUMMARY
+          echo "- Trivy FS: **trivy-report.html** (vuln/secret/misconfig)" >> $GITHUB_STEP_SUMMARY
+          echo "- DevSkim: **devskim.sarif**" >> $GITHUB_STEP_SUMMARY
+          echo "- Gitleaks: **gitleaks-report.json**" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "> Página pública: **gh-pages /reports/index.html**" >> $GITHUB_STEP_SUMMARY
+
+      - name: Comment on PR (if applicable)
+        if: ${{ github.event.workflow_run.event == 'pull_request' }}
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const body = `
+            ## 🔐 Seguridad - Reportes
+            - OWASP DC (HTML): gh-pages /reports/dependency-check-html/dependency-check-report.html
+            - Trivy FS (HTML): gh-pages /reports/trivy-fs/trivy-report.html
+            - DevSkim (SARIF): artifact devskim-sarif
+            - Gitleaks (JSON): artifact gitleaks-report
+
+            _Prioriza CRITICAL/HIGH. Si hay CVEs, revisá si tienen exploit público y si hay fix disponible._
+            `;
+            github.rest.issues.createComment({
+              issue_number: context.payload.workflow_run.pull_requests[0].number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body
+            });
+
+      - name: Slack notify (optional)
+        if: ${{ env.SLACK_WEBHOOK_URL != '' }}
+        run: |
+          curl -X POST -H 'Content-type: application/json' \
+          --data '{"text":"[Security] Reports published to gh-pages/reports/index.html. Revisar CRITICAL/HIGH."}' \
+          ${{ secrets.SLACK_WEBHOOK_URL }}
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

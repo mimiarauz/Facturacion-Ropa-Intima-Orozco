@@ -1,0 +1,75 @@
+name: Repo Scan - Trivy FS (HTML/JSON + Threshold)
+
+on:
+  push:
+    branches: [ main, fix/**, feature/** ]
+    paths-ignore:
+      - '**/*.md'
+      - '.github/workflows/99-consolidate-publish.yml'
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 8 * * 1"  # Lunes 08:00 UTC
+  workflow_dispatch:
+
+env:
+  TRIVY_TIMEOUT: 10m
+  TRIVY_SEVERITY: CRITICAL,HIGH        # Umbral lógico
+  TRIVY_EXIT_CODE: 0                   # 1 = rompe si encuentra lo indicado
+  TRIVY_IGNORE_UNFIXED: true           # opcional
+  TRIVY_CACHE_DIR: ~/.cache/trivy
+
+jobs:
+  trivy-fs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache Trivy DB
+        uses: actions/cache@v4
+        with:
+          path: ${{ env.TRIVY_CACHE_DIR }}
+          key: trivy-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: trivy-${{ runner.os }}-
+
+      - name: Install Trivy
+        run: |
+          sudo apt-get update -y
+          sudo apt-get install -y wget apt-transport-https gnupg lsb-release
+          wget -qO- https://aquasecurity.github.io/trivy-repo/deb/public.key | sudo gpg --dearmor -o /usr/share/keyrings/trivy.gpg
+          echo "deb [signed-by=/usr/share/keyrings/trivy.gpg] https://aquasecurity.github.io/trivy-repo/deb $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/trivy.list
+          sudo apt-get update -y
+          sudo apt-get install -y trivy
+
+      - name: Download HTML template
+        run: wget -q https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/html.tpl -O html.tpl
+
+      - name: Trivy FS → JSON (para consolidación)
+        run: trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
+              --severity $TRIVY_SEVERITY \
+              --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
+              --format json -o trivy-report.json .
+
+      - name: Trivy FS → HTML (para lectura humana)
+        run: trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
+              --severity $TRIVY_SEVERITY \
+              --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
+              --format template --template "@html.tpl" -o trivy-report.html .
+
+      - name: Fail if threshold reached
+        run: |
+          # Rompe si hay findings >= severidad configurada
+          trivy fs --timeout $TRIVY_TIMEOUT --scanners vuln,secret,misconfig \
+            --severity $TRIVY_SEVERITY --ignore-unfixed=$TRIVY_IGNORE_UNFIXED \
+            --exit-code $TRIVY_EXIT_CODE .
+        continue-on-error: true   # Falla controlada: no detiene el resto de pasos
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: trivy-fs
+          path: |
+            trivy-report.json
+            trivy-report.html
