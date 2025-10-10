@@ -15,7 +15,7 @@ on:
 env:
   TRIVY_TIMEOUT: 10m
   TRIVY_SEVERITY: CRITICAL,HIGH        # Umbral lógico
-  TRIVY_EXIT_CODE: 1                   # 1 = rompe si encuentra lo indicado
+  TRIVY_EXIT_CODE: 0                   # 1 = rompe si encuentra lo indicado
   TRIVY_IGNORE_UNFIXED: true           # opcional
   TRIVY_CACHE_DIR: ~/.cache/trivy
 

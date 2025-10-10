@@ -61,10 +61,11 @@ jobs:
         run: dotnet tool install --global CycloneDX
 
       - name: Generate SBOM (CycloneDX JSON/XML)
-        run: |
-          export PATH="$PATH:/home/runner/.dotnet/tools"
-          cyclonedx . -o sbom-cyclonedx.json -j
-          cyclonedx . -o sbom-cyclonedx.xml -x
+  run: |
+    export PATH="$PATH:/home/runner/.dotnet/tools"
+    dotnet cyclonedx --project-name "Facturacion-Ropa-Intima-Orozco" --json sbom-cyclonedx.json
+    dotnet cyclonedx --project-name "Facturacion-Ropa-Intima-Orozco" --xml sbom-cyclonedx.xml
+
 
       - name: Upload SBOM
         uses: actions/upload-artifact@v4

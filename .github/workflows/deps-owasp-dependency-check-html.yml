@@ -34,7 +34,8 @@ jobs:
           restore-keys: odc-data-${{ runner.os }}-
 
       - name: OWASP Dependency-Check (HTML)
-        uses: dependency-check/Dependency-Check_Action@v4.0.1
+        uses: dependency-check/Dependency-Check_Action@v3.2.1
+
         with:
           project: "Facturacion-Ropa-Intima-Orozco"
           path: "."
