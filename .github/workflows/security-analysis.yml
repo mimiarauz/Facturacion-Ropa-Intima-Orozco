@@ -1,0 +1,50 @@
+name: Análisis de Código Estático
+
+on:
+  push:
+    branches: [ main, fix/**, feature/** ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  analyze-security:
+    name: Análisis de Seguridad Estático
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🔍 Clonar repositorio
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Instalar .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: 📦 Restaurar dependencias
+        run: dotnet restore
+
+      - name: 🧱 Compilar proyecto
+        run: dotnet build --no-restore
+
+      - name: 🧪 Ejecutar análisis estático con DevSkim
+        uses: microsoft/DevSkim-Action@v1
+        with:
+          directory: .
+          output: devskim-results.sarif
+          fail-on-issues: false
+
+      - name: 🔒 Escanear vulnerabilidades con CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp
+
+      - name: 🧠 Ejecutar análisis CodeQL
+        uses: github/codeql-action/analyze@v3
+
+      - name: 📤 Subir resultados
+        uses: actions/upload-artifact@v4
+        with:
+          name: resultados-seguridad
+          path: |
+            devskim-results.sarif
+            ./codeql-results
