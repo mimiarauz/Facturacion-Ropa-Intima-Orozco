@@ -1,0 +1,75 @@
+name: SAST - CodeQL (C#)
+
+on:
+  push:
+    branches: [ main, fix/**, feature/** ]
+    paths:
+      - '**/*.cs'
+      - '**/*.csproj'
+      - '**/*.sln'
+      - '.github/workflows/01-sast-codeql.yml'
+  pull_request:
+    branches: [ main ]
+  schedule:
+    - cron: "0 6 * * 1"   # Lunes 06:00 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+  actions: read
+
+jobs:
+  codeql:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Cache NuGet (optimiza tiempo de restore/build)
+      - name: Cache NuGet
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v3
+        with:
+          languages: csharp
+          # Puedes habilitar queries extra (más estrictas):
+          # queries: security-and-quality
+
+      - name: Restore & Build
+        run: |
+          dotnet restore
+          dotnet build --no-restore -c Release
+
+      - name: Analyze
+        uses: github/codeql-action/analyze@v3
+        with:
+          category: "/language:csharp"
+
+      #  Generar SBOM CycloneDX (JSON y XML)
+      - name: Install CycloneDX for .NET
+        run: dotnet tool install --global CycloneDX
+
+      - name: Generate SBOM (CycloneDX JSON/XML)
+        run: |
+          export PATH="$PATH:/home/runner/.dotnet/tools"
+          cyclonedx . -o sbom-cyclonedx.json -j
+          cyclonedx . -o sbom-cyclonedx.xml -x
+
+      - name: Upload SBOM
+        uses: actions/upload-artifact@v4
+        with:
+          name: sbom
+          path: |
+            sbom-cyclonedx.json
+            sbom-cyclonedx.xml

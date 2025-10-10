@@ -1,0 +1,59 @@
+name: SAST - DevSkim (.NET + Cache)
+
+on:
+  push:
+    branches: [ main, fix/**, feature/** ]
+    paths:
+      - '**/*.cs'
+      - '**/*.csproj'
+      - '**/*.sln'
+      - '.github/workflows/02-sast-devskim-dotnet-cache.yml'
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  security-events: write
+
+jobs:
+  devskim:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache NuGet
+        uses: actions/cache@v4
+        with:
+          path: ~/.nuget/packages
+          key: nuget-${{ runner.os }}-${{ hashFiles('**/*.csproj') }}
+          restore-keys: nuget-${{ runner.os }}-
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+
+      - name: Restore & Build
+        run: |
+          dotnet restore
+          dotnet build --no-restore -c Release
+
+      - name: Run DevSkim (SARIF)
+        uses: microsoft/DevSkim-Action@v1
+        with:
+          directory: .
+          output: devskim.sarif
+          fail-on-issues: false   # Falla controlada: no rompe el build aquí
+
+      - name: Upload SARIF to Security tab
+        uses: github/codeql-action/upload-sarif@v3
+        with:
+          sarif_file: devskim.sarif
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: devskim-sarif
+          path: devskim.sarif
